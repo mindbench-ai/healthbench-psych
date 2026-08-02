@@ -1,0 +1,67 @@
+{
+  "run_id": "3959f47b3c6e_gpt-4.1-2025-04-14_gpt-4.1-2025-04-14",
+  "timestamp": "2026-07-29T00:40:12.627880+00:00",
+  "git_commit": "7482b33",
+  "mode": "openai-batch",
+  "temperature": 0.5,
+  "subset": {
+    "name": "healthbench_hard",
+    "sha": "3959f47b3c6e",
+    "n": 1000
+  },
+  "candidate": {
+    "id": "gpt-4.1-2025-04-14",
+    "params": {
+      "temperature": 0.5,
+      "gen_max_tokens": 2048,
+      "judge_max_tokens": 2048,
+      "mode": "openai-batch"
+    },
+    "responses_file": "eval/runs/responses/gpt-4.1-2025-04-14_3959f47b3c6e_t0.5.jsonl",
+    "responses_source": "generated(batch)"
+  },
+  "judge": {
+    "id": "gpt-4.1-2025-04-14",
+    "params": {
+      "temperature": 0.5,
+      "gen_max_tokens": 2048,
+      "judge_max_tokens": 2048,
+      "mode": "openai-batch"
+    }
+  },
+  "grader": {
+    "file": "eval/vendor/healthbench_eval.py",
+    "sha": "b763d8c1f53e",
+    "reused_by": "eval/hb_grade.py (verbatim)"
+  },
+  "source_corpus": {
+    "file": "source/hb_oss.jsonl",
+    "sha": "e99dd3c6372c"
+  },
+  "batch": {
+    "generation": {
+      "batch_id": "batch_6a694beda74481908ebc92eeed766c09",
+      "input_file_id": "file-PFUjDgfVTcQVQAJ3TSLzVw",
+      "output_file_id": "file-RzAmbHCdVST3aAstni9hEh",
+      "error_file_id": null,
+      "request_counts": {
+        "total": 1000,
+        "completed": 1000,
+        "failed": 0
+      }
+    },
+    "grading": {
+      "batch_id": "batch_6a694ce7c0088190a6ef107544872961",
+      "input_file_id": "file-DWPyyafXB5g6EQbBE9UatE",
+      "output_file_id": "file-VuoXoAVJcszsfJSzeqdfSw",
+      "error_file_id": null,
+      "request_counts": {
+        "total": 11846,
+        "completed": 11846,
+        "failed": 0
+      }
+    },
+    "sync_fallbacks": 0
+  },
+  "n_prompts_scored": 1000
+}

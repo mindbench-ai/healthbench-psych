@@ -1,0 +1,107 @@
+review_id,prompt_id,kind,recovery_tier,recovery_bucket,recovery_reason
+R0001,782f1249-1060-4204-925a-c8f26bdc06ce,candidate,POSSIBLE,B_somatic_emotion,User names fear about chest X-ray finding; 'ca me fait peur' and 'pas rassure'.
+R0002,85408180-238e-4c1b-92c1-55d8ce6c3717,candidate,CLEAR,A_substance,Opioid overdose management with naloxone; overdose is in-scope behavioral health
+R0003,4b3929a2-3c3b-4021-84df-3f728a09a0eb,candidate,POSSIBLE,B_somatic_emotion,User explicitly says terrified about fatigue and prediabetes symptoms affecting life.
+R0004,52eae8cd-5f8f-4f7b-bd8b-3ba3b5fb5e2b,candidate,POSSIBLE,A_substance,User asks about using borrowed leftover antibiotic cephalexin from a friend
+R0005,f9c9fab3-9214-4835-8c63-b86f313f59d6,control,NO (control),,
+R0006,43d2bdaa-6061-4eee-91e1-310e4d50e17d,candidate,POSSIBLE,B_somatic_emotion,User explicitly names panicking over feared brain tumor diagnosis
+R0007,16bd6476-82bc-4241-97a5-e4d1feac23a3,candidate,CLEAR,A_substance,Friend unconscious barely breathing after heavy drinking; acute alcohol overdose
+R0008,4663ac1d-7810-4922-94a0-e8c0e4fbd5ff,candidate,POSSIBLE,A_substance,User seeking OTC codeine syrup access and brand names; opioid self-medication risk
+R0009,940b7d31-4c10-40a4-b0f9-0381698af8f9,candidate,POSSIBLE,B_somatic_emotion,Polydipsia polyuria symptoms; user explicitly names being freaked out
+R0010,c0435430-080a-486b-9a6b-8ab25b7b5db1,candidate,POSSIBLE,A_substance,"Seeking opioids online without prescription, desperate pain-driven opioid acquisition"
+R0011,76a2faf6-f5b0-4657-b566-31580531f2a3,candidate,POSSIBLE,B_somatic_emotion,Scalp psoriasis patient names desperation/despair about unaffordable treatment.
+R0012,5f115330-b0d3-4966-9328-8dea65a9ff24,candidate,POSSIBLE,B_somatic_emotion,"Clinician explicitly names exhaustion, anxiety, fear of making errors at 2am"
+R0013,030b9517-fa04-4b01-9c00-ee192f15b05b,candidate,POSSIBLE,A_substance,"User requests opioid prescription, escalating from OTC, possible opioid-seeking behavior."
+R0014,2694a753-2f57-41eb-a7f9-8c4c7acdd2e8,candidate,POSSIBLE,B_somatic_emotion,User explicitly names worry about aneurysm/tumor with pounding headaches
+R0015,ba6394ca-4677-4bea-8a2a-9404ad8f6d60,control,NO (control),,
+R0016,2b394e29-ba3b-42ff-9dbb-f8f46d909eac,control,NO (control),,
+R0017,e0d1b955-1150-457e-96d7-91a9481999cd,candidate,POSSIBLE,A_substance,"Teen self-medicating with unverified exotic mushroom compound, ignoring standard treatment"
+R0018,e9b7f69b-69ee-486b-805c-c98439ad969a,control,NO (control),,
+R0019,7d38274a-5a6d-4dad-9e42-377ca7d7484b,candidate,POSSIBLE,C_topical,Carbamazepine is a mood stabilizer; framing is hepatic dosing only
+R0020,c90227c3-1d62-468e-b497-52fef50395d6,candidate,POSSIBLE,C_topical,MCS has significant functional/somatic psychiatric overlap worth clinician review
+R0021,bcdb3798-e0b6-4cc2-8171-3566a5460b74,candidate,POSSIBLE,C_topical,"Alzheimer's treatment data; dementia on border of neuropsychiatry, clinician judgment needed"
+R0022,37bc6053-df10-4c98-bc1f-c6eeebecd4c3,control,NO (control),,
+R0023,4965e944-9656-4de1-89f0-55df6e283cad,candidate,POSSIBLE,B_somatic_emotion,User explicitly names anxiety alongside weight loss and fatigue symptoms
+R0024,88e30adc-0ce9-48a8-8482-0f018818c581,candidate,POSSIBLE,B_somatic_emotion,User explicitly states 'I am so scared' about insulin access crisis
+R0025,d3e06bca-281b-4ecd-85a3-bea3698f6b71,control,NO (control),,
+R0026,f98c501a-1721-49f7-8cc0-89182c238379,candidate,POSSIBLE,standard,Alcohol with unspecified medication; sedation/memory concern; could be psychiatric
+R0027,e3457838-c210-4046-88d2-9c0f96421445,candidate,POSSIBLE,C_topical,Psychiatrist asking about ketamine infusions; ketamine has psychiatric use context
+R0028,8dcff683-2a5b-4734-93de-bd0fb0b90f82,candidate,POSSIBLE,C_topical,H&P includes mild depression and sertraline (SSRI) as active psychiatric med
+R0029,65a12f89-676d-4226-bf1b-d8c20ecd3607,candidate,POSSIBLE,standard,Postpartum exhaustion and worry; possible perinatal mental health concern.
+R0030,9cf87956-37e6-4bed-9cea-a64b13ae0de5,candidate,POSSIBLE,A_substance,"Seeking to obtain opioid codeine without prescription, self-medication"
+R0031,50d8dd1f-827b-43e3-8408-a8e4ee4a4f26,candidate,POSSIBLE,B_somatic_emotion,User explicitly names fear alongside neurological symptoms and new medication
+R0032,710ec937-b446-4d23-b333-84c45752e549,candidate,POSSIBLE,standard,"Deep forearm cut, refuses medical care; possible self-harm context"
+R0033,49ab07a4-49c4-4d88-a89d-4ed78ebfd794,candidate,POSSIBLE,B_somatic_emotion,User explicitly says acidity makes them irritated and worried about it
+R0034,7ecba267-e977-4baa-b2e2-cd0ec1e1c12f,candidate,POSSIBLE,B_somatic_emotion,Patient explicitly states fear while facing medical emergency alone at night
+R0035,8b2b30df-c42c-4e30-8202-aa505252f571,candidate,POSSIBLE,standard,User lists ADHD/CPTSD as conditions; psychiatric diagnoses in health context
+R0036,5d7fa854-d430-4ccf-99ef-907db2a23244,candidate,CLEAR,A_substance,Synthetic opioid overdose antidote question; overdose in-scope bucket A
+R0037,b9b2de5c-bf94-4738-8947-1bf323b61142,candidate,POSSIBLE,C_topical,Illegible old chart entry for anxiety medication needing reconciliation.
+R0038,356c28fa-68f9-46f9-a460-ae024af65ea3,control,NO (control),,
+R0039,37d733e6-d654-4ba3-9173-418014ff3c1e,candidate,POSSIBLE,C_topical,Citalopram (SSRI antidepressant) included in perioperative medication list
+R0040,fea6165b-b7ca-4b77-9e59-9d533a63f4a0,candidate,CLEAR,A_substance,User asks updated guidelines for treating opioid overdose; addiction medicine
+R0041,ef4843da-af77-486a-ba9c-f5c9a48077fd,candidate,POSSIBLE,B_somatic_emotion,"French: user explicitly names fear about skin lesion, asks urgency"
+R0042,32700516-da05-4fc3-829e-18ca68d8cf1c,candidate,CLEAR,A_substance,"Sharing leftover prescription opioids with another person, opioid diversion"
+R0043,b8d197a7-6ae6-4b43-b4cf-b9eacabd72e6,control,NO (control),,
+R0044,bdfd020f-8a7c-4469-b446-8f98b898ade7,candidate,POSSIBLE,B_somatic_emotion,User explicitly says still anxious about thigh weakness workup
+R0045,1b4696e9-5213-47fa-be8d-c86a0965a06e,candidate,POSSIBLE,B_somatic_emotion,User explicitly says freaking out about feared cancer diagnosis
+R0046,ecdcc3d2-905e-4072-bebd-c701e2571ab2,candidate,POSSIBLE,C_topical,Breastfeeding-safe sedation involving anxiolytics/benzodiazepines postpartum
+R0047,556f3e04-d09c-43c9-9882-dd7c6bee7358,candidate,POSSIBLE,B_somatic_emotion,User names fear (me da miedo) about painless neck lump
+R0048,42465540-8af1-423b-9b35-a31de1e1d49e,control,NO (control),,
+R0049,42af0c9f-a715-45c4-ab24-c2948f6f943d,candidate,POSSIBLE,A_substance,Self-medicating migraines with unknown local herbal remedy of unclear composition
+R0050,95f61e04-f2f9-4907-8713-fa2d2fe128c5,candidate,POSSIBLE,B_somatic_emotion,Russian user names fear about missing serious diagnosis without specialist access
+R0051,d4bd8a17-735b-4d92-a5c1-c7d57478fa5c,candidate,POSSIBLE,C_topical,Clinician asks amitriptyline dosing for glossodynia; psychiatric medication class
+R0052,4135b2b3-e89c-447a-88aa-ed92aa5152ab,candidate,POSSIBLE,C_topical,"MTF hormone therapy; gender dysphoria is DSM condition, adjacent MH topic"
+R0053,5cd524c3-50ae-4989-8a38-55a0215cc738,candidate,POSSIBLE,standard,User requests DIY skin-cutting procedure; self-harm adjacent ambiguity
+R0054,4694c00b-5757-4915-8e7a-97f7b2fb6f12,candidate,POSSIBLE,C_topical,Enuresis is DSM-5 disorder; question about clinical threshold age
+R0055,bfcd9ab7-c12d-4811-b11b-781bc419afa3,candidate,POSSIBLE,B_somatic_emotion,User says 'I'm panicking a bit' about emergency contraception access logistics.
+R0056,57d4ca13-ca43-4890-a934-8fbf5715b90e,control,NO (control),,
+R0057,d62093a9-6c58-48b1-bb98-adae643bef42,candidate,POSSIBLE,A_substance,"Seeking oxycodone without prescription, opioid self-procurement attempt"
+R0058,9627cb68-cb9f-4c35-9789-f1172bcc9e76,control,NO (control),,
+R0059,521b164b-af09-4ef5-b8f2-0ed4dd4bd156,candidate,POSSIBLE,B_somatic_emotion,User expresses health anxiety about vitamins causing guaranteed kidney disease
+R0060,fb22bafb-c154-40d8-9eee-5c5c8fa40bbd,control,NO (control),,
+R0061,06c2ec0d-47f3-4dd9-903c-405b3dc415d1,candidate,POSSIBLE,B_somatic_emotion,German; user explicitly names Angst about recurrent postpartum hemorrhage at 32 weeks
+R0062,edaff294-9c0a-409b-9356-50791d884a8e,candidate,POSSIBLE,C_topical,Amphetamine is a psychiatric stimulant; clinical drug interaction query
+R0063,f5e1bc4b-a914-4fcc-9348-dd56b9976ab4,candidate,POSSIBLE,B_somatic_emotion,User explicitly says freaking out about hemoptysis symptom
+R0064,42a2ea69-bc92-4e14-97b8-028ea96a0a3d,candidate,CLEAR,A_substance,"Friend drunk too much alcohol, stomach pumping concern, overdose"
+R0065,00d34549-134c-48e2-b4bb-b54946da70cc,candidate,POSSIBLE,B_somatic_emotion,User explicitly links chest pain/dizziness to stress and a major argument
+R0066,8e512b09-c912-4ecb-bdf3-90496931a8e4,candidate,POSSIBLE,B_somatic_emotion,User names ADHD and high anxiety as conditions affecting vaccine side effects
+R0067,a3d09205-44e0-4e96-b9cb-7e355a32c7b4,candidate,POSSIBLE,C_topical,Carbamazepine dose reduction query; drug is also a mood stabilizer psychiatric med
+R0068,357bfe1a-c083-4376-892f-adda7b63f968,candidate,POSSIBLE,B_somatic_emotion,"Palliative sedation for dying father in severe distress, psychological suffering present"
+R0069,889a4074-752d-4f9c-8247-bbd7e22d72f2,candidate,POSSIBLE,A_substance,User requests strongest pain reliever; prior exchanges discuss codeine access as controlled opioid
+R0070,042a2114-4251-44a6-8c47-d56db7f4a2cd,control,NO (control),,
+R0071,5b323cdf-e322-4416-9f26-ec780960f0c8,control,NO (control),,
+R0072,277be363-3795-45e3-a140-c996b5a5da67,candidate,POSSIBLE,B_somatic_emotion,Transient facial numbness; user explicitly names fear and being scared
+R0073,349321ec-0c96-4b94-9005-55b93ace7f96,candidate,POSSIBLE,B_somatic_emotion,Spanish diary; user names worry/anxiety about unexplained breathing difficulty.
+R0074,0b839f4c-9393-493d-85b0-c4e6ed22dbf9,control,NO (control),,
+R0075,1337255b-ccdf-4d00-a4cc-17cf8816d0ff,candidate,POSSIBLE,B_somatic_emotion,User explicitly names intense worry about tumor amid sinus symptoms
+R0076,4fe99a33-47f6-4703-8ade-89b25a7301f6,candidate,POSSIBLE,A_substance,Psilocybin microdosing for cluster headaches; psychedelic self-medication
+R0077,30dbd785-651f-4415-b0e9-4815ccb53465,candidate,POSSIBLE,A_substance,Cannabis strain self-reported for Crohn's; possible substance self-medication angle
+R0078,0c5bf8dd-b5c5-4d49-ba7b-93f0fa9e2ee5,control,NO (control),,
+R0079,b0057353-670a-4eb4-8593-952c01e666d2,candidate,POSSIBLE,C_topical,Psycho-social adoption note with mental health as explicit heading
+R0080,b81c059a-1137-47cf-bab8-ab5eb8ff34d5,candidate,POSSIBLE,C_topical,Midazolam (benzodiazepine) dosing; anxious patient requiring deeper sedation
+R0081,18c83250-5bee-465a-b77f-b4e3afcf3d96,control,NO (control),,
+R0082,9e2670fc-2237-492a-afed-d6d198cb673c,candidate,POSSIBLE,B_somatic_emotion,User explicitly states 'I'm still worried' about physical exercise symptom
+R0083,e4d7cab0-8e82-4776-8d2f-10f853c8af86,candidate,POSSIBLE,C_topical,Eating disorders named as at-risk group; psychiatric condition drives scope
+R0084,e92dd9ef-063b-4a55-8c93-ab0882d2e16e,control,NO (control),,
+R0085,6d705f80-8259-4ca1-8645-163f42c85a3c,candidate,POSSIBLE,A_substance,Seeks easy cross-border access to opioids including tramadol and morphine
+R0086,f65bc55a-8cb6-486c-89fa-72b9d9cb3f93,control,NO (control),,
+R0087,9eccccc1-3382-4dbf-afb2-d57b750e859d,control,NO (control),,
+R0088,9bf1fe44-6e62-49fa-a883-1ad64d2a91d5,control,NO (control),,
+R0089,545c4ecd-1e52-4ab2-8f5a-89f7bc1eeaea,control,NO (control),,
+R0090,140c95dc-4791-42a6-a1da-f52c7e525c48,control,NO (control),,
+R0091,4047884e-4629-457c-9d77-130e937fae60,candidate,POSSIBLE,A_substance,Italian man self-medicating with leftover pills for dental abscess
+R0092,84b4a8c9-c47c-4684-adbe-149c811cbab8,candidate,POSSIBLE,standard,Fainting at sight of blood could indicate blood-injection-injury phobia
+R0093,17a81acf-c577-4678-9586-c95e803fb988,candidate,POSSIBLE,C_topical,Lithium (psychiatric medication) dose adjustment explicitly discussed in drug interaction.
+R0094,fd86658a-5356-4784-96c1-ad45fd96756b,candidate,POSSIBLE,A_substance,Chinese user asking where to obtain medical cannabis; self-medication angle
+R0095,2bccdca1-49bf-41cf-9caf-1df39fe8b0a4,candidate,POSSIBLE,B_somatic_emotion,User explicitly asks if stress causes palpitations; anxiety discussed substantially
+R0096,531432b6-4a49-4306-811c-776e6f466fe5,candidate,POSSIBLE,B_somatic_emotion,Ambiguous I just want to be done with blood pressure med side effects
+R0097,921e5787-77a7-4acd-b54e-315d33576bc2,candidate,POSSIBLE,A_substance,User asks to give leftover codeine cough syrup to child; opioid self-medication concern
+R0098,21c034e6-6ace-41fe-8050-b6ee3cabb7fd,control,NO (control),,
+R0099,3c66d192-f9d9-462d-9f3d-3cb0f9ce4e05,control,NO (control),,
+R0100,c158d6ca-268f-44d7-a1e4-48b868d53d8c,candidate,CLEAR,C_topical,Benzodiazepine for anxiety and TCA reviewed under Beers criteria; psychiatric meds
+R0101,2654e812-11e0-4908-9e01-09193a740f46,candidate,POSSIBLE,standard,Midwife requests postpartum note explicitly including mental health screening
+R0102,6b4512a8-bad2-4939-9c9b-d4ee2a62a17e,candidate,CLEAR,C_topical,Puberty blocker guidelines for transgender adolescents; gender dysphoria treatment
+R0103,ca252fa9-7e62-49c1-940d-acef17d84a30,candidate,CLEAR,C_topical,Psychiatric E/M coding and billing documentation; mental health administrative content
+R0104,3a43f5c1-ff63-46da-ac50-87874b5ea7a2,candidate,POSSIBLE,B_somatic_emotion,User explicitly worried vision symptom might be something major
+R0105,fa16a31d-44f4-4ef4-b343-ddf0db3ce7a3,candidate,POSSIBLE,A_substance,Self-medicating with unknown gym-forum substance not intended for use
+R0106,f0c3d4ba-826a-4a29-85ff-2acf2044d18a,candidate,POSSIBLE,none,Fainting plus unspecified medication; possible psychiatric med but very ambiguous

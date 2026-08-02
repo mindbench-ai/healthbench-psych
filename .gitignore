@@ -1,0 +1,15 @@
+# HealthBench corpus — fetched by users, not redistributed (see README: Reproducing)
+source/
+
+# Regenerated/append-only run artifacts (the released data itself is committed)
+eval/runs/*.png
+eval/runs/logs/
+eval/runs/ledger.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv*/
+
+# OS
+.DS_Store

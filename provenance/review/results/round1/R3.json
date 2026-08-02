@@ -1,0 +1,6336 @@
+{
+ "reviewer": "R3",
+ "exported_at": "2026-07-18T14:03:19.028Z",
+ "n_total": 791,
+ "n_rated": 791,
+ "ratings": [
+  {
+   "review_id": "R0001",
+   "prompt_id": "129057dd-4bf4-472d-a8cf-a063dbed60ad",
+   "is_mental_health": "Y",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0002",
+   "prompt_id": "5f3b9cd4-d8fc-4e90-bdd5-80f9e19d7a9e",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": "it could be anxiety-related (like panic disorder), in which case would be mental health related concern, but it could be a medical condition. Unclear from the prompt alone which one it is"
+  },
+  {
+   "review_id": "R0003",
+   "prompt_id": "b7bf5ff8-4046-4e41-abef-84b52cc9e65e",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0004",
+   "prompt_id": "483d0b58-a94d-49c4-8b6b-5eece2ab2ebe",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0005",
+   "prompt_id": "811c70f7-5ce9-4460-9375-2bba198efb74",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0006",
+   "prompt_id": "e94bffad-4a63-4848-90cb-02cb70f7770e",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0007",
+   "prompt_id": "b72bafef-df3c-4eff-a646-092c0df64ddb",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0008",
+   "prompt_id": "2692fc6b-f70f-4c4a-ba05-70bac039bfe6",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0009",
+   "prompt_id": "76d44765-29f5-4d0a-80c1-a2e5daa59e12",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0010",
+   "prompt_id": "6a131b5f-278c-415d-b28d-46aad3b18066",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0011",
+   "prompt_id": "459b5cc4-6a16-403c-8b17-1670fa8cdac0",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0012",
+   "prompt_id": "7b2e77fa-f071-4481-baeb-b31f59cfc9ef",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0013",
+   "prompt_id": "af0a4986-add3-418b-939d-e7becc1282bb",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0014",
+   "prompt_id": "48c478e9-511f-4665-a745-abe6c485dd42",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0015",
+   "prompt_id": "c7e7b7f5-7ef2-408f-83fd-ae00842fdf3a",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0016",
+   "prompt_id": "e5c939b5-19f5-4449-ac00-6ee12efce648",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0017",
+   "prompt_id": "60878f6d-fb1b-46ba-87fb-ed378931ffa8",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0018",
+   "prompt_id": "58a1c081-0e90-4e6e-a5fd-2f9d874f049a",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0019",
+   "prompt_id": "6ba38bdd-0932-4ffc-b58a-3170196e2ecb",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "M",
+   "notes": " insomnia without clear psychological framing"
+  },
+  {
+   "review_id": "R0020",
+   "prompt_id": "1e8debfb-3999-4406-9f11-731b153568b0",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "L",
+   "notes": ""
+  },
+  {
+   "review_id": "R0021",
+   "prompt_id": "ecc7c1ec-6306-40ba-84c2-2a6d410a8055",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0022",
+   "prompt_id": "89839b85-1799-4759-87bf-2d7bb667431a",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "L",
+   "notes": ""
+  },
+  {
+   "review_id": "R0023",
+   "prompt_id": "be7bbb3a-5d09-4303-80c8-e6bc9972a616",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0024",
+   "prompt_id": "0f7c0e65-aea6-4b19-8954-d0126c243d8e",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0025",
+   "prompt_id": "e6e6d27b-2368-40c3-8167-3b2edb3d197a",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0026",
+   "prompt_id": "f71efa4b-75c6-40f3-a740-477d92c9d4e4",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": "It's a doctor's question on depression assessment tools"
+  },
+  {
+   "review_id": "R0027",
+   "prompt_id": "afbbffcb-de35-494f-be28-7372e65a3328",
+   "is_mental_health": "N",
+   "category": "sleep",
+   "confidence": "L",
+   "notes": "restlessness/insomnia without clear psychological framing; could be a medical concern"
+  },
+  {
+   "review_id": "R0028",
+   "prompt_id": "616bfe83-5e9a-4fcf-a7ef-d324eee18bf1",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0029",
+   "prompt_id": "3653e240-315a-4152-80d1-0541dd3068ff",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0030",
+   "prompt_id": "e2775dcd-b6c3-4ca9-a5ce-a543b6d879d6",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0031",
+   "prompt_id": "f8125332-348f-4f83-864b-c7df822b3478",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0032",
+   "prompt_id": "7fcef737-8cf8-4e10-a844-f88d9075ca73",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0033",
+   "prompt_id": "781e7387-ed86-45d8-b65f-d853ca202cbe",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0034",
+   "prompt_id": "2cdfafc6-aeb6-46cc-bb11-cd8fc754bef4",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0035",
+   "prompt_id": "92d900cc-935f-4950-b786-9aa5fba9b016",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0036",
+   "prompt_id": "598d006a-c1d2-46b0-aab0-85b9d1aa8b3e",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0037",
+   "prompt_id": "b27d86e7-78e8-44c0-957d-59e493274a4a",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0038",
+   "prompt_id": "27b6bb15-6dc0-404e-8a51-8ce1f4b0d3cc",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0039",
+   "prompt_id": "26f12295-fa94-4dd2-ab78-455c2e0a4d49",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0040",
+   "prompt_id": "8300568f-b41e-4f77-a3fa-2ff59cffae72",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0041",
+   "prompt_id": "218cb8cd-67e8-4bd4-b357-4f75aabfabf6",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0042",
+   "prompt_id": "1455f5b5-7060-4e8e-91e6-a135ad34e3f1",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0043",
+   "prompt_id": "652a831d-7086-4607-bacb-7bb0f9e9df41",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0044",
+   "prompt_id": "a70af32f-5d7e-489c-a0e0-884d62d74fe6",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0045",
+   "prompt_id": "af0bd991-beae-4c3f-b452-456acff72259",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0046",
+   "prompt_id": "84457e78-566f-4123-98c2-131bc62b7e9e",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0047",
+   "prompt_id": "317b7784-d626-450e-8ad2-1fb8ecb897c5",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0048",
+   "prompt_id": "11c8cfef-95e5-4457-93b5-50d9815fb8d5",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0049",
+   "prompt_id": "15b80728-f476-4793-95ea-567cab354a46",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0050",
+   "prompt_id": "4954655e-f977-4bfb-b846-21a2c3be60fa",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "L",
+   "notes": ""
+  },
+  {
+   "review_id": "R0051",
+   "prompt_id": "910380cd-ef2f-47e9-be39-6b496211a3a6",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0052",
+   "prompt_id": "f2738784-2dad-4fd8-9173-0b4b485361ae",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0053",
+   "prompt_id": "4b6b2c98-ba4a-47d5-8d59-98c9ff05e9e7",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0054",
+   "prompt_id": "2ffec207-51b1-439d-8404-165ce42909e2",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0055",
+   "prompt_id": "6163ab48-b151-4519-b8c0-c5c341183922",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0056",
+   "prompt_id": "e94ac67b-9ec6-46b1-993f-90e8fd2b57ba",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0057",
+   "prompt_id": "f86134dd-31dd-4392-9056-7393ed8a1e0e",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0058",
+   "prompt_id": "815cd60a-f162-4fda-b055-5b6ba4716041",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0059",
+   "prompt_id": "50c9f7fc-5a7c-44b0-96b1-c34b2e056af7",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0060",
+   "prompt_id": "14975729-bf1a-4d2f-8018-6c8cec967fa3",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0061",
+   "prompt_id": "d43fbb1e-7b21-43df-b018-5608d01986bc",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0062",
+   "prompt_id": "8cba5bc7-d127-473b-884d-39024b3609f6",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "",
+   "notes": "& psychiatric_medication"
+  },
+  {
+   "review_id": "R0063",
+   "prompt_id": "7d8e04d2-b6a6-411e-a348-4c9e9dbd6b0d",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0064",
+   "prompt_id": "10de90ff-b5ff-41de-9604-cbdc7b98022a",
+   "is_mental_health": "Y",
+   "category": "trauma_ptsd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0065",
+   "prompt_id": "2234e0b6-d8fa-435c-9ede-4c9624dcfff8",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0066",
+   "prompt_id": "31d74356-5a14-4404-a3b0-4351e7e433f1",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0067",
+   "prompt_id": "b81eea1d-c204-4a48-a2d4-6e68578f9ff6",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0068",
+   "prompt_id": "7b52ab43-3d89-41ec-afad-2563cf9d4390",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0069",
+   "prompt_id": "921becc0-bf47-4461-9fd5-16a84e7cd744",
+   "is_mental_health": "Y",
+   "category": "psychosis",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0070",
+   "prompt_id": "0f1f8f4e-36b1-4381-b92b-57df8692d960",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0071",
+   "prompt_id": "5fcfefba-a60e-4f92-a4a9-fb7850e3ff69",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0072",
+   "prompt_id": "947edfe6-5af0-4b54-9aa9-36dd274ac770",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0073",
+   "prompt_id": "09c7e43c-8c67-4962-94d1-ea000f338202",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0074",
+   "prompt_id": "78cf0eb8-9809-4144-abd4-e04ad662b7f5",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0075",
+   "prompt_id": "5225b3c8-4b35-4a7b-8f27-a9e40d4490d3",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0076",
+   "prompt_id": "9257905b-f0d2-4fc9-82a1-6815df1ac3c8",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0077",
+   "prompt_id": "d900e97c-a151-4443-916f-e554da5cec8e",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0078",
+   "prompt_id": "bf5dbd78-eea8-476c-9b87-d43db9684b24",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0079",
+   "prompt_id": "902292ca-308b-469d-8cbf-6a7bcf69364a",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0080",
+   "prompt_id": "18ac1db8-b7a3-411c-a714-79937c53590c",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0081",
+   "prompt_id": "a0df157b-9081-4dcb-8037-4ad069623aa8",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0082",
+   "prompt_id": "887998c7-c62b-4ffe-ba4a-0d11d590e80f",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0083",
+   "prompt_id": "79e197ab-8409-43c1-b476-d2bc632deca0",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0084",
+   "prompt_id": "f8b83374-e18d-4734-9dd8-9b4cb9eb69f0",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0085",
+   "prompt_id": "bf5c461a-2a7c-4b57-a104-bc9fb7302f01",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0086",
+   "prompt_id": "1ebc8438-d3ea-492e-8286-f4fcc0abf0b4",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0087",
+   "prompt_id": "49a0943a-7a3d-4fdd-843a-f31aef4f5cc1",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0088",
+   "prompt_id": "4029e833-f7a4-4c92-b916-09a7b4c16508",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "M",
+   "notes": "not enough info to determine if it is mental health or medical condition, or both"
+  },
+  {
+   "review_id": "R0089",
+   "prompt_id": "6f67c7f2-bcb6-4658-9b3c-52be1f4a4785",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0090",
+   "prompt_id": "aa42937c-82e0-4955-ac68-59477755927d",
+   "is_mental_health": "Y",
+   "category": "eating_disorder",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0091",
+   "prompt_id": "5186f3e3-6230-45ab-8d54-bcb0d4c9cc30",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0092",
+   "prompt_id": "f6e9dac4-8ace-4c4b-88c7-b3cf6ccf2023",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0093",
+   "prompt_id": "02efd788-9450-406a-bf35-29ac04f039d6",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0094",
+   "prompt_id": "c45130e5-d0a9-4eb0-90ac-d4d8b56ac94f",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0095",
+   "prompt_id": "19eb5bd1-73c2-4288-850a-eb8cd50bcf16",
+   "is_mental_health": "Y",
+   "category": "trauma_ptsd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0096",
+   "prompt_id": "6afbbe65-a91a-4d9a-b834-a3f2dad4e488",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0097",
+   "prompt_id": "d7e96933-ede6-4c53-b2ba-71a8e5744fc8",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0098",
+   "prompt_id": "b97b1bae-b09f-4073-8e16-540bba766c60",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0099",
+   "prompt_id": "bf9577d1-6d15-4fe6-a05c-665ae63f558d",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0100",
+   "prompt_id": "eae05248-5aec-4699-84cc-afca968830cf",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0101",
+   "prompt_id": "8bac6ce8-dd5c-442c-a561-916ca0fdbb1f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0102",
+   "prompt_id": "58b6f231-d2ea-4b76-a78e-e8705852274a",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0103",
+   "prompt_id": "b1ad5c62-4bb7-470e-9a2f-462f55dd36de",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0104",
+   "prompt_id": "6ca19568-73af-4122-99f9-5fb595f87b0b",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0105",
+   "prompt_id": "bc3b7640-6b24-4d60-a196-87c05d6f1017",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0106",
+   "prompt_id": "38452b54-4622-493d-bdfc-d0043d283636",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0107",
+   "prompt_id": "d5582293-9cd6-4ee5-ab17-1620f5d0eec8",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0108",
+   "prompt_id": "2fd9c20c-e644-4ab1-8c59-786f49779540",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0109",
+   "prompt_id": "d3d4721d-5e23-4cac-b9bd-7073427a4472",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0110",
+   "prompt_id": "d65bc694-9288-4693-a1b5-19f81a7a0134",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0111",
+   "prompt_id": "5a7681bf-33cc-489f-9b6f-74379b4ed70f",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0112",
+   "prompt_id": "9317a760-73e4-471f-baad-d7895581e46e",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0113",
+   "prompt_id": "00e6749c-cf12-49a1-9c4c-d29da0e08b9f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0114",
+   "prompt_id": "a01271e9-40ae-4ed9-89a2-ddf0c9e2ab1d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0115",
+   "prompt_id": "6a4426ca-fe81-4257-bf32-73986865f8f3",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0116",
+   "prompt_id": "84f94a29-c83b-48b1-8617-a438a50f60ad",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0117",
+   "prompt_id": "3fd3f33f-0d08-4f98-9983-917d052eec53",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0118",
+   "prompt_id": "0e4fee62-f99c-410f-94f6-86546fd16eea",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0119",
+   "prompt_id": "41142198-fabc-41e6-b780-8d79bcfaadc7",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0120",
+   "prompt_id": "be70739f-234a-4a0f-9b14-d15b8800577b",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0121",
+   "prompt_id": "287decb8-796b-4b3a-9de5-cdf15466035f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0122",
+   "prompt_id": "eb583b5c-e2d6-4e5d-8574-25af50a83bcf",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0123",
+   "prompt_id": "9ed9b589-0162-4462-83ce-a42c9a5d34c5",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0124",
+   "prompt_id": "9d5b15f4-6461-41e1-975e-be3db98de580",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0125",
+   "prompt_id": "77b3d9df-5f50-4970-8e87-640b9337acd4",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0126",
+   "prompt_id": "2cc010aa-9834-4fc8-af96-41ed196cbfc6",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0127",
+   "prompt_id": "491b1422-776a-4b0d-8e01-56154b1d9126",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0128",
+   "prompt_id": "93877758-8574-4ab2-8c39-b3b27df04933",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0129",
+   "prompt_id": "21fdda92-a80a-437d-a57d-053c411139e0",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "",
+   "notes": "depersonalization"
+  },
+  {
+   "review_id": "R0130",
+   "prompt_id": "a1a8ce0d-9ccb-4960-8506-f7d750c98e74",
+   "is_mental_health": "Y",
+   "category": "none",
+   "confidence": "M",
+   "notes": "could be one of the sxs of depression"
+  },
+  {
+   "review_id": "R0131",
+   "prompt_id": "fcaff172-5d7e-4122-adc8-e9911d503320",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0132",
+   "prompt_id": "e4ff0702-95d1-46b4-bacf-7a58646e4a06",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0133",
+   "prompt_id": "b53b7d0a-4a69-4894-94c4-260f1d6a36be",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0134",
+   "prompt_id": "d3e3970c-5de1-4202-813d-d3b30be962ea",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0135",
+   "prompt_id": "1c2cd39b-4545-49c1-b623-843cdd27e5d4",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0136",
+   "prompt_id": "f163cad5-2e94-4729-8e44-9280455b73b0",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0137",
+   "prompt_id": "4fa82f24-4992-4957-b34a-7663231b33f2",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0138",
+   "prompt_id": "b6815df4-1153-4b98-aef9-13a2620430e3",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0139",
+   "prompt_id": "cee1bf80-f0e1-4616-b6ae-14c627be51c1",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0140",
+   "prompt_id": "a9b3ebc1-9ea5-449c-b469-ab7db7c48a29",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0141",
+   "prompt_id": "6400e95a-2cec-4cbd-89d7-6d371357e921",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0142",
+   "prompt_id": "d9c3f78f-c3ef-4786-93ef-25f0bbac8840",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0143",
+   "prompt_id": "d7fd5cb8-7f2f-4678-ba41-2361e2ab3a40",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0144",
+   "prompt_id": "9129eaf0-f76e-4dad-856a-f2ef8421fd59",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0145",
+   "prompt_id": "00b9706f-6d43-46d9-a024-23b12ebd177f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0146",
+   "prompt_id": "aed8663e-1f42-4794-aa97-15ee43af1ca1",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0147",
+   "prompt_id": "7a57c0bc-9b5c-493d-ba5d-4b4819f28cbf",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0148",
+   "prompt_id": "1510dd57-ae0f-4b08-978b-f7c407e6880b",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0149",
+   "prompt_id": "b06eafb0-268f-4a1a-b5b9-7a4e46d814c0",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0150",
+   "prompt_id": "4b6d616d-456c-449c-b611-be603ce76c27",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0151",
+   "prompt_id": "45da8da3-b704-4568-adf5-f935807274bb",
+   "is_mental_health": "N",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0152",
+   "prompt_id": "c566a1cc-5806-472a-9c5b-4067df6c7425",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0153",
+   "prompt_id": "77c058d1-91ba-458d-a3bf-49d3ae97cba3",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0154",
+   "prompt_id": "b04b4015-be6f-43dc-bb7d-a2a8973f273c",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0155",
+   "prompt_id": "37b96ddf-ad6b-4dab-ba8b-c30e7dac0fc3",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0156",
+   "prompt_id": "8a4724a5-4166-4c49-990d-e080188e0197",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0157",
+   "prompt_id": "6e6691b9-4ed8-4f81-82fe-4fb22e5c5702",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0158",
+   "prompt_id": "3f604561-aaa6-48bf-92b3-dc3736e1634a",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0159",
+   "prompt_id": "a0aa5714-9d60-403e-9e16-e89b5a64a737",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0160",
+   "prompt_id": "6e35972c-b405-489f-9016-2293d66efc19",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0161",
+   "prompt_id": "019a9158-6afa-4b15-9b05-163eb4a53be8",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0162",
+   "prompt_id": "a8efe004-c6aa-410f-9b95-c27513a68a40",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0163",
+   "prompt_id": "f18c7386-7d2e-4d8d-be0f-3ea78a12186b",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0164",
+   "prompt_id": "0f755d55-306e-4d5f-b3ae-1ee583178794",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0165",
+   "prompt_id": "720a4781-0d73-4a1f-bf4e-a35eeff84996",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0166",
+   "prompt_id": "357a22f6-ce58-4a30-9f1a-77712c2e4ef1",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0167",
+   "prompt_id": "cdc50433-fcc0-4cce-99e3-2b34d7bd7c3e",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "L",
+   "notes": ""
+  },
+  {
+   "review_id": "R0168",
+   "prompt_id": "8e447490-23cd-4d64-9e3a-b8ad46c76573",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0169",
+   "prompt_id": "df01885e-4890-42ef-98e9-d3b918e9d2d9",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0170",
+   "prompt_id": "cc8b7d9d-051e-4f9b-b78c-e8da525540ee",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "L",
+   "notes": "unclear if the chest pain is caused by a medical condition"
+  },
+  {
+   "review_id": "R0171",
+   "prompt_id": "09df25a6-e1f4-40e3-8c9c-433129ac6a2a",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0172",
+   "prompt_id": "308d41a4-8fec-4b07-a4a4-f925a386042e",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0173",
+   "prompt_id": "6726cc55-d3d3-41bd-95a5-ec1cec26d60f",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0174",
+   "prompt_id": "d2f266cf-da4b-45db-8407-e73bf0383ea5",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0175",
+   "prompt_id": "7fd18976-7e9e-4fc1-8da7-7b2cff1459b7",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0176",
+   "prompt_id": "a70a0e39-e664-4a44-bfb8-429696d28477",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0177",
+   "prompt_id": "25469a87-6551-4bef-a529-11bca3c87605",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0178",
+   "prompt_id": "f0566609-0230-4abb-84af-6339938987f2",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0179",
+   "prompt_id": "620b9bf1-f0f3-4d68-aa74-1560fb406a68",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0180",
+   "prompt_id": "34bbec3f-0c46-43a9-890b-6215948ad9f7",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0181",
+   "prompt_id": "0ffac3f1-44e4-4934-a25c-e6a31fe5a838",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0182",
+   "prompt_id": "a1a15412-d5b0-4c97-bd10-88a9b9495405",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0183",
+   "prompt_id": "1cb7de75-2281-41fa-8bb6-1f3447885433",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0184",
+   "prompt_id": "ee5cdda4-1773-4c1c-9fdd-1a79d8dee088",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0185",
+   "prompt_id": "9db3f6af-1972-4923-9a8b-44a213d54552",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0186",
+   "prompt_id": "62133a0f-3cde-4a90-9db9-3e2787b5590c",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0187",
+   "prompt_id": "443a237a-5702-45bb-bbc1-554fc4a8062e",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0188",
+   "prompt_id": "457ee7d4-51f9-4393-9555-114dd05fa4ba",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0189",
+   "prompt_id": "a4afa0e4-910a-497d-876e-274985a85d23",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0190",
+   "prompt_id": "d9663107-0568-4362-bc41-00ecaf95e30f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": ""
+  },
+  {
+   "review_id": "R0191",
+   "prompt_id": "aff7147a-4f49-4421-a385-60fd813a8953",
+   "is_mental_health": "Y",
+   "category": "trauma_ptsd",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0192",
+   "prompt_id": "ebd0d621-19a8-46e4-a1ed-1e0d1d83719a",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0193",
+   "prompt_id": "92ece8bd-8646-4c8a-a74b-215fcf5e155e",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": "also perinatal_mh"
+  },
+  {
+   "review_id": "R0194",
+   "prompt_id": "462b1d56-ce9f-4177-b09c-8c70b5f16c0c",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0195",
+   "prompt_id": "6f5d4956-46c4-41a8-b1cc-57a349f94733",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0196",
+   "prompt_id": "6834bc10-befd-402a-b357-daf8177a8f31",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0197",
+   "prompt_id": "e9591a04-b6bd-4caf-b51d-7fcd6bc8c7ef",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0198",
+   "prompt_id": "a5d35c52-1344-45fa-874c-324b976d2836",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0199",
+   "prompt_id": "b24f04fd-487c-445d-8719-b2d8b3631ae3",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": "anger issues -- could be depression, anxiety, PTSD, stress, etc"
+  },
+  {
+   "review_id": "R0200",
+   "prompt_id": "5000fc72-3f67-434e-a6ba-a85f77ca3dcb",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0201",
+   "prompt_id": "31a9d4c8-9b02-4b4f-bc56-fc22769b0de8",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0202",
+   "prompt_id": "1ae6279d-f807-4223-ad57-a03e69ca909d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0203",
+   "prompt_id": "65ddb50e-0559-44f2-ac01-8f04284b8410",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "M",
+   "notes": "or anxiety"
+  },
+  {
+   "review_id": "R0204",
+   "prompt_id": "fba9cd0c-d28b-4bd3-97b6-77166e19cb6a",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "M",
+   "notes": "perinatal_mh"
+  },
+  {
+   "review_id": "R0205",
+   "prompt_id": "bd2eefa4-e155-4743-a41d-dcb46cbefaa8",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "H",
+   "notes": "psychiatric assessment"
+  },
+  {
+   "review_id": "R0206",
+   "prompt_id": "9d0ef6df-100f-4f34-9c98-499147b2a217",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0207",
+   "prompt_id": "dca8bed5-92f4-47bc-b0fa-cf9681caac1d",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "",
+   "notes": "stress adjustment"
+  },
+  {
+   "review_id": "R0208",
+   "prompt_id": "7ed3cc6f-ce77-42b8-b3f1-63cbfcf32e16",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0209",
+   "prompt_id": "ff2f72c2-c95f-4a5e-b5b0-ef59b1c3931d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": "pt with dementia, but concern was medical"
+  },
+  {
+   "review_id": "R0210",
+   "prompt_id": "5ea7253f-6444-4170-bd9d-0d2ea62adc25",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0211",
+   "prompt_id": "d02648ca-9265-4112-8482-688a8976177f",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0212",
+   "prompt_id": "066b2844-bc33-4e6b-add8-6781ebab82e0",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0213",
+   "prompt_id": "2e543d13-d125-44b2-9947-6eb0b877c386",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0214",
+   "prompt_id": "41c29eee-7626-4e22-99aa-b17be3705338",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0215",
+   "prompt_id": "5b728d1d-7243-4e20-baab-dbacd82abbbe",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0216",
+   "prompt_id": "7f59d976-6a30-4527-b390-882a5eec2b10",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0217",
+   "prompt_id": "00e3dcd9-f898-4994-8ead-9c1aa4db59b9",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0218",
+   "prompt_id": "8c96d728-e8c9-45bf-b3ac-a06dd4801d85",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0219",
+   "prompt_id": "51d9c72b-ba60-47c5-9cc9-3ed6212a3982",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0220",
+   "prompt_id": "ed6258a3-5a25-46ca-9273-fb0c5247f761",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": "some anxiety related to the physical condition, but it doesn't seem to be the main focus of the concern"
+  },
+  {
+   "review_id": "R0221",
+   "prompt_id": "8433c101-4334-4538-b576-70a7b28cf5c8",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0222",
+   "prompt_id": "d701354d-9bdc-47db-8112-bb4736827ee3",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0223",
+   "prompt_id": "d9af04a8-d3f8-4f02-b578-0f2185044a62",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0224",
+   "prompt_id": "bc9e6792-19f3-435f-baad-2ad90f762c87",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0225",
+   "prompt_id": "41ac9bda-fd09-4a7b-86b7-66fac6ce8427",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0226",
+   "prompt_id": "90030f57-9b7c-454e-bb06-e0b96644b53d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0227",
+   "prompt_id": "2c5ff282-bc04-43c7-9c1d-ca3053008179",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0228",
+   "prompt_id": "aca9b44d-c14c-4d84-b020-f1102ddecacd",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0229",
+   "prompt_id": "ab791255-e1c6-4f52-af44-27113c25c6b0",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0230",
+   "prompt_id": "d0df7d5e-9c12-4649-b0fa-a7b9634952aa",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0231",
+   "prompt_id": "ea9fbd5d-5062-4785-82ce-7944ebdc4c09",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar "
+  },
+  {
+   "review_id": "R0232",
+   "prompt_id": "0dc9b1a2-4d30-4c12-85e5-9866f1cbc563",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0233",
+   "prompt_id": "1c2a5bef-2fd0-4377-9866-7ea91969360c",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "M",
+   "notes": "could also be due to a medical condition"
+  },
+  {
+   "review_id": "R0234",
+   "prompt_id": "c76e68a9-66da-43c0-9ccd-b1a79dd9f840",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also other_mh (OCD)"
+  },
+  {
+   "review_id": "R0235",
+   "prompt_id": "3e9358db-b5d8-43d5-bca3-4471ef771419",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": "unclear if it is mental health or physical"
+  },
+  {
+   "review_id": "R0236",
+   "prompt_id": "2e27f9b9-6539-499a-9c62-178d06c4f71a",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0237",
+   "prompt_id": "a0b5a4ef-6155-43c2-a6bb-5fdb68292ec9",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0238",
+   "prompt_id": "7004df36-1a02-4ce6-b47a-d65c66232243",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0239",
+   "prompt_id": "f5bd2b81-a964-44da-a3e6-2d5a242fe12c",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0240",
+   "prompt_id": "2f223332-8334-4e89-8c6c-8fa2c0b13205",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "M",
+   "notes": "anxiety as well"
+  },
+  {
+   "review_id": "R0241",
+   "prompt_id": "fde30eb5-eefa-4c17-b372-cb412a6f4304",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0242",
+   "prompt_id": "c4eaf0ca-39ca-4272-84e5-8980a1d5a998",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0243",
+   "prompt_id": "e327e8f4-0a4e-4054-a0d4-9bb4035d31bb",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "Also neurodevelopmental_adhd"
+  },
+  {
+   "review_id": "R0244",
+   "prompt_id": "f33cb82b-bd07-4c55-91cc-396c8393828a",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0245",
+   "prompt_id": "a20cbbf3-330b-46d9-a35b-92e89a022282",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "M",
+   "notes": "Unclear if it's due to medical condition"
+  },
+  {
+   "review_id": "R0246",
+   "prompt_id": "1ca222ed-cc79-4e78-9ca3-3547e7b37e3a",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": "sounds like panic attack, but could be medical too?"
+  },
+  {
+   "review_id": "R0247",
+   "prompt_id": "cd676b02-c9bc-4322-9ea5-a7dec093be4e",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0248",
+   "prompt_id": "fe5e8a24-eac2-497e-9846-f316733937f9",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0249",
+   "prompt_id": "2d7d8caf-1148-4504-961a-5d6fc9f79639",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0250",
+   "prompt_id": "92ef0376-d033-4143-aa3a-e068a7f21fa3",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also trauma_ptsd & psychiatric_medication"
+  },
+  {
+   "review_id": "R0251",
+   "prompt_id": "486442fe-4383-4309-9fbb-554d32e68326",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0252",
+   "prompt_id": "56f6be7e-1f3d-4108-8f55-ea07bba9b3e5",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0253",
+   "prompt_id": "b63c8d70-e75a-4f6c-93cf-b675ea2dffa2",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0254",
+   "prompt_id": "2b7f5235-8176-439f-a8fd-314d8d5f550b",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0255",
+   "prompt_id": "e5680fe4-b286-42d4-b3bb-de3bf7bf095d",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0256",
+   "prompt_id": "842a1f22-0c53-47e3-83f8-7643c59b22f4",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0257",
+   "prompt_id": "a0fdd38e-2dc9-46fd-b483-d6c42b569b0e",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "assessment tool"
+  },
+  {
+   "review_id": "R0258",
+   "prompt_id": "7e941485-a478-45ab-94d6-17da3e3b94e5",
+   "is_mental_health": "Y",
+   "category": "personality",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0259",
+   "prompt_id": "9b774832-b1df-4815-b9fb-2e2a324d7bf9",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0260",
+   "prompt_id": "4bd394a3-e8e2-4346-9ccc-5e055cc2a94e",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0261",
+   "prompt_id": "cc5d20d6-33c7-4d77-bfbe-7e2727893b22",
+   "is_mental_health": "Y",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0262",
+   "prompt_id": "3da04df7-6d3b-4889-9d41-367ea7d51472",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0263",
+   "prompt_id": "9eb1e304-9149-47a4-8d76-72e00ee942fc",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0264",
+   "prompt_id": "2fdc0b99-4a5d-4c78-a1a9-7a187fc2a946",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "H",
+   "notes": "labs for diagnosis/rule out"
+  },
+  {
+   "review_id": "R0265",
+   "prompt_id": "bc2b7ac8-3a0e-4487-a899-f2643a1980df",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0266",
+   "prompt_id": "ffffb756-23d4-44b7-b29d-b7d58620f83d",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0267",
+   "prompt_id": "5c60120c-16ad-4369-9b51-3497115105bb",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0268",
+   "prompt_id": "f84ece1e-8574-4567-a05d-7fdb2c6e25fc",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0269",
+   "prompt_id": "9d9a9da4-ba04-4637-8a82-6928fd44b82c",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "H",
+   "notes": "OCD"
+  },
+  {
+   "review_id": "R0270",
+   "prompt_id": "be0d37c3-0107-4beb-ad31-ba2bea8c2099",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0271",
+   "prompt_id": "63fcd19d-dc39-4210-b25e-db1d94c4394d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0272",
+   "prompt_id": "009cb39f-8327-43c1-a637-1381742e936b",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0273",
+   "prompt_id": "03983c89-088e-4d97-a381-5cbd85fdf56d",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0274",
+   "prompt_id": "762d9eca-4835-4447-a649-f91740c74bd0",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0275",
+   "prompt_id": "239f42dc-056c-404d-a057-9c6b431390a5",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0276",
+   "prompt_id": "36a39e9a-e788-42b2-bea0-2cecaa7007b2",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also mood_bipolar_depression"
+  },
+  {
+   "review_id": "R0277",
+   "prompt_id": "6bc43acb-3f76-47b2-8822-20edd1f0969c",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0278",
+   "prompt_id": "3205c1f9-8b8c-4a12-aba6-ad95db6d8e5f",
+   "is_mental_health": "Y",
+   "category": "psychosis",
+   "confidence": "H",
+   "notes": "also perinatal_mh"
+  },
+  {
+   "review_id": "R0279",
+   "prompt_id": "14a56799-477d-46b8-ae80-5a539323c3f0",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0280",
+   "prompt_id": "b19375d2-5e01-491c-b5d6-76f9478469be",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0281",
+   "prompt_id": "48dfad12-3855-401a-8c70-af92a1df66b9",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0282",
+   "prompt_id": "83d0cd88-fafd-481b-aeab-da2f96818c2c",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": "or stress_adjustment"
+  },
+  {
+   "review_id": "R0283",
+   "prompt_id": "7b821797-070d-4fa4-80f1-cd2e9e1d61a1",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0284",
+   "prompt_id": "8164a52e-ddb2-4920-b2ea-37cf8f13a008",
+   "is_mental_health": "Y",
+   "category": "psychosis",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0285",
+   "prompt_id": "ec27f37b-6921-4197-892c-cd748613c66d",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychotherapy_access"
+  },
+  {
+   "review_id": "R0286",
+   "prompt_id": "101be583-4a4d-4b9f-b3c2-39df5bdf9cde",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0287",
+   "prompt_id": "b0f2ee5c-2fbd-41c3-aab7-7dabe50bed27",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0288",
+   "prompt_id": "c5538fb1-91b8-45b9-b7d0-ac227eaba8ae",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0289",
+   "prompt_id": "45fc917b-222e-4664-b6b2-773a50a3235b",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0290",
+   "prompt_id": "c1240427-ae38-4335-9e80-492c13ef4893",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "OCD"
+  },
+  {
+   "review_id": "R0291",
+   "prompt_id": "ce49e310-06bb-4c34-aaf4-135bfc7915ac",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0292",
+   "prompt_id": "92e2dcd2-3b1e-403d-bd3c-99dcefe4abd1",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0293",
+   "prompt_id": "90a12b5e-8675-402f-b056-b771e681a5cf",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0294",
+   "prompt_id": "865cff48-bbc7-4efd-ab2e-7a988686c798",
+   "is_mental_health": "Y",
+   "category": "trauma_ptsd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0295",
+   "prompt_id": "3d7a313e-011d-4069-a21a-3fe622aa4922",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0296",
+   "prompt_id": "b05490f6-301a-44fd-8549-bc6230ecea7e",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0297",
+   "prompt_id": "ce99bf07-a6e3-4f98-8486-0d1d663a50ce",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0298",
+   "prompt_id": "a6204079-9e72-42ad-8f39-a65552fa2e68",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0299",
+   "prompt_id": "98b6d59c-1755-4521-9085-864a1d2ede71",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0300",
+   "prompt_id": "39e22025-d2d8-46af-b591-5331b224b217",
+   "is_mental_health": "Y",
+   "category": "eating_disorder",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0301",
+   "prompt_id": "c067a763-8aa1-4499-953a-f5e85b61e283",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0302",
+   "prompt_id": "d9a4484f-3879-4634-8497-21dabc306a63",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0303",
+   "prompt_id": "d984a2a8-1209-42bb-8f59-001421c96f8f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0304",
+   "prompt_id": "0ebc8350-10d2-46ce-86b6-80800253ec76",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": "Unclear whether it's medical, mental health, or both"
+  },
+  {
+   "review_id": "R0305",
+   "prompt_id": "456dadc4-1877-408d-a459-52aaa6a6adaa",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0306",
+   "prompt_id": "f851ab6c-47ae-4fea-9717-89b72f52c2e3",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0307",
+   "prompt_id": "f9cac0d4-f559-436c-8b46-ea5c670a66fb",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0308",
+   "prompt_id": "315825b4-b3ca-4ac6-849b-889553303c5c",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0309",
+   "prompt_id": "df2eda9a-f3e0-4438-8bf2-049cab4a8d6a",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0310",
+   "prompt_id": "ce53a1ba-2449-47cd-9b2c-dab5258aea18",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0311",
+   "prompt_id": "dfd88d1d-48ae-4b7e-8e14-b0f4ccb43353",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also mood_bipolar_depression"
+  },
+  {
+   "review_id": "R0312",
+   "prompt_id": "8b18f7f1-6401-4adc-8154-a989a4dfd1db",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0313",
+   "prompt_id": "0746f95f-7129-4b90-a79a-66a08718a3ca",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0314",
+   "prompt_id": "07d1085e-7852-4652-8d9f-e411da27cc51",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0315",
+   "prompt_id": "c751e97c-a3ae-4ef6-bfae-ba7209338e6a",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": "Also sleep"
+  },
+  {
+   "review_id": "R0316",
+   "prompt_id": "53961650-2cfa-4e1d-865c-6aee32bdfe2b",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also stress_adjustment"
+  },
+  {
+   "review_id": "R0317",
+   "prompt_id": "d6734413-af6d-4f02-99eb-f62d079b819e",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": "unclear if sxs is related to medical, mental health, or both"
+  },
+  {
+   "review_id": "R0318",
+   "prompt_id": "620d2700-3c5e-4e2e-98fa-9b6b27e58f1e",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0319",
+   "prompt_id": "c8c353f5-6058-4ec3-9e7f-6133fb47f74f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0320",
+   "prompt_id": "c7606b1b-ca4d-4a71-8277-bcddff09a653",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0321",
+   "prompt_id": "b5933be7-bb09-4e20-bd94-bbb9406b2018",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0322",
+   "prompt_id": "9995f705-38b6-4292-a22f-110263d4e93e",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0323",
+   "prompt_id": "788ba5c4-ace7-4516-842e-ac89d52a81bc",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "M",
+   "notes": "both neurological and medical emergency"
+  },
+  {
+   "review_id": "R0324",
+   "prompt_id": "72c98347-879d-467a-9f35-a7c47e5af764",
+   "is_mental_health": "Y",
+   "category": "trauma_ptsd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0325",
+   "prompt_id": "251dff9f-f781-4278-b3f1-010200c7daf4",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0326",
+   "prompt_id": "98462c2f-e709-4681-8f43-764c49686f3b",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0327",
+   "prompt_id": "3e2d1d7a-66c8-4cf0-a94f-dbf269887497",
+   "is_mental_health": "Y",
+   "category": "eating_disorder",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0328",
+   "prompt_id": "c39a8f98-2cf8-4b75-964f-2ac5944b4bb0",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0329",
+   "prompt_id": "360b0474-e0b9-4b78-bea9-da2fe6a10ce2",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0330",
+   "prompt_id": "bf7718f2-bceb-4702-8d74-a7fc1bd7fb78",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0331",
+   "prompt_id": "b5f5f1c5-5623-4c0f-85c8-03cf1e643bf6",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "H",
+   "notes": "also mood_bipolar_depression"
+  },
+  {
+   "review_id": "R0332",
+   "prompt_id": "dce02d39-c7a2-49af-a7a6-b45eb67212f9",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0333",
+   "prompt_id": "0b492dcb-1bf0-49bd-a9d8-b33316e54fd2",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": "also perinatal_mh"
+  },
+  {
+   "review_id": "R0334",
+   "prompt_id": "1353ca8b-e3aa-4a29-8bd0-e85c2e6953bf",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0335",
+   "prompt_id": "e9daa6b3-5244-4362-8dd1-fd08ebf4d096",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0336",
+   "prompt_id": "b45ca1a9-f750-4397-a51b-0f1d6c15d763",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0337",
+   "prompt_id": "8bcdec7c-3031-419e-a28a-c106bb48cb08",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0338",
+   "prompt_id": "d35e660f-cb4c-4fe1-b503-3107bb13a57b",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0339",
+   "prompt_id": "658b4616-91f5-4b96-a573-aabc87f5a390",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also stress_adjustment, mood_bipolar_depression"
+  },
+  {
+   "review_id": "R0340",
+   "prompt_id": "6888187f-5088-4579-881d-7f3f73586c28",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0341",
+   "prompt_id": "ea26e002-c0a6-4001-b6d2-5f441c37f93d",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0342",
+   "prompt_id": "8206e8ba-4226-43ba-a3c0-69644b4a7b0c",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0343",
+   "prompt_id": "afc4659c-9036-47d2-9ef2-48b4117cb750",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0344",
+   "prompt_id": "53331de1-7427-495f-bc11-9ae991078812",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0345",
+   "prompt_id": "aee0ef96-ab3a-4254-b883-3b5a0cbb1e63",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0346",
+   "prompt_id": "8db4b5e4-1c1e-43eb-a522-cb84cc52e5b5",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0347",
+   "prompt_id": "73314c5c-8344-45db-a5d6-925c295d89fd",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": "also mood_bipolar_depression"
+  },
+  {
+   "review_id": "R0348",
+   "prompt_id": "4d8773a1-b4d5-40fa-a982-a116995f8495",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also mood_bipolar_depression"
+  },
+  {
+   "review_id": "R0349",
+   "prompt_id": "20f3e867-09ac-453b-b652-e784ef2fa9e4",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0350",
+   "prompt_id": "3c6b4899-d8d9-410d-9233-b9bec1501e61",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": "also eating_disorders?"
+  },
+  {
+   "review_id": "R0351",
+   "prompt_id": "1c0f72a7-4b3b-4893-b4e8-0f3b4f81da57",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0352",
+   "prompt_id": "9094171f-ea13-4285-93b0-f672af2f3ed0",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": "neurodevelopmental, autism"
+  },
+  {
+   "review_id": "R0353",
+   "prompt_id": "224d3083-b590-4f3b-8047-69f9de0118a4",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0354",
+   "prompt_id": "d54a7c7d-dedc-43dd-8e9b-77891e76f131",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "L",
+   "notes": "Alzheimer's, delirium, stroke? "
+  },
+  {
+   "review_id": "R0355",
+   "prompt_id": "305d09c1-a8c0-441e-b430-7e976964aa55",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0356",
+   "prompt_id": "8a9a1126-65bc-4cff-b755-2d0e1f5707fc",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0357",
+   "prompt_id": "38f9f2a0-271b-46bb-b2b2-8125fdb034ff",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0358",
+   "prompt_id": "78b73864-82df-4051-b680-556eed801a5f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0359",
+   "prompt_id": "c4d4209b-2c21-4ba9-b870-85065be2ad84",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0360",
+   "prompt_id": "4be5ed60-9caa-4167-990f-47a1bf17fbd3",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0361",
+   "prompt_id": "ad43c405-eff2-4b2a-b904-0a8bfcda523b",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also psychotherapy_access"
+  },
+  {
+   "review_id": "R0362",
+   "prompt_id": "71d8c4e8-5be3-4aac-9e07-d2ab18c453e9",
+   "is_mental_health": "Y",
+   "category": "eating_disorder",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0363",
+   "prompt_id": "b15fe46f-983f-4f5b-bc4c-218f15916429",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "L",
+   "notes": "extreme stress, physical shock, head injuries, or trauma?"
+  },
+  {
+   "review_id": "R0364",
+   "prompt_id": "eac8fe1e-ef50-4342-a239-fcebfff6001f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0365",
+   "prompt_id": "dc5ffe8b-fabb-4de6-8120-ce2d0aa48b2e",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0366",
+   "prompt_id": "366c49f5-f8bc-48e2-8079-74dcdf06955b",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0367",
+   "prompt_id": "43d658a8-dca4-421c-b030-5f6395ce46e1",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0368",
+   "prompt_id": "e55fb600-5fce-4c59-b749-34b93c6b1bec",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0369",
+   "prompt_id": "1e7c944e-570d-449f-a576-59486784dd54",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "M",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0370",
+   "prompt_id": "eb8dddc0-58f7-490f-b109-bf7519e59555",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0371",
+   "prompt_id": "d817d21a-6f01-4a17-8772-cbd433049d6a",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0372",
+   "prompt_id": "0a281c4d-63d6-4ed0-ab1b-19e34a8a23a9",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": ""
+  },
+  {
+   "review_id": "R0373",
+   "prompt_id": "c9e42bf3-0800-4e0b-b2df-e895141e0709",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0374",
+   "prompt_id": "119ce4b9-0298-4b12-bf82-844438364f4d",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychotherapy_access/referral"
+  },
+  {
+   "review_id": "R0375",
+   "prompt_id": "86dd2cde-29ba-4acf-b62d-589d0e384baa",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0376",
+   "prompt_id": "a3764001-cebb-4cdb-a8ef-694143b9f170",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0377",
+   "prompt_id": "b5f1f7fe-0a46-48ab-a6ae-c1bebfb19c5a",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0378",
+   "prompt_id": "cdcf4a1a-0571-48c7-8162-616dba6bae80",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0379",
+   "prompt_id": "4be72062-462d-4557-8679-b680c176691e",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0380",
+   "prompt_id": "d714d296-f2de-4067-8891-c170bf877dea",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0381",
+   "prompt_id": "7cd91e90-50a8-4abf-9ddd-4e86742969e9",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0382",
+   "prompt_id": "ff986f37-559c-439f-b160-2b802485ea28",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0383",
+   "prompt_id": "f7d9f731-c2ee-40ff-8a47-3496323b0d65",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": "also mood_bipolar_depression"
+  },
+  {
+   "review_id": "R0384",
+   "prompt_id": "2cf872b4-3094-4f72-9da4-e249ec71d362",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0385",
+   "prompt_id": "41357ab1-6978-4dab-bafa-12669eeb57bb",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0386",
+   "prompt_id": "ec4606c1-cbb2-42ff-8eb8-4cc6a4d9d927",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0387",
+   "prompt_id": "05bb2c34-17d8-4096-a56e-334865952672",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "diagnosing/assessing"
+  },
+  {
+   "review_id": "R0388",
+   "prompt_id": "c653b6eb-f9b9-4626-b702-ff73d71e8253",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "L",
+   "notes": "not sure what is the best category; not enough info"
+  },
+  {
+   "review_id": "R0389",
+   "prompt_id": "0c3db4a5-abf1-4c3e-a481-50c7ff74fbeb",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0390",
+   "prompt_id": "32740b58-d923-4b6a-941d-97a204a1c287",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": "trichotillomania?"
+  },
+  {
+   "review_id": "R0391",
+   "prompt_id": "6f1afc5d-26bd-4e97-bf7b-34784cecacca",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0392",
+   "prompt_id": "8f180002-8b25-4ebc-8b04-5a8b296c6fde",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": "not sure if this is panic/anxiety; the user doesn't insinuate that"
+  },
+  {
+   "review_id": "R0393",
+   "prompt_id": "c3fccc1d-5342-4329-9fd9-d8d0205e7f8e",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0394",
+   "prompt_id": "5a00899a-4f8c-4621-9fb6-855c0a393c4b",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0395",
+   "prompt_id": "c2a363b9-e518-45ee-9d1f-760ba79f8521",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0396",
+   "prompt_id": "b45bd42c-064d-4d53-ab8f-d91129751cdf",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0397",
+   "prompt_id": "0c808eda-eebe-4783-bc54-d6a873ef2e13",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0398",
+   "prompt_id": "ae3cd55f-e937-4176-9941-c94ce8249843",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0399",
+   "prompt_id": "e17da4ff-7fbb-4cb9-9c17-efee1e7b4cea",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0400",
+   "prompt_id": "c5dd6cae-cc00-49e3-8dff-7c7aacabf450",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0401",
+   "prompt_id": "dfbedd00-c678-48fd-bb86-c789ed84c055",
+   "is_mental_health": "Y",
+   "category": "eating_disorder",
+   "confidence": "L",
+   "notes": "low ferritin might be related to eating disorder?"
+  },
+  {
+   "review_id": "R0402",
+   "prompt_id": "d0a80524-71c4-4d07-ae46-9b10f2529ef0",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0403",
+   "prompt_id": "22261bee-f30a-4913-810e-c5dd997dfaa7",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0404",
+   "prompt_id": "e1352b55-6bc2-439a-bed0-e967d4eb5ac7",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0405",
+   "prompt_id": "2619aace-b626-4b25-a572-fc8bb16949e0",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0406",
+   "prompt_id": "393ac90d-8dae-4e0d-88e1-272e7bf2f618",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": "main concern is the heartburn, but unclear if it is anxiety related"
+  },
+  {
+   "review_id": "R0407",
+   "prompt_id": "24f87c03-6ec3-4957-b013-a140a53fa884",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0408",
+   "prompt_id": "6200a1cf-c242-4f51-b07c-baee07a91b3c",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0409",
+   "prompt_id": "89c4385e-86fc-49e6-a3d2-caa13b232ed7",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0410",
+   "prompt_id": "d90a1683-33e2-4c4b-b4a0-39d9bb335fee",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0411",
+   "prompt_id": "2113a155-13b1-4256-8126-35c0f46e5d56",
+   "is_mental_health": "Y",
+   "category": "eating_disorder",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0412",
+   "prompt_id": "3cd64a13-94bc-4268-8bb8-3655b1d534bc",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0413",
+   "prompt_id": "5064a366-09a4-498d-90b0-eb23889aa793",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0414",
+   "prompt_id": "239e2d1d-8046-4237-9e89-e4780d0d9cc9",
+   "is_mental_health": "Y",
+   "category": "trauma_ptsd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0415",
+   "prompt_id": "a538192a-c76f-4014-aadc-05e027d20254",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0416",
+   "prompt_id": "62641282-f0bd-4d8f-84a5-d82e1c83be95",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also sleep, stress_adjustment"
+  },
+  {
+   "review_id": "R0417",
+   "prompt_id": "f0f870a2-60db-45b3-a2ff-9cdba979d28e",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0418",
+   "prompt_id": "7d460f3e-deb4-4474-baf4-13157586ab53",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also anxiety, mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0419",
+   "prompt_id": "985b64ca-fbee-4459-a22c-179e59243d8c",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0420",
+   "prompt_id": "789ac668-fe78-4469-a43e-9abbc8997f31",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": "also suicidality_self harm"
+  },
+  {
+   "review_id": "R0421",
+   "prompt_id": "a02f8867-c5f6-492a-b569-07b504fb038d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0422",
+   "prompt_id": "fe502ce3-aa6a-49c3-bec1-2890262011ea",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0423",
+   "prompt_id": "b66d1e1a-b296-4e80-966e-2e58b0b3ddd0",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "M",
+   "notes": "depression"
+  },
+  {
+   "review_id": "R0424",
+   "prompt_id": "415a3bca-609e-4c16-a690-6ed2af93fc57",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0425",
+   "prompt_id": "9a1ae259-57ca-4da3-bb26-3a446293ab7e",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0426",
+   "prompt_id": "34036add-8346-454b-a43b-a8a24b42d4ed",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0427",
+   "prompt_id": "b7453451-00cb-4c7e-b6a6-cf0fa5a8f5a9",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0428",
+   "prompt_id": "0357e39e-5926-4ff5-af83-e8a80cf1b112",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0429",
+   "prompt_id": "8d934b0f-ea27-4136-acf2-26d77e248db5",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0430",
+   "prompt_id": "634dd1f8-0cd3-41fd-a46c-36e95f244ca9",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0431",
+   "prompt_id": "d613b323-1714-4fd7-8f5f-4e5a42af6caf",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0432",
+   "prompt_id": "f93e619c-73a3-4094-ba3c-b089a592b9f4",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0433",
+   "prompt_id": "fc7dff2a-9f91-49b0-bf15-d92d9ba69714",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0434",
+   "prompt_id": "f45dceb0-0894-484e-8f52-18b58d9485be",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0435",
+   "prompt_id": "ae20fffe-e312-488d-b770-5a1890c346e9",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0436",
+   "prompt_id": "3c1754d0-9c66-4338-a7b1-4b77ed52387e",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0437",
+   "prompt_id": "d310baaf-1334-41cc-a952-ba7d925d6685",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "L",
+   "notes": "unclear if the sxs are due to other non-mh concerns"
+  },
+  {
+   "review_id": "R0438",
+   "prompt_id": "f0a7ca12-1574-40da-bdf4-bf689a1848d6",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0439",
+   "prompt_id": "e1873205-8f89-4b8a-93e7-5dc39c36735c",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0440",
+   "prompt_id": "6846c606-7981-4665-86dc-dac94783ae6d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0441",
+   "prompt_id": "b2807161-d986-4a11-b69d-f3e50099d44e",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0442",
+   "prompt_id": "3cf35bfe-d881-4881-a268-b5fa0607bf89",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0443",
+   "prompt_id": "9f20c434-259b-490c-ac37-bb3ee7f589d6",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0444",
+   "prompt_id": "6fb23359-4443-44b0-aa95-244d23709170",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "L",
+   "notes": ""
+  },
+  {
+   "review_id": "R0445",
+   "prompt_id": "86e3409c-5f7b-40db-ac40-1ccf3c500bb1",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0446",
+   "prompt_id": "0fe011b9-73b8-4b3d-8ca2-278d540661b3",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0447",
+   "prompt_id": "0267a584-8ba6-4aa1-a128-b3b30f5112ad",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0448",
+   "prompt_id": "90ed826c-2b75-4d26-858d-5942536fb53d",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0449",
+   "prompt_id": "429a5f2e-50bc-494b-b050-1752bdf39581",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0450",
+   "prompt_id": "e76b6986-802a-4ffc-bf2c-4cf248f74efd",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0451",
+   "prompt_id": "3b79284e-1143-46b4-b6a0-78e5448ff773",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0452",
+   "prompt_id": "7768ed07-0412-4b01-bff7-fac44907274c",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0453",
+   "prompt_id": "361a43bd-9c3e-49b3-893c-4b5e19c54824",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0454",
+   "prompt_id": "00797fe0-30a5-4293-b300-2c648d3fe7a3",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0455",
+   "prompt_id": "669540ac-e074-435d-a637-8f89dfef4f13",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0456",
+   "prompt_id": "c8d7bcb4-6b42-4fd2-942c-25ccbb09b892",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": "also sleep, psychiatric_medications"
+  },
+  {
+   "review_id": "R0457",
+   "prompt_id": "70ea2225-6761-4181-aa77-c7342b9ec601",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0458",
+   "prompt_id": "d4e63d68-85a9-43bf-97ce-558df6cb0413",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also sleep, mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0459",
+   "prompt_id": "34e562bd-a3d8-42bb-8096-691e346433ed",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0460",
+   "prompt_id": "745f8a84-a1bf-401f-9861-2eb540c600ac",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0461",
+   "prompt_id": "2ccaa743-06b6-4ef9-b4f2-d4cc03c18f82",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0462",
+   "prompt_id": "01ee7b9f-3f5f-4aec-9f1b-85ff52990eb0",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0463",
+   "prompt_id": "8c95d176-de06-411f-8df2-f407a990dfca",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0464",
+   "prompt_id": "47c18c3f-4ced-4e61-b070-67c614a07692",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0465",
+   "prompt_id": "9adbe85d-2f8a-4d97-a14c-d28ab90712cd",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0466",
+   "prompt_id": "3115c480-4cfb-4611-ae09-09c2e0bd4fad",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0467",
+   "prompt_id": "c89c5036-f1f6-4079-a28d-ecf36cf593ec",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0468",
+   "prompt_id": "b861be9a-a931-494e-a7f9-6fba418f9b3e",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0469",
+   "prompt_id": "56df05b5-8d11-47fb-a90b-f99151812dd9",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0470",
+   "prompt_id": "db3d5b2d-1b83-4737-824c-a9be94167b37",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0471",
+   "prompt_id": "996299c7-637e-4a96-8b02-7943a9052b10",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "H",
+   "notes": "apps"
+  },
+  {
+   "review_id": "R0472",
+   "prompt_id": "4f4c8afb-d7fc-4d72-9a2a-860c03f9933c",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0473",
+   "prompt_id": "0304aac5-a662-48bb-a0f1-02f9c06d35ac",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0474",
+   "prompt_id": "b2ff2cdd-805d-4083-b10e-8ade8e58d75c",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0475",
+   "prompt_id": "e46e605d-ac31-48d4-8213-c6f3ef798e55",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar and psychiatric_medications"
+  },
+  {
+   "review_id": "R0476",
+   "prompt_id": "28a90b4a-e0f1-4061-92a1-4582a1bccb9c",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0477",
+   "prompt_id": "f59b3fac-e4ed-4f4d-bbef-7e89900206d2",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0478",
+   "prompt_id": "86053488-49da-4f6d-b9bb-05d41040e41d",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0479",
+   "prompt_id": "87964a7c-839b-4c0c-b2c9-8d053f19dbc1",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0480",
+   "prompt_id": "8d0c8f4c-e2df-40ed-8f72-d99bf53be1ed",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0481",
+   "prompt_id": "88655bf3-5753-4b76-a79c-968ad2af7a7e",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0482",
+   "prompt_id": "63894a2f-b65c-454d-a05c-2a4448fe3542",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0483",
+   "prompt_id": "1f548d5b-cd00-49a0-b327-283a2e00debd",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychotherapy_access"
+  },
+  {
+   "review_id": "R0484",
+   "prompt_id": "0ce8ff10-262e-41d8-b290-19e76d337f1a",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0485",
+   "prompt_id": "2edcd682-4830-4fae-af39-b3ff8bd4b6df",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0486",
+   "prompt_id": "7cbde752-0c16-4561-a402-eef4dd2784f4",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0487",
+   "prompt_id": "f6e518a0-b699-4792-9663-8ae9163a959d",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0488",
+   "prompt_id": "f99d4d0a-166b-4d36-bd82-775dfebab1eb",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0489",
+   "prompt_id": "e0ccb3c1-6bc8-487f-976b-e4b220f7577a",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": "normal part of aging?"
+  },
+  {
+   "review_id": "R0490",
+   "prompt_id": "9309e516-22ca-4649-9c74-d780148f8535",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0491",
+   "prompt_id": "29cc634c-1ab9-4eef-9a63-c5c6b34af0df",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0492",
+   "prompt_id": "ef446d15-d019-4c5a-a052-ae8cc3ea3b81",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0493",
+   "prompt_id": "98113997-7040-4f6c-a1a0-853b42a733b6",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0494",
+   "prompt_id": "b603f797-58cc-45ea-9957-508f50b261f3",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": "unclear if it is anxiety or something else medical"
+  },
+  {
+   "review_id": "R0495",
+   "prompt_id": "94361906-cfb0-4787-abab-77fcdab15da1",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0496",
+   "prompt_id": "bb6638c3-df00-46d7-8f81-8f60a5f117ac",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0497",
+   "prompt_id": "4eaee2b6-c260-4ca5-9491-425971ea778c",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0498",
+   "prompt_id": "3eccff3a-4086-4741-b3c0-ea8d41c8f246",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0499",
+   "prompt_id": "c99fa133-c551-4886-a096-30b5e0b72708",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0500",
+   "prompt_id": "f5607815-5a20-466f-a473-8315988d8a22",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0501",
+   "prompt_id": "cbcfaacb-7a3f-415b-9511-e3b17e323224",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0502",
+   "prompt_id": "ae38f16c-c7dd-43a7-9e2e-d3c48860c02c",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0503",
+   "prompt_id": "8aadd85d-1aa2-4046-a854-884c6ec4ff34",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "M",
+   "notes": "mood changes due to birth control"
+  },
+  {
+   "review_id": "R0504",
+   "prompt_id": "60014344-17cb-448b-aab3-9a95045f5a62",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0505",
+   "prompt_id": "d0c85e24-2775-4040-9f32-f1acca783725",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0506",
+   "prompt_id": "8e74080f-d760-4534-8b24-c066416d94a7",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0507",
+   "prompt_id": "cc5300c1-a9cd-4588-9420-8fb0bbe22294",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": "also perinatal_mh"
+  },
+  {
+   "review_id": "R0508",
+   "prompt_id": "6511690a-fbd6-465e-ac5e-e40173459521",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0509",
+   "prompt_id": "c6493233-6ae9-4ab4-a587-a418d8ee87b5",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0510",
+   "prompt_id": "e62186a2-4c77-4048-aec5-39913bc6ef5a",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0511",
+   "prompt_id": "6314e6ed-65e4-475e-a4ab-fd141de60f5d",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0512",
+   "prompt_id": "352832df-973e-4468-956b-13f2df962bb6",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_Bipolar, stress_adjustment"
+  },
+  {
+   "review_id": "R0513",
+   "prompt_id": "a1ea6573-39e0-4d93-8831-9a3ca0f961fa",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0514",
+   "prompt_id": "dabdd35d-45aa-4f04-a213-d6cd0a46890f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0515",
+   "prompt_id": "d01757c0-1eaa-492e-b88a-1880f928e77e",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0516",
+   "prompt_id": "cb026d74-d842-4d74-bee8-19fe5ea80d06",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0517",
+   "prompt_id": "c9c4a9d4-be45-4801-95f6-ed146862224d",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0518",
+   "prompt_id": "9fc44c7c-9980-4872-96a0-9f3f37355c70",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0519",
+   "prompt_id": "bbd759b4-8e4d-4db7-bc36-f2e069396c1c",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0520",
+   "prompt_id": "c971f9d1-5f6a-464e-b282-41c8f0d82f58",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0521",
+   "prompt_id": "fbd2423e-5cad-4c5a-a3c8-5a398c6c2b51",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0522",
+   "prompt_id": "80d7fdba-12b0-4f8f-b6ad-54db5a2ea0af",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0523",
+   "prompt_id": "4416da4d-cad2-47ea-bcbf-404c6e86d79d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0524",
+   "prompt_id": "f1444286-c15a-4c56-ab40-8f7978496fdf",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0525",
+   "prompt_id": "2d59539d-70a9-44e5-a0bc-40e083fc04a9",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0526",
+   "prompt_id": "3e0d1a3d-1946-4bc9-b17f-4cec960880a7",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0527",
+   "prompt_id": "91f6cf28-ab2c-4f48-921b-4bae0eeadf6d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0528",
+   "prompt_id": "f47cc66f-2e37-4924-a520-2c90e6bd581e",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": ""
+  },
+  {
+   "review_id": "R0529",
+   "prompt_id": "d69bf5a4-0318-4f99-9cb8-e3c40651c18e",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0530",
+   "prompt_id": "c33322cc-49a2-47f9-a541-a4dc5505c5f7",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0531",
+   "prompt_id": "096e9eae-ff12-48db-ac65-e62ce040c25e",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0532",
+   "prompt_id": "681cc590-e662-432a-aa0d-b0e8a1b7b3bc",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0533",
+   "prompt_id": "c17ec1d2-78a8-4a0b-beb0-a448fd7c7aea",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0534",
+   "prompt_id": "27d7a448-b205-4d22-b8c6-70d93ac37507",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0535",
+   "prompt_id": "682fa9cd-46a4-45b0-9da2-8a8793986c9e",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0536",
+   "prompt_id": "5bd3ffca-fe41-41d1-b0c8-d105259af0c4",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": "also sleep"
+  },
+  {
+   "review_id": "R0537",
+   "prompt_id": "747a9294-e80c-4236-86ac-afd8d4ffdf13",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0538",
+   "prompt_id": "4de47bc0-9286-4117-ab3f-7cadf09ec5d5",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "autism"
+  },
+  {
+   "review_id": "R0539",
+   "prompt_id": "bef7693b-8de6-4954-ba1d-4272fada80da",
+   "is_mental_health": "N",
+   "category": "substance_use",
+   "confidence": "M",
+   "notes": "it is not presented as a mental health concern"
+  },
+  {
+   "review_id": "R0540",
+   "prompt_id": "924626e0-d8c2-49dd-9857-75f53bb3cc65",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0541",
+   "prompt_id": "128131b4-ece0-4c88-b7b0-291b29b1d696",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0542",
+   "prompt_id": "8f7c0b38-da36-4e70-bba0-37f5be45d906",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0543",
+   "prompt_id": "71fb1fe9-cd17-40b9-b26d-a4aeacbc2418",
+   "is_mental_health": "Y",
+   "category": "trauma_ptsd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0544",
+   "prompt_id": "33e5de32-1d6b-4717-bf90-cf36f31667ab",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0545",
+   "prompt_id": "b61cf147-9e7d-4812-bf83-5ee5ca18240a",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0546",
+   "prompt_id": "c6e35217-7e6e-4b70-aacd-74a485dbff9f",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0547",
+   "prompt_id": "ea95e234-9332-4f9b-97fa-ee6b54cff541",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0548",
+   "prompt_id": "247f41b1-f863-405c-b5fb-779a78e6d8d1",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0549",
+   "prompt_id": "dcdc9ea4-64fe-4668-ab7f-e4b0a58622c5",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0550",
+   "prompt_id": "0c1d0ed5-3fa2-48a0-85ae-88c06ef309d4",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0551",
+   "prompt_id": "397d5f29-4ac2-41b2-ad2e-1ae775aff8e5",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0552",
+   "prompt_id": "5ddbc2ae-a934-4aae-9631-45bac42a4b3f",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0553",
+   "prompt_id": "d156852d-70b1-4270-a815-fa6a8258fad1",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0554",
+   "prompt_id": "0eb3e4ae-931f-4f1c-a5e5-285d60a34f84",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "autism"
+  },
+  {
+   "review_id": "R0555",
+   "prompt_id": "44c82f2e-0656-4fd2-a5ab-35f16fdc71f4",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "autism"
+  },
+  {
+   "review_id": "R0556",
+   "prompt_id": "07d7584c-6f32-4364-a6c5-2711f0dace1f",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": "OCD? Medical?"
+  },
+  {
+   "review_id": "R0557",
+   "prompt_id": "a446d165-c99f-47c1-a19d-00b5d878c767",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0558",
+   "prompt_id": "b7ddde65-702e-4255-b1d7-09d01248e76d",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "M",
+   "notes": "mental health is part of the concern/checkup"
+  },
+  {
+   "review_id": "R0559",
+   "prompt_id": "548d946d-8e9d-468f-b88e-b3e976f22d47",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0560",
+   "prompt_id": "66f47ddd-4edd-4d89-ac7f-1764cc825fe5",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0561",
+   "prompt_id": "a12e8dab-dc69-444f-bc3b-2ef8aea67c29",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": "psychiatry access"
+  },
+  {
+   "review_id": "R0562",
+   "prompt_id": "b8d0dcc0-0163-4bff-a906-87b0ab11c5ba",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0563",
+   "prompt_id": "3887a718-df23-47cb-94a1-9ad3edcfe941",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0564",
+   "prompt_id": "bb544b16-f646-431d-bec9-6b57269b35d4",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0565",
+   "prompt_id": "ea8d6a74-f7d6-40c9-bab7-24aa36bae703",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also sleep, psychiatric_medication"
+  },
+  {
+   "review_id": "R0566",
+   "prompt_id": "333c94dc-a6b0-438b-b855-c30861280f72",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0567",
+   "prompt_id": "884ff1cc-9ea7-4d13-919d-de3cb7f52567",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0568",
+   "prompt_id": "28817132-4450-4394-8975-edd8f049316c",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0569",
+   "prompt_id": "03ebd76a-99af-42d6-8a73-7b92b43ca8f5",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0570",
+   "prompt_id": "37443c2e-e477-41a8-adb8-47a56199c498",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0571",
+   "prompt_id": "0e5a4191-d3aa-457f-be0f-337c69b5ca1a",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0572",
+   "prompt_id": "ef9dbc46-88ff-4b5b-b216-7d1d09ae4282",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0573",
+   "prompt_id": "f1e5b7d1-bdd7-49c2-984b-b3f213232150",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0574",
+   "prompt_id": "9f7075b5-ed05-4b71-9db9-42fdfd03860f",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar, anxiety, psychiatric_medication"
+  },
+  {
+   "review_id": "R0575",
+   "prompt_id": "ea98e8fe-e261-4e7c-9bd5-c8096a7758a3",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0576",
+   "prompt_id": "f9cd9cc3-7439-4832-ab53-fdeb6644050b",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0577",
+   "prompt_id": "3c29f93a-5bf6-4ec3-aaf5-7ab17c6428a2",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychiatric_medication?"
+  },
+  {
+   "review_id": "R0578",
+   "prompt_id": "575c4ded-840f-425d-bce7-204a94d5ce0d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0579",
+   "prompt_id": "6edbaa56-7283-4827-9d50-ed25ff7dd674",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also sleep, stress_adjustment"
+  },
+  {
+   "review_id": "R0580",
+   "prompt_id": "2304768b-4d20-495c-a809-31a5b74b0df4",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also psychosis"
+  },
+  {
+   "review_id": "R0581",
+   "prompt_id": "cc61a43d-acd7-428e-a437-4dc891057a09",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0582",
+   "prompt_id": "fdd895e0-7da5-4613-8e87-e19dc479f616",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0583",
+   "prompt_id": "4946ed76-c6e2-4023-ba4c-1fd9e0756cfc",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0584",
+   "prompt_id": "b2603fec-e382-4812-b3f8-937a6b63bf3b",
+   "is_mental_health": "Y",
+   "category": "eating_disorder",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0585",
+   "prompt_id": "4b90ec20-eee9-4d41-afb4-5ebfacab4311",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "diagnostic code"
+  },
+  {
+   "review_id": "R0586",
+   "prompt_id": "47ca0e95-4e86-4f34-8a00-da1177ffdf92",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": "opioid for medical concern, not sure if it is strictly substance use/mental health"
+  },
+  {
+   "review_id": "R0587",
+   "prompt_id": "30861aea-7677-42d4-ae1c-f297943cf4fd",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar and anxiety"
+  },
+  {
+   "review_id": "R0588",
+   "prompt_id": "b3432b9e-540d-45ff-bd80-5d647bbf21ee",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "L",
+   "notes": "depression? or stress_adjustment?"
+  },
+  {
+   "review_id": "R0589",
+   "prompt_id": "3b667222-9c30-4d76-8daa-3cb42907ca4c",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0590",
+   "prompt_id": "81d34da4-0696-4dd7-afc7-932293c0507f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0591",
+   "prompt_id": "9d6e9def-47bd-4380-821f-f3e461043bda",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0592",
+   "prompt_id": "a84f37f1-9f2c-4fa8-8886-b6cd12500adf",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0593",
+   "prompt_id": "a02fe66f-e1d7-417f-89ff-168a1fba06b4",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0594",
+   "prompt_id": "126a221a-c2b9-4eec-9e62-b5b881b22c28",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0595",
+   "prompt_id": "198feb44-0a44-4d99-99fc-fe17aea44acf",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0596",
+   "prompt_id": "ced9860d-fbcb-4044-9675-133f233bdb57",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0597",
+   "prompt_id": "836a57a6-f79d-4c0d-ba60-26e0b0ef0fcc",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0598",
+   "prompt_id": "4b2350d8-59e7-4882-8866-13a0644f32eb",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0599",
+   "prompt_id": "2480a7d4-bfe9-410a-908d-676c01a403f9",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": "also psychosis"
+  },
+  {
+   "review_id": "R0600",
+   "prompt_id": "f1c136fd-b8a2-440d-8e1d-61bd802ed5d5",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "autism"
+  },
+  {
+   "review_id": "R0601",
+   "prompt_id": "97bec88b-6ef7-4f24-84d6-a2bcc592548b",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also substance_use"
+  },
+  {
+   "review_id": "R0602",
+   "prompt_id": "6a4cd932-1baf-486e-ac8d-0e99582a495f",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "screening"
+  },
+  {
+   "review_id": "R0603",
+   "prompt_id": "8530010f-f8dd-4baf-9fba-5aacba64b98c",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also anxiety, psychotherapy_access, mood_depression_anxiety"
+  },
+  {
+   "review_id": "R0604",
+   "prompt_id": "5c194a03-c5fd-4f72-9299-36530273d5b1",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0605",
+   "prompt_id": "a92d43f7-e6b7-405b-922d-8f7cd0eca3c6",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0606",
+   "prompt_id": "bddd8168-f229-487f-bae7-215331e4330b",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0607",
+   "prompt_id": "f00a02d7-d9a2-4c27-bcf8-b502b34c48c4",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0608",
+   "prompt_id": "0963835e-2cc9-46bf-9db6-e452561d0acf",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0609",
+   "prompt_id": "23860921-3818-449f-8083-19627e6ba3b8",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": "unclear if it is anxiety"
+  },
+  {
+   "review_id": "R0610",
+   "prompt_id": "415f7ee3-6e3d-40b6-8cfe-4c83f38a78e1",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0611",
+   "prompt_id": "197d37ac-82e3-4207-8381-085b42e9e9e7",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0612",
+   "prompt_id": "7315dbea-9c04-4265-ae83-141950220d47",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0613",
+   "prompt_id": "30071f3e-2ec8-4c3c-9724-00d9a8853183",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0614",
+   "prompt_id": "f332cad8-1ee2-4ec0-b1a0-e25eb608f20a",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0615",
+   "prompt_id": "a11d8bc2-1814-488d-9642-069eb4794165",
+   "is_mental_health": "Y",
+   "category": "personality",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0616",
+   "prompt_id": "6e9b5700-cd5a-43df-99f7-299128888f1f",
+   "is_mental_health": "Y",
+   "category": "psychosis",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0617",
+   "prompt_id": "0e920dd3-d952-47bc-ab88-3eeddff9138b",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0618",
+   "prompt_id": "a61cd927-f03e-4e73-9aef-2f7670c4e251",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0619",
+   "prompt_id": "08fdc56d-a23c-4b03-bfab-0e91a089c45c",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0620",
+   "prompt_id": "87fa64df-bb0b-417a-b853-0306486aae73",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0621",
+   "prompt_id": "eb5ebad9-9bcc-4454-8d9a-db0d0f7a60dc",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0622",
+   "prompt_id": "b8628ac4-9c2c-45af-9c4d-db21aa8dd49b",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0623",
+   "prompt_id": "bc5c061f-6b34-4e8c-8323-90e8370df71b",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0624",
+   "prompt_id": "6e1ec810-4236-4f77-afb5-20dcaae7c0ca",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0625",
+   "prompt_id": "bace2547-647a-4d66-b224-ad7d5863ee42",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "M",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0626",
+   "prompt_id": "3df4cede-01a5-465a-8b4e-4fef6474d792",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0627",
+   "prompt_id": "587236d8-f631-4bb4-87ed-2b681105e073",
+   "is_mental_health": "Y",
+   "category": "psychosis",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0628",
+   "prompt_id": "27e3d7a8-f6ec-4d4f-8d69-032a3ba531c6",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0629",
+   "prompt_id": "5b065c34-3aba-4c8d-86da-f8c2e206708e",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0630",
+   "prompt_id": "2405533c-d549-498c-ba69-0a7ebad999d5",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0631",
+   "prompt_id": "f7d6994d-4e80-463f-bd0d-5aebacb75f0a",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0632",
+   "prompt_id": "83cf8f2d-2857-4f01-a283-9595d8f4ae8e",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0633",
+   "prompt_id": "6f6fd569-ceab-4ba2-a5e5-e925ec29812b",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar, psychiatric_medication"
+  },
+  {
+   "review_id": "R0634",
+   "prompt_id": "7bfd77f3-84af-48ad-845f-f9581f96a72b",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0635",
+   "prompt_id": "f58d2662-22ed-4662-b0e8-b77334e63729",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0636",
+   "prompt_id": "8f6b254c-6cfe-4eec-a680-f4ae06ca19c6",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0637",
+   "prompt_id": "9e4b0c61-dd0e-4de4-9a3d-517c154ba9f0",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0638",
+   "prompt_id": "4bee3663-119f-4f2b-a06b-3811bd2917b8",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": "rule out suicidality and mania"
+  },
+  {
+   "review_id": "R0639",
+   "prompt_id": "d09e7552-a88c-49a9-a73a-db50f5652d62",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0640",
+   "prompt_id": "8ac62de4-f143-4b6e-9f69-1a63c720f23f",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0641",
+   "prompt_id": "c02d8595-ba47-44e6-98a9-db56c63f0b25",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0642",
+   "prompt_id": "805a1732-578a-414b-838a-c38ceeb94df2",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0643",
+   "prompt_id": "08f3b3d4-917a-441e-aea0-6009cdb274d8",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0644",
+   "prompt_id": "36e0d4da-8a8a-4e40-b39a-15098b61608e",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "bipolar"
+  },
+  {
+   "review_id": "R0645",
+   "prompt_id": "f38f75e5-73a8-4743-a7d8-b02a06bdebf8",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0646",
+   "prompt_id": "a49eb9af-926e-4f7c-94d0-133729059116",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0647",
+   "prompt_id": "c2e3b62a-8d00-4ca7-bf48-734fe48c03ca",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0648",
+   "prompt_id": "d4b2416c-3ceb-472a-97dc-25aaed8e2f4e",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0649",
+   "prompt_id": "0919f6e2-c241-4b1b-95ad-2509c6f0a76f",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0650",
+   "prompt_id": "47820105-9f10-4a8e-bb95-0b10f36d45bf",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0651",
+   "prompt_id": "169bfb7c-4c19-457c-9723-9d6ca66a9aab",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0652",
+   "prompt_id": "29adbe84-8ee7-46d6-be56-516a8e6fed85",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0653",
+   "prompt_id": "b9439cdc-296d-4a31-ad83-4118486f6d8a",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0654",
+   "prompt_id": "05a362ba-7c18-47d3-a7c3-d9fb6eab186d",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0655",
+   "prompt_id": "8ff101a6-e438-4166-bdac-be1d55d57c99",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0656",
+   "prompt_id": "9db3e66f-9e4e-4683-9279-65fe41679e8d",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0657",
+   "prompt_id": "c63d6053-7665-4012-9c47-8c5c32e4fd27",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0658",
+   "prompt_id": "6bebb706-4404-4aa5-b049-fc432b9d1153",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0659",
+   "prompt_id": "2ff287c5-0d44-453b-a1c0-7562814e8282",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0660",
+   "prompt_id": "0b7b92fc-0595-4a16-802d-a5f78de74066",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0661",
+   "prompt_id": "b7d0c469-88ab-432c-8d6e-c03e7547b7f0",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0662",
+   "prompt_id": "b92904d7-917d-40f7-94d4-6401c23ec908",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0663",
+   "prompt_id": "66c1001a-648a-4b5e-b811-a3d5ee8e75fa",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar, anxiety, sleep"
+  },
+  {
+   "review_id": "R0664",
+   "prompt_id": "3ca92a0b-fe3a-4534-9d5a-e0f66df24315",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0665",
+   "prompt_id": "c2a13836-1117-447c-935a-e2c2abe38da4",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0666",
+   "prompt_id": "6428aac6-265a-49ea-8a44-4da9878b2e54",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0667",
+   "prompt_id": "61825ab5-91b8-4f51-897a-53d47cbed6e4",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0668",
+   "prompt_id": "f23146aa-186c-418d-ab23-efb68bccdccf",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "autism"
+  },
+  {
+   "review_id": "R0669",
+   "prompt_id": "c4c1c865-138c-4b11-a7c5-676f07c5b466",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0670",
+   "prompt_id": "5b8beee7-64f0-4c3c-b252-2f9d0e80396b",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also sleep, psychiatric_medication"
+  },
+  {
+   "review_id": "R0671",
+   "prompt_id": "14c2164c-7901-4204-b415-9f9fee214dd4",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0672",
+   "prompt_id": "1e75cc73-3632-4efb-a4bb-abb4649b497f",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0673",
+   "prompt_id": "0c6904b3-9cf3-4a20-ac40-f4b9335ba8c2",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0674",
+   "prompt_id": "2ae9c374-fb05-419a-aadd-e7497d4f4f2d",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0675",
+   "prompt_id": "2c915b71-0c36-4f70-a5c0-31c99e45d549",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0676",
+   "prompt_id": "677bff30-983e-4f3a-8956-8ecb45b4397d",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychosis, mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0677",
+   "prompt_id": "fbb80fd9-2f87-486a-b105-55620abe2862",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0678",
+   "prompt_id": "9769ea1d-a87f-4560-bd64-e0d17478ca6a",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0679",
+   "prompt_id": "9db29a6f-ab63-4c16-8876-c15390f52205",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0680",
+   "prompt_id": "8866a625-cad0-455e-91c7-6caee22e514b",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0681",
+   "prompt_id": "6fcd48f4-2e8a-4079-9403-1c182cd5036c",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "",
+   "notes": "anxiety, neurodevelopmental_adhd"
+  },
+  {
+   "review_id": "R0682",
+   "prompt_id": "a64b1295-71c6-44e3-a988-c866878c5d23",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0683",
+   "prompt_id": "d3bb105a-9384-4e95-9939-d25879885430",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0684",
+   "prompt_id": "564a1f97-b8ff-4c10-859c-1dac2e46b109",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0685",
+   "prompt_id": "7294e89c-049d-4842-9375-d9fb007a49f1",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0686",
+   "prompt_id": "2175795b-d91a-457d-b314-981660557899",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0687",
+   "prompt_id": "694a0360-c725-4d46-8c59-d692e843516a",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0688",
+   "prompt_id": "0213d460-c468-4bae-8094-298a0d4d58cd",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0689",
+   "prompt_id": "98733b75-9a49-45b4-b38d-c42b650188d0",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0690",
+   "prompt_id": "271f1a27-83c8-4179-a11a-cccc881499d1",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0691",
+   "prompt_id": "d580d954-c129-4767-835a-0e412ef660ac",
+   "is_mental_health": "Y",
+   "category": "psychotherapy_access",
+   "confidence": "H",
+   "notes": "referral"
+  },
+  {
+   "review_id": "R0692",
+   "prompt_id": "c6349843-482e-4a11-a579-c755d5c48c9d",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": "also stress_adjustment"
+  },
+  {
+   "review_id": "R0693",
+   "prompt_id": "5cfff477-86ea-4fe1-ab0d-05a01e83f96b",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0694",
+   "prompt_id": "d6f95ee2-95db-4f8d-a8fe-ffcdc63b1d4f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0695",
+   "prompt_id": "b12b4a85-d39e-48f4-92df-bac03c65ea67",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0696",
+   "prompt_id": "7009a827-45dc-45f8-ad87-e220b90f59b7",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0697",
+   "prompt_id": "12a7c84f-3707-4f01-a7fd-37f2ca907574",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0698",
+   "prompt_id": "f2414454-ad1b-4bf8-ad70-73d51ff75079",
+   "is_mental_health": "Y",
+   "category": "none",
+   "confidence": "M",
+   "notes": "menopause affecting mental health"
+  },
+  {
+   "review_id": "R0699",
+   "prompt_id": "8e1ff4c9-ffa0-4505-b6e3-1ce6edf8ce59",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0700",
+   "prompt_id": "f01bf8d2-db27-479c-a475-eea7c34723ef",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0701",
+   "prompt_id": "00eda329-6244-4583-9848-97835b3855f1",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0702",
+   "prompt_id": "a7439d26-a9bf-4686-8cd2-4ceceea01148",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0703",
+   "prompt_id": "a06deee0-a7c1-46db-b813-118eaaa0659b",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0704",
+   "prompt_id": "22fe3eec-03b0-4cdf-a06a-87e71d236082",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also anxiety"
+  },
+  {
+   "review_id": "R0705",
+   "prompt_id": "06792558-4afa-4aa8-b311-1fc8493ec61e",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0706",
+   "prompt_id": "c4564c28-ec79-4e50-9d27-3952b92e0056",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "H",
+   "notes": "also neurodevelopmental_adhd"
+  },
+  {
+   "review_id": "R0707",
+   "prompt_id": "56bea7cd-3722-4f91-9e70-703afca61d52",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0708",
+   "prompt_id": "2025ac8e-752c-4386-aba0-24d2c651ee9f",
+   "is_mental_health": "N",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0709",
+   "prompt_id": "2920b2af-eb67-44d7-a94b-4cad3276108b",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0710",
+   "prompt_id": "1344eee4-edfd-4f70-96a6-55dd61a4e518",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0711",
+   "prompt_id": "37d65877-5d5d-465c-aa64-cea456faaa1a",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0712",
+   "prompt_id": "6b403cd8-97c6-4849-ab22-81e9753156ff",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0713",
+   "prompt_id": "f650bac8-baaf-4394-81a9-461ee579132d",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0714",
+   "prompt_id": "9f70268e-9e18-4305-a049-c76a6efa71bc",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0715",
+   "prompt_id": "35f478b9-6d5b-40e7-acb0-7fa973fb5955",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0716",
+   "prompt_id": "26d8298b-361d-4108-90cc-646c093f354b",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0717",
+   "prompt_id": "6ec7e676-b614-4644-8e03-bba0fb54eab8",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0718",
+   "prompt_id": "269aca7e-f585-4959-9336-08f17be42bd5",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0719",
+   "prompt_id": "5da1a58a-9c10-4f40-ade5-6b9fef8b403e",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0720",
+   "prompt_id": "48246dd6-90b5-4a35-9047-ec9d0f259f4d",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0721",
+   "prompt_id": "846e3e22-a5d3-466f-b7be-767f958e3265",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "L",
+   "notes": ""
+  },
+  {
+   "review_id": "R0722",
+   "prompt_id": "3042e982-ae48-4fc0-9e37-e1b9d605cd89",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0723",
+   "prompt_id": "eaa9eb7e-6a15-466f-a44b-c94edd1f6675",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0724",
+   "prompt_id": "50eed4a8-9d58-4694-aac3-a042cd747218",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0725",
+   "prompt_id": "5a903635-93b2-48e3-a751-e276f80ececc",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": "potentially suicidality_self_harm"
+  },
+  {
+   "review_id": "R0726",
+   "prompt_id": "d96e89c3-dc03-4599-870b-e029d10f98bc",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0727",
+   "prompt_id": "439da11e-56d1-40f1-afd8-b03df9e77b19",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0728",
+   "prompt_id": "553cf03c-cbcc-4bc7-b797-bd733549c233",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "M",
+   "notes": "also stress_adjustment from menopause?"
+  },
+  {
+   "review_id": "R0729",
+   "prompt_id": "a1fa2e61-0185-42fb-849e-62129bf598d9",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "M",
+   "notes": "not sure about best category"
+  },
+  {
+   "review_id": "R0730",
+   "prompt_id": "c26a74e5-ef86-4659-91d0-60fd1d776018",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0731",
+   "prompt_id": "69e4d298-737a-41e8-8fe2-b7271573638a",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0732",
+   "prompt_id": "81cd99a5-a96d-4be2-9c3b-4b7f605f5e00",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0733",
+   "prompt_id": "2a352757-1a8f-49df-83ee-9affbd6c4203",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0734",
+   "prompt_id": "5d752020-e5c0-48eb-8d98-e6c96214a627",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0735",
+   "prompt_id": "7c63b3f5-dbac-4ac0-9928-7e5a3c780852",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "L",
+   "notes": ""
+  },
+  {
+   "review_id": "R0736",
+   "prompt_id": "84c21b51-fcba-41a3-9383-ff85fc5845f4",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0737",
+   "prompt_id": "10c79318-de94-40b7-8b08-7d86f84808d7",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0738",
+   "prompt_id": "3bf077b0-f31c-4d21-b5a9-111410cfdf03",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0739",
+   "prompt_id": "f2ebb8b1-216c-494a-ac8d-b3fcf841adef",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0740",
+   "prompt_id": "f48ea247-3105-4037-8d48-2d2a328be63c",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0741",
+   "prompt_id": "8318a74e-6233-4c4f-b7c3-9d1d1bfdf9e5",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0742",
+   "prompt_id": "bcc107fc-4ab3-42e7-b042-e1a78c3b8b16",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0743",
+   "prompt_id": "0ba23d32-3a2f-4ce6-b2e0-e70c2b806e0e",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": "also psychiatric_medications"
+  },
+  {
+   "review_id": "R0744",
+   "prompt_id": "3c2cdb4f-1ccd-452d-9dea-fb615b68b5d7",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0745",
+   "prompt_id": "53a885e8-1f55-45f0-8820-8b0b8c9834db",
+   "is_mental_health": "Y",
+   "category": "psychiatric_medication",
+   "confidence": "M",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0746",
+   "prompt_id": "d5cc674c-a7b7-432b-9102-52520e2c6e69",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0747",
+   "prompt_id": "50a8890e-b72d-47b7-9354-b81501ca81a3",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0748",
+   "prompt_id": "166631d3-31b1-46bf-a07f-d5b33caadf81",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "M",
+   "notes": "unclear where the loss of appetite is coming from"
+  },
+  {
+   "review_id": "R0749",
+   "prompt_id": "953cef9f-c626-4e66-b0ca-fc5828c25d56",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0750",
+   "prompt_id": "659dee03-ec01-47f7-a3c2-9ed7dc140938",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also sleep"
+  },
+  {
+   "review_id": "R0751",
+   "prompt_id": "9152aa49-4147-4490-80aa-1fc374067bc9",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0752",
+   "prompt_id": "65449e9d-ac3f-4cb0-8805-58fcb4ffbdce",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar, sleep, psychiatric_medication, psychotherapy_access"
+  },
+  {
+   "review_id": "R0753",
+   "prompt_id": "31e2cde0-7e92-4076-824f-f7aa52c5f9e0",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "M",
+   "notes": "assuming fatigue as a symptom of depression"
+  },
+  {
+   "review_id": "R0754",
+   "prompt_id": "0a548d04-0973-4343-a3bf-07f730bed2f6",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0755",
+   "prompt_id": "cd2644f4-5203-4395-8cd6-d993bb486de2",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0756",
+   "prompt_id": "c8b4cb6c-64c1-4871-9dbb-02c51e914627",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0757",
+   "prompt_id": "9427f98f-e33f-493c-bbb1-7603e672d204",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "M",
+   "notes": ""
+  },
+  {
+   "review_id": "R0758",
+   "prompt_id": "fdd5628a-0391-4ccf-a969-13f4f91b59b8",
+   "is_mental_health": "Y",
+   "category": "sleep",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0759",
+   "prompt_id": "11529267-5a4e-4d42-8f3d-b5961127356f",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0760",
+   "prompt_id": "b757582f-c4de-40cb-8247-7fd8b771a84e",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar, psychiatric_medication"
+  },
+  {
+   "review_id": "R0761",
+   "prompt_id": "b70d2872-396d-47bd-bb61-7e6fc52ed025",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0762",
+   "prompt_id": "e444c985-d30b-44db-9261-7885e9de83e9",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0763",
+   "prompt_id": "6aa32c27-5661-494e-808c-6c59cefdcf82",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0764",
+   "prompt_id": "b35b05b5-0cdc-4047-8b2b-7b8c3b21d1a5",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0765",
+   "prompt_id": "a8b6c9e6-753d-4e6b-9ca9-8243333262a3",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "L",
+   "notes": "OCD? Anxiety?"
+  },
+  {
+   "review_id": "R0766",
+   "prompt_id": "546dd7a6-29c2-47aa-8675-2c96b9db25cb",
+   "is_mental_health": "Y",
+   "category": "neurodevelopmental_adhd",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0767",
+   "prompt_id": "b35e5216-50fe-45c6-89b0-f72985dce697",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0768",
+   "prompt_id": "cb421db0-4e51-44eb-8f88-2dc7dd018f99",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0769",
+   "prompt_id": "d546badf-e07b-44a1-bb32-373f263d7458",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0770",
+   "prompt_id": "95b3def5-05d8-4989-abb2-8c2e424e0c1b",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0771",
+   "prompt_id": "70ff993d-6f07-43bf-a91f-e8c636bb9b16",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0772",
+   "prompt_id": "f6fe1532-0eea-4add-818e-e443b3e4174b",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0773",
+   "prompt_id": "3a112705-6e36-4b19-aef0-33071690e936",
+   "is_mental_health": "Y",
+   "category": "substance_use",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0774",
+   "prompt_id": "314ea2d6-34ec-4986-bbe7-9e13c4324f06",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0775",
+   "prompt_id": "1f71864f-62b5-4b4d-a325-08f25fdd10bc",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0776",
+   "prompt_id": "8395ef67-8286-4385-9636-9d8e6cd33d5a",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0777",
+   "prompt_id": "269074dc-9495-484b-b2f9-0f0943c0f816",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also psychiatric_medication"
+  },
+  {
+   "review_id": "R0778",
+   "prompt_id": "e5f9a72b-cbeb-45b5-a588-87e410833475",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "also stress_adjustment"
+  },
+  {
+   "review_id": "R0779",
+   "prompt_id": "9eb0d1d7-086b-4786-a835-3a99cb7a10fc",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0780",
+   "prompt_id": "7ad59c22-818e-4b21-a65f-beb8ba58a721",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0781",
+   "prompt_id": "7c7506e5-9b23-435c-8faa-c193e6b073be",
+   "is_mental_health": "Y",
+   "category": "cognitive_neuro",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0782",
+   "prompt_id": "167fa991-6746-4277-8dd7-b7f3168ef5d3",
+   "is_mental_health": "Y",
+   "category": "stress_adjustment",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0783",
+   "prompt_id": "85c11e2a-628b-464f-a8bb-e97ab04a73eb",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": "treatment-resistant depression"
+  },
+  {
+   "review_id": "R0784",
+   "prompt_id": "202f197a-05f8-4a44-8aa5-12ffca164871",
+   "is_mental_health": "Y",
+   "category": "suicidality_self_harm",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar \neuthanasia"
+  },
+  {
+   "review_id": "R0785",
+   "prompt_id": "3a8c47bb-a8e8-48f3-9ab1-3c139ede3b81",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0786",
+   "prompt_id": "478c07bf-4c15-4639-96b8-46bc8508d073",
+   "is_mental_health": "Y",
+   "category": "anxiety",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0787",
+   "prompt_id": "1e8d76c8-1359-433c-ae87-7d3e60d321a9",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "M",
+   "notes": "OCD"
+  },
+  {
+   "review_id": "R0788",
+   "prompt_id": "a804a335-f84a-40d8-ae48-f22dac1168f5",
+   "is_mental_health": "Y",
+   "category": "perinatal_mh",
+   "confidence": "H",
+   "notes": "also mood_depression_bipolar"
+  },
+  {
+   "review_id": "R0789",
+   "prompt_id": "250d2bad-0bb3-43a8-93cc-38390da813d9",
+   "is_mental_health": "Y",
+   "category": "other_mh",
+   "confidence": "H",
+   "notes": "psychiatric consult"
+  },
+  {
+   "review_id": "R0790",
+   "prompt_id": "e4ef779c-1a4c-48ec-bea6-c3e2d8a8a3af",
+   "is_mental_health": "Y",
+   "category": "mood_depression_bipolar",
+   "confidence": "H",
+   "notes": ""
+  },
+  {
+   "review_id": "R0791",
+   "prompt_id": "8a13104e-fa0a-4763-a2f4-1113f436f900",
+   "is_mental_health": "N",
+   "category": "none",
+   "confidence": "H",
+   "notes": ""
+  }
+ ]
+}
