@@ -134,11 +134,11 @@ def main():
         path = store.resp_path(cand)
         todo = [pid for pid in sorted(prompt_ids) if pid not in store.load_done(path)]
         if not todo:
-            print(f"  {cand}: all {len(prompt_ids)} done — skip")
+            print(f"  {cand}: all {len(prompt_ids)} done, skipping")
             continue
         if args.max_cost and store.spend_to_date("generate") >= args.max_cost:
             print(f"[{args.provider}] STOP: generation spend "
-                  f"${store.spend_to_date('generate'):.2f} >= cap ${args.max_cost:.0f} — "
+                  f"${store.spend_to_date('generate'):.2f} >= cap ${args.max_cost:.0f} ; "
                   f"{cand} and later NOT started (raise --max-cost or re-run to resume)")
             break
         use_batch = prov_batchable and cand not in FORCE_SYNC

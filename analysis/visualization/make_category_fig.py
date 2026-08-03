@@ -1,4 +1,4 @@
-"""Fig. 2 — clinician category decomposition of the HealthBench-Psych subset.
+"""Fig. 2: clinician category decomposition of the HealthBench-Psych subset.
 
 Modal category = the category >=2 of the Y-voting panel clinicians assigned (round-1 trio for
 round-1 items, same trio for round-2 additions); items without a category majority appear as

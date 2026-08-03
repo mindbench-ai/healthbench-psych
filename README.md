@@ -22,7 +22,7 @@ hash; the conversations themselves ship with HealthBench (see *Reproducing*, bel
 | `eval/` | The evaluation harness: entry points (`generate.py`, `grade.py`, `grade_sync.py`, `aggregate.py`, `run_sweep.sh`), shared libraries (`lib/`), provider batch backends (`backends/`), the vendored HealthBench grader (`vendor/`), subset definitions (`subsets/`), and released run data (`runs/`) |
 | `eval/runs/responses/` | One response per (model, conversation): 20 models × 610, full text, refusals retained with their API stop reason |
 | `eval/runs/grades/` | Per-rubric-criterion verdicts and per-conversation scores for every (model, conversation, judge); judge free-text explanations omitted for size |
-| `analysis/` | `visualization/` — figure generation from the released data; `statistics/` — statistical machinery and the paper's quantitative analyses (runs key-less) |
+| `analysis/` | `visualization/`: figure generation from the released data; `statistics/`: the paper's quantitative analyses (runs key-less) |
 | `provenance/` | How the dataset was built: screening and recovery rubrics (`rubrics/`), full-corpus screening outputs (`screening/`), the blinded review instruments plus de-identified expert ratings (`review/`), and the HealthBench-Hard parity run backing the harness-validation result (`harness-validation/`) |
 
 ## Quickstart: analyze the released results (no API keys needed)
@@ -83,10 +83,10 @@ grading logic in this harness is verbatim from it. If you use HealthBench-Psych,
 both HealthBench and:
 
 ```bibtex
-[CITATION — to be added on publication]
+[CITATION: to be added on publication]
 ```
 
 ## License
 
 MIT (see `LICENSE`). Vendored and redistributed HealthBench materials remain under OpenAI's
-MIT terms — see `THIRD-PARTY-NOTICES.md`.
+MIT terms; see `THIRD-PARTY-NOTICES.md`.

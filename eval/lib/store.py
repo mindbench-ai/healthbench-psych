@@ -1,4 +1,4 @@
-"""Prompt-keyed, append-only stores for the sweep — the mechanism that makes
+"""Prompt-keyed, append-only stores for the sweep; this is what makes
 round 2 free of duplicate work.
 
 Responses live per candidate; grades live per (candidate, judge). Each is a JSONL
@@ -49,7 +49,7 @@ def spend_to_date(phase=None):
 
 def log_error(**fields):
     """Append one timestamped anomaly record to a DURABLE, append-only log (never
-    truncated) — the transparency/audit trail for the paper. Typical fields:
+    truncated); the audit trail for the paper. Typical fields:
     phase ('generate'|'grade'), kind (e.g. 'call_failed', 'empty_response',
     'grade_fallback', 'grade_no_verdict'), candidate, judge, prompt_id, detail."""
     os.makedirs(os.path.dirname(ERROR_LOG), exist_ok=True)

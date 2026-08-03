@@ -7,8 +7,8 @@ Error bars = 95% CI from a HealthBench-style bootstrap (the vendor's
 1000 iterations) applied to the per-prompt panel score (mean of the 3 judges'
 scores on that prompt).
 
-Style: MindBench figure-style guide — AI Lab Color Taxonomy (color = lab,
-shade = capability tier), direct labels, legend in the right gutter.
+Color encodes lab, shade the tier within a lab; direct labels, legend in the
+right gutter.
 Run with .venv-fig/bin/python (has matplotlib).
 """
 import argparse, json, os, random, sys, statistics as st
@@ -34,7 +34,7 @@ _slug = "" if _args.subset == "healthbench-psych-v1" else "-" + _args.subset.rep
 _bench = "HealthBench-Psych-Hard" if "hard" in _args.subset else "HealthBench-Psych"
 N_SUB = len(sub)
 
-# AI Lab Color Taxonomy (figure-style guide); shade = capability tier
+# color = lab, shade darkens with tier
 COLORS = {
     "gpt-5.6-sol": ("OpenAI", "#163B6E"), "gpt-5.5": ("OpenAI", "#2960A8"),
     "gpt-4.1-2025-04-14": ("OpenAI", "#4A88CA"), "gpt-3.5-turbo": ("OpenAI", "#7CB0DE"),

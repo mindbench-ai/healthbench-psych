@@ -1,4 +1,4 @@
-"""Per-model API prices ($/1M tokens) and a cost helper — the basis for the
+"""Per-model API prices ($/1M tokens) and a cost helper; the basis for the
 spend guard and cost reporting. Batch APIs bill at 50% of these rates.
 
 Prices as researched 2026-07-29 (input, output, cached_input). Cached-input is

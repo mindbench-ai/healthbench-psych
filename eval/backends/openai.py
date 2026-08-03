@@ -6,7 +6,7 @@ and runs server-side (the machine need not stay awake past submission), at the
 cost of a completion window (up to 24h; small jobs usually finish in minutes).
 
 OpenAI-only for now: DeepSeek/Google OpenAI-compat and Anthropic expose separate
-batch endpoints — add sibling modules when those judges/candidates are batched.
+batch endpoints; add sibling modules if other judges get batched.
 
 Reference: POST /v1/files (purpose=batch) -> POST /v1/batches -> GET /v1/batches/{id}
 -> GET /v1/files/{output_file_id}/content.

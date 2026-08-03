@@ -1,4 +1,4 @@
-"""Synchronous (online-API) grading — a resilient fallback for when a provider's
+"""Synchronous (online-API) grading, a fallback for when a provider's
 BATCH queue is throttled/stalled (e.g. Google native batch).
 
 Grades the SAME deterministic work-list as grade.py (prompt-keyed, idempotent: skips
@@ -7,7 +7,7 @@ thread pool instead of the batch API. The online sampler's _post already retries
 URLError/timeouts, so transient network blips pause-and-retry instead of crashing.
 
 --skip-first-chunk drops the first deterministic chunk from the work-list: use it when
-that exact chunk is still in-flight as a batch (so we don't duplicate it — it gets
+that exact chunk is still in-flight as a batch (so we don't duplicate it; it gets
 recovered from the batch separately). The chunk boundary matches grade.py exactly.
 
 Reuses hb_grade (build_grader_prompt/robust_verdict/calculate_score), store (idempotent
@@ -69,7 +69,7 @@ def build_worklist(judge, prompt_ids, examples, candidates, skip_first_chunk):
             cnt += m; cby += b
         dropped = groups[:cut]
         print(f"  --skip-first-chunk: dropped {len(dropped)} groups / "
-              f"{sum(len(g[2]) for g in dropped)} gradings (the in-flight batch — recover separately)")
+              f"{sum(len(g[2]) for g in dropped)} gradings (the in-flight batch; recover separately)")
         groups = groups[cut:]
     return groups
 
@@ -86,7 +86,7 @@ def grade_group(judge_fn, g):
                 d = hb_grade.robust_verdict(judge_fn(hb_grade.build_grader_prompt(convo, item)))
             except Exception as e:
                 if S.is_quota_error(str(e)) or "quota/balance" in str(e):
-                    raise  # balance exhausted -> propagate to graceful stop
+                    raise  # balance exhausted -> propagate to the stop handler
                 d = {}
             tries += 1
         if not isinstance(d.get("criteria_met"), bool):
@@ -155,14 +155,14 @@ def main():
                     cand, pid, rec = fut.result()
                 except Exception as e:  # quota/balance -> stop cleanly
                     if S.is_quota_error(str(e)) or "quota/balance" in str(e):
-                        print(f"[{judge}] STOP: account balance/quota exhausted — flushing partial, "
+                        print(f"[{judge}] STOP: account balance/quota exhausted; flushing partial, "
                               f"re-run to resume (idempotent).")
                         stop = True
                         break
                     raise
                 if rec is None:
                     store.log_error(phase="grade", judge=judge, candidate=cand, prompt_id=pid,
-                                    kind="grade_no_verdict", detail="sync: no criteria_met after retries — SKIPPED")
+                                    kind="grade_no_verdict", detail="sync: no criteria_met after retries; SKIPPED")
                     skipped += 1
                     continue
                 by_cand.setdefault(cand, []).append(rec)
@@ -172,7 +172,7 @@ def main():
                     spent = store.spend_to_date("grade")
                     print(f"  [{done}/{len(groups)}] flushed {w} | +${cost:.2f} | global ${spent:.2f} | {skipped} skipped")
                     if args.max_cost and spent >= args.max_cost:
-                        print(f"[{judge}] STOP: global grade spend ${spent:.2f} >= cap ${args.max_cost:.0f} — "
+                        print(f"[{judge}] STOP: global grade spend ${spent:.2f} >= cap ${args.max_cost:.0f}; "
                               f"remaining NOT graded (re-run to resume).")
                         stop = True
                         break

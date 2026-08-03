@@ -71,12 +71,12 @@ def flush(chunk, judge, backend, poll, log):
                     d = hb_grade.robust_verdict(judge_fn(hb_grade.build_grader_prompt(convo, item)))
                 except Exception as e:
                     if S.is_quota_error(str(e)) or "quota/balance" in str(e):
-                        raise  # let balance errors reach the graceful main handler
+                        raise  # let balance errors reach the stop handler in main
                     d = {}  # transient fallback error -> invalid; loop/skip, never crash the chunk
                 tries += 1; fb += 1
             if not isinstance(d.get("criteria_met"), bool):
                 store.log_error(phase="grade", judge=judge, candidate=cand, prompt_id=pid,
-                                kind="grade_no_verdict", detail=f"rubric {ri} after {tries} retries — prompt SKIPPED (re-graded on re-run)")
+                                kind="grade_no_verdict", detail=f"rubric {ri} after {tries} retries; prompt SKIPPED (re-graded on re-run)")
                 ok = False
                 break  # skip just this (cand,prompt); it stays ungraded -> retried next run
             if tries > 0:
@@ -164,7 +164,7 @@ def main():
             if chunk and (count + m > CHUNK_SPECS or cbytes + gb > MAX_BATCH_BYTES):
                 if would_exceed(chunk):
                     print(f"[{judge}] STOP: grade spend ${store.spend_to_date('grade'):.2f} + projected "
-                          f"chunk would exceed cap ${args.max_cost:.0f} — remaining NOT submitted "
+                          f"chunk would exceed cap ${args.max_cost:.0f}; remaining NOT submitted "
                           f"(raise --max-cost or re-run to resume)")
                     return
                 u = flush(chunk, judge, backend, args.poll, print)
@@ -174,14 +174,14 @@ def main():
             chunk.append(g); count += m; cbytes += gb
         if chunk:
             if would_exceed(chunk):
-                print(f"[{judge}] STOP: cap ${args.max_cost:.0f} would be exceeded — remaining NOT submitted")
+                print(f"[{judge}] STOP: cap ${args.max_cost:.0f} would be exceeded; remaining NOT submitted")
                 return
             u = flush(chunk, judge, backend, args.poll, print)
             for k in total:
                 total[k] += u.get(k, 0)
     except RuntimeError as e:
         if S.is_quota_error(str(e)) or "quota/balance" in str(e):
-            print(f"[{judge}] STOP: account balance/quota exhausted mid-run — partial grades saved, "
+            print(f"[{judge}] STOP: account balance/quota exhausted mid-run; partial grades saved, "
                   f"re-run after recharge to resume (no work lost). detail: {str(e)[:120]}")
             return
         raise

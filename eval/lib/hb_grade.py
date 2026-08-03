@@ -111,8 +111,8 @@ _CRIT_RE = re.compile(r'"criteria_met"\s*:\s*(true|false)', re.IGNORECASE)
 def robust_verdict(raw):
     """Parse a grader response into a dict with a boolean `criteria_met`.
 
-    First uses the verbatim HealthBench parser. If strict JSON fails — almost always
-    an unescaped quote inside the free-text `explanation` — we extract `criteria_met`
+    First uses the verbatim HealthBench parser. If strict JSON fails (almost always
+    an unescaped quote inside the free-text `explanation`), extract `criteria_met`
     directly by regex. Scoring uses ONLY `criteria_met`, so this recovers the grader's
     ACTUAL temp=0 verdict without re-sampling (which would change the judgment). Returns
     {} only if no criteria_met value is present at all.
@@ -134,7 +134,7 @@ def render_conversation(prompt, response_text):
 
 
 def build_grader_prompt(convo_str, rubric_item):
-    """The single grader prompt for one rubric item — the one string sent to the
+    """The single grader prompt for one rubric item: the string sent to the
     judge. Sync and batch paths both call this, so their prompts are identical."""
     return GRADER_TEMPLATE.replace("<<conversation>>", convo_str).replace(
         "<<rubric_item>>", str(rubric_item)

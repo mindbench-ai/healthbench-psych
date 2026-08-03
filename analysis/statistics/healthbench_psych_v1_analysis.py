@@ -148,6 +148,15 @@ def leaderboard(panels):
     return rows
 
 
+def lineage_regressions(panels):
+    print("\n== Newest release vs immediate predecessor, per lineage (Discussion) ==\n")
+    for newer, older in [("claude-fable-5", "claude-opus-5"),
+                         ("gpt-5.6-sol", "gpt-5.5"),
+                         ("kimi-k3", "kimi-k2.6")]:
+        d, lo, hi = SL.paired_diff_ci(panels[newer], panels[older])
+        print(f"  {newer:14s} - {older:14s}  Δ = {d:+.3f}  95% CI [{lo:+.3f}, {hi:+.3f}]")
+
+
 def frontier_hard(rows):
     print("\n== Frontier comparisons on HealthBench-Psych-Hard (§3.3 / Figure 2) ==\n")
     import itertools
@@ -168,27 +177,58 @@ def frontier_hard(rows):
 
 def judge_analyses(panels, ids):
     print("\n== Judge agreement, severity, and self-preference (§3.4) ==\n")
+    import itertools, random
     candidates = sorted(panels)
-    cell = {}
+    pids = sorted(ids)
+    # per-(candidate, judge) score vectors aligned on the sorted conversation list
+    vec = {}
     for c in candidates:
         for j in JUDGES:
-            scs = [json.loads(l)["score"]
-                   for l in open(os.path.join(ROOT, "eval/runs/grades", f"{c}__{j}.jsonl"))
-                   if json.loads(l)["prompt_id"] in ids and json.loads(l).get("score") is not None]
-            cell[(c, j)] = SL.clip01(st.mean(scs))
-    print("Between-judge rank agreement (Kendall tau):")
-    import itertools
-    for a, b in itertools.combinations(JUDGES, 2):
-        tau = SL.kendall_tau([cell[(c, a)] for c in candidates], [cell[(c, b)] for c in candidates])
-        print(f"  {a.split('-2025')[0]:26s} vs {b.split('-2025')[0]:26s} tau = {tau:.3f}")
-    grand, sev = SL.judge_severity(cell, candidates, JUDGES)
-    print(f"\nJudge severity (grand mean {grand:.3f}):")
+            scs = {}
+            for l in open(os.path.join(ROOT, "eval/runs/grades", f"{c}__{j}.jsonl")):
+                r = json.loads(l)
+                if r["prompt_id"] in ids and r.get("score") is not None:
+                    scs[r["prompt_id"]] = r["score"]
+            vec[(c, j)] = [scs[p] for p in pids if p in scs]
+    n = min(len(v) for v in vec.values())
+
+    def stats_from(idx):
+        cell = {(c, j): SL.clip01(sum(vec[(c, j)][i] for i in idx) / len(idx))
+                for c in candidates for j in JUDGES}
+        taus = {pair: SL.kendall_tau([cell[(c, pair[0])] for c in candidates],
+                                     [cell[(c, pair[1])] for c in candidates])
+                for pair in itertools.combinations(JUDGES, 2)}
+        grand, sev = SL.judge_severity(cell, candidates, JUDGES)
+        sp = SL.self_preference(cell, JUDGES, sev)
+        return taus, grand, sev, sp
+
+    point = stats_from(list(range(n)))
+    rng = random.Random(0)
+    boots = [stats_from([rng.randrange(n) for _ in range(n)]) for _ in range(1000)]
+
+    def ci(get):
+        vals = sorted(get(b) for b in boots)
+        return vals[25], vals[974]
+
+    print("Between-judge rank agreement (Kendall tau, 95% conversation-level bootstrap CI):")
+    for pair in itertools.combinations(JUDGES, 2):
+        lo, hi = ci(lambda b, p=pair: b[0][p])
+        a, b_ = pair[0].split("-2025")[0], pair[1].split("-2025")[0]
+        print(f"  {a:20s} vs {b_:20s} tau = {point[0][pair]:.3f}  [{lo:.3f}, {hi:.3f}]")
+    lo, hi = ci(lambda b: b[1])
+    print(f"\nJudge severity (grand mean {point[1]:.3f} [{lo:.3f}, {hi:.3f}]):")
     for j in JUDGES:
-        print(f"  {j:28s} {sev[j]:+.3f}")
-    sp = SL.self_preference(cell, JUDGES, sev)
-    print("\nSelf-preference (raw -> severity-corrected):")
+        lo, hi = ci(lambda b, j=j: b[2][j])
+        print(f"  {j:28s} {point[2][j]:+.3f}  [{lo:+.3f}, {hi:+.3f}]")
+    print("\nSelf-preference, raw -> severity-corrected (95% CI; two-sided bootstrap p vs zero for corrected):")
     for j in JUDGES:
-        print(f"  {j:28s} {sp[j][0]:+.3f} -> {sp[j][1]:+.3f}")
+        rlo, rhi = ci(lambda b, j=j: b[3][j][0])
+        clo, chi = ci(lambda b, j=j: b[3][j][1])
+        cboots = [b[3][j][1] for b in boots]
+        le = sum(1 for v in cboots if v <= 0)
+        p = max(2 * min(le, 1000 - le) / 1000, 2 / 1000)
+        print(f"  {j:28s} {point[3][j][0]:+.3f} [{rlo:+.3f}, {rhi:+.3f}] -> "
+              f"{point[3][j][1]:+.3f} [{clo:+.3f}, {chi:+.3f}]  p = {p:.2f}")
 
 
 def refusal_analyses(panels, ids):
@@ -231,6 +271,7 @@ def main():
     subset_construction(ids, r2new, key, r1, r2, key2)
     harness_validation()
     rows = leaderboard(panels)
+    lineage_regressions(panels)
     frontier_hard(rows)
     judge_analyses(panels, ids)
     refusal_analyses(panels, ids)

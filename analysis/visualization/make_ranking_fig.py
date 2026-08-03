@@ -1,8 +1,7 @@
-"""Shareable PNG of the current haiku-judged ranking, per MindBench figure-style guide.
+"""Shareable PNG of a single-judge ranking (make_panel_fig.py draws the 3-judge panel).
 
-Multi-model benchmark figure: color encodes LAB (AI Lab Color Taxonomy), shade encodes
-capability tier (flagship deepest). Model names on the y-axis are the redundant (non-color)
-encoding; a lab legend is supplementary. Provisional — single judge, temp=0.
+Color encodes lab, shade the tier within a lab; model names on the y-axis carry the
+non-color encoding, with a lab legend as backup.
 
 Run with the .venv-fig interpreter (has matplotlib).
 """
@@ -29,32 +28,27 @@ JUDGE_SLUG = {"claude-haiku-4-5-20251001": "haiku", "gemini-2.5-flash": "gemini"
 sub = set(json.load(open(os.path.join(os.path.dirname(__file__), "..", "..", "eval", f"subsets/{_args.subset}.json")))["prompt_ids"])
 N_SUB = len(sub)
 
-# AI Lab Color Taxonomy: (lab, per-model shade by capability tier — flagship deepest)
-LAB, HEX = {}, {}
-def assign(lab, deep_hex, *models):
-    for m in models:
-        LAB[m] = lab; HEX[m] = None
-    return
+# (lab, hex); shade darkens with tier within a lab
 COLORS = {
-    # OpenAI — Cobalt Blue
+    # OpenAI
     "gpt-5.6-sol": ("OpenAI", "#163B6E"), "gpt-5.5": ("OpenAI", "#2960A8"),
     "gpt-4.1-2025-04-14": ("OpenAI", "#4A88CA"), "gpt-3.5-turbo": ("OpenAI", "#7CB0DE"),
-    # Anthropic — Burnt Orange (Fable is the new flagship -> deepest; others shift down)
+    # Anthropic
     "claude-fable-5": ("Anthropic", "#B85518"), "claude-opus-5": ("Anthropic", "#D47A3A"),
     "claude-sonnet-5": ("Anthropic", "#ECA060"),
     "claude-haiku-4-5-20251001": ("Anthropic", "#F4C08A"),
-    # Google DeepMind — Purple
+    # Google DeepMind
     "gemini-3.6-flash": ("Google", "#5529A0"), "gemini-2.5-pro": ("Google", "#7650BC"),
     "gemini-2.5-flash": ("Google", "#9A7DD0"),
-    # xAI — Neutral Grey
+    # xAI
     "grok-4.5": ("xAI", "#3D3D3D"),
-    # Qwen — Red
+    # Qwen
     "qwen3.7-plus": ("Qwen", "#A82028"), "qwen3-8b": ("Qwen", "#CC4450"),
-    # Mistral — Gold
+    # Mistral
     "mistral-large-latest": ("Mistral", "#A87800"), "mistral-small-latest": ("Mistral", "#CCA020"),
-    # DeepSeek — Green
+    # DeepSeek
     "deepseek-v4-pro": ("DeepSeek", "#1A7040"), "deepseek-v4-flash": ("DeepSeek", "#2EA060"),
-    # Moonshot (Kimi) — Magenta (k3 = newer flagship -> deepest)
+    # Moonshot
     "kimi-k3": ("Moonshot", "#A02878"), "kimi-k2.6": ("Moonshot", "#C84E98"),
 }
 LAB_DEEP = {"OpenAI": "#163B6E", "Anthropic": "#B85518", "Google": "#5529A0", "xAI": "#3D3D3D",

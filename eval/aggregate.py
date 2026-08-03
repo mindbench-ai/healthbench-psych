@@ -117,7 +117,7 @@ def main():
         return None if v is None else v - severity.get(j, 0.0)
 
     # Self-preference: a model's score under its own judge vs. under the others.
-    # Report raw AND severity-corrected — the corrected value is the one to trust.
+    # Report raw and severity-corrected; the corrected value is the one to trust.
     print("\n=== self-preference: raw vs. severity-corrected "
           "(judge=m minus mean judge!=m) ===")
     for m in models:

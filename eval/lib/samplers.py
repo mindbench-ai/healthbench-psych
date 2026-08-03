@@ -6,7 +6,7 @@ Judge call:     __call__(grader_prompt: str) -> raw model text.
 The same instance serves both roles; run_eval picks by argument type.
 
 Reasoning policy: candidates run in their DEFAULT API config (reasoning models
-reason, non-reasoning don't) — no forced parity; reasoning affects generation
+reason, non-reasoning don't); no forced parity; reasoning affects generation
 only, not grading. Judges (gpt-4.1, claude-haiku, gemini-2.5-flash) run
 non-reasoning + temperature=0 for deterministic HealthBench-faithful grading.
 
@@ -30,7 +30,7 @@ GEN_MAX_TOKENS = 8192   # candidate generation cap (headroom for reasoning model
 JUDGE_MAX_TOKENS = 2048  # HealthBench grader uses max_tokens=2048
 GRADER_SYSTEM_MESSAGE = "You are a helpful assistant."  # OPENAI_SYSTEM_MESSAGE_API
 _RETRY_CODES = {429, 500, 502, 503, 529}
-# Balance/quota errors are PERMANENT (often masquerade as 429) — never retry them:
+# Balance/quota errors are PERMANENT (often masquerade as 429); never retry them:
 # hammering a suspended account is rude and risks getting the key blocked.
 _QUOTA_MARKERS = ("insufficient balance", "insufficient_quota", "exceeded_current_quota",
                   "exceeded your current quota", "credit balance", "suspended",
@@ -44,7 +44,7 @@ def is_quota_error(body):
 
 
 # Empties with these stop/finish reasons are NOT retried: genuine declines
-# (refusal/content_filter) or truncation (length/max_tokens) — retrying just
+# (refusal/content_filter) or truncation (length/max_tokens); retrying just
 # pesters the API. Any other empty (stop/end_turn/unknown) is a likely fluke.
 _NO_RETRY_EMPTY = ("refusal", "content_filter", "length", "max_tokens")
 
@@ -53,7 +53,7 @@ def should_retry_empty(text, stop_reason):
     return not (text and text.strip()) and (stop_reason or "") not in _NO_RETRY_EMPTY
 
 
-# provider (base_url, key_env-or-list) — key_env list tries each name in order
+# provider (base_url, key_env-or-list); key_env list tries each name in order
 OPENAI = ("https://api.openai.com/v1", "OPENAI_API_KEY")
 DEEPSEEK = ("https://api.deepseek.com", "DEEPSEEK_API_KEY")
 GOOGLE = ("https://generativelanguage.googleapis.com/v1beta/openai", "GOOGLE_API_KEY")
@@ -113,7 +113,7 @@ class _Usage:
 
 
 def _lazy_key(obj):
-    """Resolve the API key at first use, not import — analysis-only users need no keys."""
+    """Resolve the API key at first use, not import; analysis-only users need no keys."""
     if getattr(obj, "_key_cached", None) is None:
         obj._key_cached = _resolve_key(obj._key_env)
     return obj._key_cached
