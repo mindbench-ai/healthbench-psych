@@ -2,13 +2,13 @@
  "name": "healthbench-psych-v1",
  "definition": "HealthBench-Psych v1: the 610 mental-health-relevant conversations of the HealthBench OSS corpus (2025-05-07 release), selected by LLM screening and two rounds of blinded review by three clinical mental-health experts (inclusion = >=2/3 majority; concealed known-exclude controls in every round). See provenance/ for rubrics, keys, and review data.",
  "n": 610,
- "round1_subset": "includes_majority (sha 65cb46f5c770)",
+ "round1_subset": "round-1 subset, n=596 (sha 65cb46f5c770)",
  "round2_source_review_files": [
   "R1.json",
   "R2.json",
   "R3.json"
  ],
- "round2_screening_key": "review/recovery_screening_key.csv",
+ "round2_screening_key": "provenance/screening/recovery-screening-key.csv",
  "round2_added_prompt_ids": [
   "16bd6476-82bc-4241-97a5-e4d1feac23a3",
   "42a2ea69-bc92-4e14-97b8-028ea96a0a3d",

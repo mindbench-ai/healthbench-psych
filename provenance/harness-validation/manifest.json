@@ -32,7 +32,7 @@
   "grader": {
     "file": "eval/vendor/healthbench_eval.py",
     "sha": "b763d8c1f53e",
-    "reused_by": "eval/hb_grade.py (verbatim)"
+    "reused_by": "eval/lib/hb_grade.py (verbatim)"
   },
   "source_corpus": {
     "file": "source/hb_oss.jsonl",
