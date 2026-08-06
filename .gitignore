@@ -6,6 +6,9 @@ eval/runs/*.png
 eval/runs/logs/
 eval/runs/ledger.csv
 
+# Platform-export output (regenerated from committed grades; see README: Platform export)
+platform/out/
+
 # Python
 __pycache__/
 *.pyc

@@ -54,6 +54,25 @@ message, token limits) with one documented deviation: judges run at temperature 
 0.5, for deterministic verdicts. Costs are bounded by `--max-cost` flags; the full 20-model,
 3-judge run cost ≈ $560 in mid-2026.
 
+## Platform export
+
+`platform/export_platform_artifacts.py` converts the committed grades store into the
+versioned artifacts the [MindBench platform](https://mindbench.ai) ingests: one
+`mindbench-results.v1` payload per candidate model, carrying the three-judge panel mean on
+`healthbench-psych-v1`, the hard-subset panel mean, and the per-judge scores behind both.
+No API keys are needed — everything is recomputed from `eval/runs/grades/`.
+
+```bash
+python3 platform/export_platform_artifacts.py     # -> platform/out/healthbench-psych--<model>.json
+                                                  #    (20 files + export-manifest.json, gitignored)
+```
+
+Each payload is validated against `platform/schemas/mindbench-results.v1.schema.json`
+before it is written. That file is a vendored, byte-identical copy of the authoritative
+schema in `mindbench-platform/packages/artifact-schemas/schemas/`; the platform's copy
+wins, and syncs are deliberate (re-copy the file verbatim). `export-manifest.json` records
+`generated_at`, the producing repo + commit, and the sha256 of every payload.
+
 ## Dataset construction (summary)
 
 The subset was built with a screen–review–recover loop: an LLM screen over all 5,000

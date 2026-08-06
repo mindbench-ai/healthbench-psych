@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mindbench.ai/schemas/mindbench-results.v1.schema.json",
+  "title": "mindbench-results v1",
+  "description": "One evaluation run: one model x one benchmark x one config. The contract between any harness and the MindBench results-hub importer. Integer counters that promote into Prisma `Int` (int4) columns \u2014 run.n_completed, run.n_errors, metrics[].n \u2014 carry the int4 range explicitly: without it the contract accepts values external_eval_runs / external_eval_metrics cannot hold, so the artifact validates and then hard-fails promotion. This bound rejects nothing the store could ever have stored. Mirrored in the producer's copy (mindbench-ai/external-evals) \u2014 the two must stay in step.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "benchmark",
+    "model",
+    "run",
+    "scoring",
+    "metrics"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "benchmark": {
+      "type": "object",
+      "required": [
+        "slug",
+        "dataset_manifest"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "dataset_manifest": {
+          "type": "object",
+          "required": [
+            "source",
+            "n_items",
+            "checksum"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "source": {
+              "type": "string"
+            },
+            "revision": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "split": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "n_items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "subsample": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "n": {
+                  "type": "integer"
+                },
+                "seed": {
+                  "type": "integer"
+                }
+              }
+            },
+            "checksum": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "model": {
+      "type": "object",
+      "required": [
+        "label",
+        "api_model_id",
+        "provider"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "api_model_id": {
+          "type": "string"
+        },
+        "provider": {
+          "type": "string"
+        },
+        "sampling": {
+          "type": "object"
+        }
+      }
+    },
+    "run": {
+      "type": "object",
+      "required": [
+        "harness",
+        "started_at",
+        "finished_at",
+        "n_completed",
+        "n_errors"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "harness": {
+          "type": "string"
+        },
+        "harness_commit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "adapter_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "started_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "finished_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "cost_usd": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "n_completed": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "n_errors": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      }
+    },
+    "scoring": {
+      "type": "object",
+      "required": [
+        "method"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "enum": [
+            "exact_match",
+            "classifier",
+            "llm_judge",
+            "expert_rated"
+          ]
+        },
+        "judge": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "model": {
+              "type": "string"
+            },
+            "prompt_version": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "metrics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "key"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "value_json": {},
+          "n": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "ci_low": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ci_high": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "anyOf": [
+          {
+            "required": [
+              "value"
+            ]
+          },
+          {
+            "required": [
+              "value_json"
+            ]
+          }
+        ]
+      }
+    },
+    "items_artifact": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Path/URL of the per-item JSONL (uploaded to S3 by the site importer)."
+    }
+  }
+}
