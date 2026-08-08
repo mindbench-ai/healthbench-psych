@@ -97,7 +97,17 @@
           "type": "string"
         },
         "sampling": {
-          "type": "object"
+          "type": "object",
+          "description": "HOW THE MODEL WAS SAMPLED, and nothing else: temperature, top_p, max_tokens, seed, reasoning effort. These are load-bearing — two runs that differ here are not comparable, and two that differ only in how fast the harness went are. Left open because every provider names its own parameters and constraining the set would mean a schema change per provider (rule 1). Harness settings go in run.harness_config; the guard below rejects the ones that have actually turned up here. An EMPTY object means provider defaults were used, which is a real answer and should be stated rather than left out.",
+          "not": {
+            "anyOf": [
+              { "required": ["max_connections"] },
+              { "required": ["max_retries"] },
+              { "required": ["max_tasks"] },
+              { "required": ["max_subprocesses"] },
+              { "required": ["timeout"] }
+            ]
+          }
         }
       }
     },
@@ -149,7 +159,12 @@
         "n_errors": {
           "type": "integer",
           "minimum": -2147483648,
-          "maximum": 2147483647
+          "maximum": 2147483647,
+          "description": "Calls that did not produce a usable result — a COUNT, measured from the run. Not a constant: one exporter hardcoded 0 here while separately discarding every ungraded row, so the field read as a clean run and the errors it was meant to report were the rows being dropped. If a harness genuinely cannot count them, say so in run.harness_config rather than writing a number nobody measured."
+        },
+        "harness_config": {
+          "type": "object",
+          "description": "How the harness was DRIVEN, as opposed to how the model was sampled: concurrency, retries, timeouts. Separate from model.sampling because these do not change what a run means, and mixing them makes it impossible to tell whether two runs are comparable. Open-ended; nothing here is interpreted by the platform."
         }
       }
     },

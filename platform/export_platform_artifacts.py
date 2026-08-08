@@ -228,6 +228,12 @@ def build_payload(candidate, judges, subsets, commit, started_at):
             "finished_at": utc_now(),
             "cost_usd": None,
             "n_completed": counts["v1"],
+            # Zero BY CONSTRUCTION, not by assumption. judge_scores() drops
+            # ungraded rows, and build_payload then asserts every judge scored
+            # exactly meta["n"] prompts — so a run with any ungraded prompt
+            # exits above and never reaches this line. Do not "fix" this into a
+            # computed count without removing that assertion first; the two
+            # state the same fact and only one of them can be load-bearing.
             "n_errors": 0,
         },
         "scoring": {
