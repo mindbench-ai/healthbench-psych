@@ -32,7 +32,7 @@ _FALLBACK = (5.0, 30.0, 5.0)  # conservative if a model is unlisted (over-estima
 
 def cost_of(model, usage, batch=False):
     """Dollar cost of a usage dict {input, cached, output} for `model`. Batch APIs
-    bill at half rate. Unknown models use a deliberately high fallback."""
+    bill at half rate. Unknown models use a high fallback rate."""
     pin, pout, pcache = PRICES.get(model, _FALLBACK)
     mult = 0.5 if batch else 1.0
     return (usage.get("input", 0) * pin + usage.get("cached", 0) * pcache

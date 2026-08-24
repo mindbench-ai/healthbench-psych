@@ -3,8 +3,8 @@
 Reconstruction (2026-08-04) of the exporter that produced the 20 promoted
 mindbench-results.v1 artifacts (run.harness "healthbench-psych-eval"),
 verified metric-for-metric, bit-for-bit against those payloads. One
-artifact per candidate model — the natural key is benchmark x model x run
-(R2.4) — each carrying:
+artifact per candidate model, keyed benchmark x model x run (R2.4).
+Each carries:
 
   - healthbench_score        panel mean (3 judges) of the per-judge
                              HealthBench clipped-mean scores on
@@ -18,14 +18,14 @@ scores filtered to the subset, mean clipped to [0,1].
 
 Schema (R2.2 / L25): platform/schemas/mindbench-results.v1.schema.json is a
 VENDORED, byte-identical copy of the authoritative platform schema at
-mindbench-platform/packages/artifact-schemas/schemas/ — the platform's copy
-wins and syncs are deliberate; re-copy the file verbatim to sync. Every
+mindbench-platform/packages/artifact-schemas/schemas/. The platform's copy
+is authoritative; to sync, re-copy the file verbatim. Every
 payload is validated against it before anything is written.
 
 Self-description (R2.3): mindbench-results.v1 is additionalProperties:false,
 so the payload's producer identity rides in run.harness / run.harness_commit
 and its generation time in run.started_at / run.finished_at (this exporter,
-like the original, stamps export wall-clock time — the store keeps no
+like the original, stamps export wall-clock time; the store keeps no
 per-call timestamps). The batch-level generated_at and producer {repo,
 commit} live in <out>/export-manifest.json alongside the payload sha256s.
 
@@ -85,8 +85,8 @@ def load_subset(name):
 def clipped_mean(scores):
     """HealthBench's reported statistic: mean clipped to [0,1] (aggregate.py).
 
-    Integer bounds on purpose: a clipped cell serializes as JSON 0/1, exactly
-    as the promoted artifacts carry it (e.g. gpt-3.5-turbo's hard scores).
+    Integer bounds: a clipped cell serializes as JSON 0/1, exactly as the
+    promoted artifacts carry it (e.g. gpt-3.5-turbo's hard scores).
     """
     m = sum(scores) / len(scores)
     return max(0, min(1, m))
@@ -228,12 +228,11 @@ def build_payload(candidate, judges, subsets, commit, started_at):
             "finished_at": utc_now(),
             "cost_usd": None,
             "n_completed": counts["v1"],
-            # Zero BY CONSTRUCTION, not by assumption. judge_scores() drops
-            # ungraded rows, and build_payload then asserts every judge scored
-            # exactly meta["n"] prompts — so a run with any ungraded prompt
-            # exits above and never reaches this line. Do not "fix" this into a
-            # computed count without removing that assertion first; the two
-            # state the same fact and only one of them can be load-bearing.
+            # Always 0: judge_scores() drops ungraded rows, and build_payload
+            # asserts every judge scored exactly meta["n"] prompts, so a run
+            # with any ungraded prompt exits before reaching this line.
+            # Replacing this with a computed count requires removing that
+            # assertion.
             "n_errors": 0,
         },
         "scoring": {
