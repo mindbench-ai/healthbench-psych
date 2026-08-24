@@ -60,7 +60,7 @@ message, token limits) with one documented deviation: judges run at temperature 
 
 ## Platform export
 
-`platform/export_platform_artifacts.py` converts the committed grades store into the
+`platform/export_platform_artifacts.py` converts the grades store (populated by `eval/fetch_runs.py`) into the
 versioned artifacts the [MindBench platform](https://mindbench.ai) ingests: one
 `mindbench-results.v1` payload per candidate model, carrying the three-judge panel mean on
 `healthbench-psych-v1`, the hard-subset panel mean, and the per-judge scores behind both.

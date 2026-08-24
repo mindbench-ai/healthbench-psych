@@ -12,8 +12,8 @@ Each carries:
   - healthbench_hard_score   the same on healthbench-psych-hard-v1 (n=119)
   - per_judge_scores         the per-judge clipped means behind both
 
-All numbers are recomputed from the committed grades store
-(eval/runs/grades/*.jsonl) exactly as eval/aggregate.py does: per-prompt
+All numbers are recomputed from the grades store (eval/runs/grades/*.jsonl,
+populated by eval/fetch_runs.py) exactly as eval/aggregate.py does: per-prompt
 scores filtered to the subset, mean clipped to [0,1].
 
 Schema (R2.2 / L25): platform/schemas/mindbench-results.v1.schema.json is a
@@ -94,7 +94,7 @@ def clipped_mean(scores):
 
 def judge_scores(candidate, judge, prompt_ids):
     """This candidate's per-prompt scores under one judge, subset-filtered,
-    in grades-file line order (the store is append-only and committed)."""
+    in grades-file line order (the store's row order is fixed)."""
     path = os.path.join(store.GRADE_DIR, f"{candidate}__{judge}.jsonl")
     if not os.path.exists(path):
         raise SystemExit(f"missing grades file: {path}")
