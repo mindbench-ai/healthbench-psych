@@ -22,3 +22,9 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Released run data (responses, grades). Hosted on the Hugging Face dataset
+# mindbench-ai/healthbench-psych; eval/fetch_runs.py rebuilds the local store.
+# The score matrix, spend ledger, and error log above stay tracked.
+eval/runs/responses/
+eval/runs/grades/
