@@ -22,7 +22,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
-BASE = ("https://huggingface.co/datasets/MindBench/healthbench-psych"
+BASE = ("https://huggingface.co/datasets/mindbench-ai/healthbench-psych"
         "/resolve/main")
 RUNS = Path(__file__).resolve().parent / "runs"
 
