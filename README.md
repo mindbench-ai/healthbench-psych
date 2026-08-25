@@ -15,7 +15,7 @@ panel. Maintained by [MindBench.ai](https://mindbench.ai).
 Subset files contain HealthBench `prompt_id` lists plus construction provenance and a content
 hash; the conversations themselves ship with HealthBench (see *Reproducing*, below). The
 released run data (responses and grades) is hosted on the
-[Hugging Face dataset](https://huggingface.co/datasets/mindbench-ai/healthbench-psych);
+[Hugging Face dataset](https://huggingface.co/datasets/MindBench/healthbench-psych);
 `eval/fetch_runs.py` rebuilds the local store from it.
 
 ## Repository layout
