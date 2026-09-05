@@ -3,16 +3,26 @@
 #
 # Order that makes this work (the audit fetches HF AT THE TAG NAME):
 #   1. build + push the HF payload, tag it vX.Y.Z on HF
-#   2. push the GitHub tag vX.Y.Z  -> this fires
-#   3. audit passes -> release created, notes from the annotated tag message
+#   2. push the GitHub tag vX.Y.Z
+#   3. audit passes -> release exists, notes from the annotated tag message
 #
-# The release page existing IS the proof; a missing one means the audit failed.
-# Failure blocks nothing but the release: tag and HF payload stay put, fix the
-# wrong side, re-run via workflow_dispatch.
+# Three ways in, one audit:
+#   push: tags        the tag push itself fires the audit; a passing audit
+#                     CREATES the release. No public window.
+#   release: published the Releases UI: draft, write notes, Publish. Publishing
+#                     fires the audit; a failing audit REVERTS the release to a
+#                     draft. Public for roughly the audit's runtime if it fails.
+#                     (Saving a draft fires nothing -- GitHub does not run
+#                     workflows for draft created/edited/deleted.)
+#   workflow_dispatch by hand, for tags made before this workflow existed.
 #
-# Tooling runs from the branch carrying this file, against the tag's DATA, so
-# it can also audit tags made before this workflow existed (workflow_dispatch
-# with tag=v1.0.0). See .github/scripts/audit_release.sh.
+# The release page being published IS the proof. Failure blocks nothing but
+# the release: tag and HF payload stay put, fix the wrong side, re-run.
+#
+# Checkout is pinned to the default branch on every event. For push: tags and
+# release: events GitHub would otherwise check out the TAG's commit, and a tag
+# predating this file (v1.0.0) has no audit script to run. Tooling comes from
+# main; the tag's DATA comes from `git show TAG:path` inside the script.
 #
 # No secrets: the audit reads public HF data; the release step uses the
 # repo-scoped GITHUB_TOKEN.
@@ -21,6 +31,8 @@ name: release-audit
 on:
   push:
     tags: ['v*']
+  release:
+    types: [published]
   workflow_dispatch:
     inputs:
       tag:
@@ -37,6 +49,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
           fetch-tags: true
 
@@ -47,25 +60,40 @@ jobs:
       - name: resolve tag
         id: tag
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            TAG="${{ inputs.tag }}"
-          else
-            TAG="${GITHUB_REF#refs/tags/}"
-          fi
+          case "${{ github.event_name }}" in
+            workflow_dispatch) TAG="${{ inputs.tag }}" ;;
+            release)           TAG="${{ github.event.release.tag_name }}" ;;
+            *)                 TAG="${GITHUB_REF#refs/tags/}" ;;
+          esac
           git rev-parse -q --verify "refs/tags/$TAG" >/dev/null || { echo "::error::no such tag $TAG"; exit 1; }
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
           echo "auditing $TAG"
 
       - name: audit GitHub@tag against HF@tag
+        id: audit
         run: bash .github/scripts/audit_release.sh "${{ steps.tag.outputs.tag }}"
+
+      - name: revert to draft (release event, audit failed)
+        if: failure() && github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          gh release edit "$TAG" --draft=true
+          echo "::error::audit failed; release $TAG reverted to a draft"
 
       - name: publish release (only on a passing audit)
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ steps.tag.outputs.tag }}
         run: |
-          if gh release view "$TAG" >/dev/null 2>&1; then
-            echo "release $TAG already exists; leaving it"
+          if gh release view "$TAG" --json isDraft >/dev/null 2>&1; then
+            if [ "$(gh release view "$TAG" --json isDraft -q .isDraft)" = "true" ]; then
+              gh release edit "$TAG" --draft=false
+              echo "published existing draft $TAG"
+            else
+              echo "release $TAG already published; audit confirms it"
+            fi
             exit 0
           fi
           NOTES="$(git tag -l --format='%(contents)' "$TAG")"
