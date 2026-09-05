@@ -1,7 +1,7 @@
 """Faithful reuse of OpenAI HealthBench grading (simple-evals).
 
-`GRADER_TEMPLATE`, `RubricItem`, `parse_json_to_dict`, and `calculate_score`
-are copied VERBATIM from `vendor/healthbench_eval.py`
+`GRADER_TEMPLATE`, `RubricItem`, `parse_json_to_dict`, `calculate_score`, and
+`calculate_length_adjusted_score` are copied VERBATIM from `vendor/healthbench_eval.py`
 (sha256 prefix b763d8c1f53ecd16, vendored 2026-07-28). `grade_response`
 replicates `HealthBenchEval.grade_sample`'s core (conversation rendering +
 per-rubric-item grading + scoring) exactly.
@@ -102,6 +102,16 @@ def calculate_score(rubric_items, grading_response_list):
         if gr["criteria_met"]
     )
     return achieved_points / total_possible_points
+
+
+def calculate_length_adjusted_score(
+    score: float,
+    response_text: str,
+    *,
+    center: float,
+    penalty_per_500_chars: float,
+) -> float:
+    return score - penalty_per_500_chars * ((len(response_text) - center) / 500.0)
 # --- end verbatim -------------------------------------------------------------
 
 
