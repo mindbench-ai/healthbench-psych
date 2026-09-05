@@ -7,7 +7,8 @@ mindbench-ai/healthbench-psych rather than in this repository. This script
 downloads the two run configs and rewrites the per-file store the harness and
 analysis code read. One-time download, ~45 MB; everything afterwards is local.
 
-    python3 eval/fetch_runs.py                  # fetch from Hugging Face
+    python3 eval/fetch_runs.py                  # fetch from Hugging Face (main)
+    python3 eval/fetch_runs.py --revision v1.0.0  # fetch a tagged release
     python3 eval/fetch_runs.py --source DIR     # rebuild from a local dataset build
     python3 eval/fetch_runs.py --force          # overwrite an existing store
 
@@ -22,16 +23,15 @@ import sys
 import urllib.request
 from pathlib import Path
 
-BASE = ("https://huggingface.co/datasets/mindbench-ai/healthbench-psych"
-        "/resolve/main")
+REPO = "https://huggingface.co/datasets/mindbench-ai/healthbench-psych"
 RUNS = Path(__file__).resolve().parent / "runs"
 
 
-def fetch(source, name):
+def fetch(source, name, revision):
     rel = f"data/{name}/train.jsonl"
     if source:
         return (Path(source) / rel).read_text(encoding="utf-8")
-    url = f"{BASE}/{rel}"
+    url = f"{REPO}/resolve/{revision}/{rel}"
     print(f"  downloading {url}")
     with urllib.request.urlopen(url) as r:
         return r.read().decode("utf-8")
@@ -49,6 +49,11 @@ def write_group(rows_by_file, out_dir, n_field):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", help="local dataset directory instead of Hugging Face")
+    ap.add_argument("--revision", default="main",
+                    help="HF revision to fetch: a tag such as v1.0.0, a branch, or a "
+                         "commit sha (default: main). Release tags on HF mirror the "
+                         "GitHub tags, so --revision vX.Y.Z pins the run data to the "
+                         "same release as the checked-out code.")
     ap.add_argument("--force", action="store_true", help="overwrite an existing store")
     a = ap.parse_args()
 
@@ -59,7 +64,7 @@ def main():
     # responses: dataset rows carry the store fields plus model / is_refusal.
     resp = {}
     n = 0
-    for line in fetch(a.source, "responses").splitlines():
+    for line in fetch(a.source, "responses", a.revision).splitlines():
         r = json.loads(line)
         rec = {"prompt_id": r["prompt_id"], "response_text": r["response_text"]}
         if r.get("stop_reason") is not None:
@@ -73,7 +78,7 @@ def main():
     # grades: criteria_met booleans expand back into the store's grades list.
     grades = {}
     n = 0
-    for line in fetch(a.source, "grades").splitlines():
+    for line in fetch(a.source, "grades", a.revision).splitlines():
         r = json.loads(line)
         rec = {"prompt_id": r["prompt_id"], "score": r["score"],
                "grades": [{"criteria_met": b} for b in r["criteria_met"]]}

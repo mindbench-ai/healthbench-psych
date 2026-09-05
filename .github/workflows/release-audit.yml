@@ -1,0 +1,73 @@
+# Release audit: prove GitHub@TAG and HuggingFace@TAG describe the same release,
+# then publish the GitHub release only if they do.
+#
+# Order that makes this work (the audit fetches HF AT THE TAG NAME):
+#   1. build + push the HF payload, tag it vX.Y.Z on HF
+#   2. push the GitHub tag vX.Y.Z  -> this fires
+#   3. audit passes -> release created, notes from the annotated tag message
+#
+# The release page existing IS the proof; a missing one means the audit failed.
+# Failure blocks nothing but the release: tag and HF payload stay put, fix the
+# wrong side, re-run via workflow_dispatch.
+#
+# Tooling runs from the branch carrying this file, against the tag's DATA, so
+# it can also audit tags made before this workflow existed (workflow_dispatch
+# with tag=v1.0.0). See eval/audit_release.sh.
+#
+# No secrets: the audit reads public HF data; the release step uses the
+# repo-scoped GITHUB_TOKEN.
+name: release-audit
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to audit (e.g. v1.0.0)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: resolve tag
+        id: tag
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            TAG="${{ inputs.tag }}"
+          else
+            TAG="${GITHUB_REF#refs/tags/}"
+          fi
+          git rev-parse -q --verify "refs/tags/$TAG" >/dev/null || { echo "::error::no such tag $TAG"; exit 1; }
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "auditing $TAG"
+
+      - name: audit GitHub@tag against HF@tag
+        run: bash eval/audit_release.sh "${{ steps.tag.outputs.tag }}"
+
+      - name: publish release (only on a passing audit)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "release $TAG already exists; leaving it"
+            exit 0
+          fi
+          NOTES="$(git tag -l --format='%(contents)' "$TAG")"
+          gh release create "$TAG" --verify-tag --title "$TAG" --notes "$NOTES"
+          echo "created release $TAG"
