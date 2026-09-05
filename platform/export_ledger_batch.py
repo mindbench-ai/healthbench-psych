@@ -10,8 +10,8 @@ in the ledger.
 
 RELEASES ARE SEPARATE BATCHES. `versioning.md` (the release plan, in the dev
 checkout) keys the benchmark's identity to `prompt_id_sha256`, the hash of the
-subset's prompt-id list, and freezes v1.0.0 for the duration of PLOS review:
-610 prompts, 20 candidate models, a 3-judge panel. The two new models of the
+subset's prompt-id list, and fixes v1.0.0 by its tag:
+610 prompts, 20 candidate models, a 3-judge panel. The three new models of the
 additive 1.x line are a DIFFERENT release and ship as their own batch, so a
 reader of the ledger can ask for the frozen state and get exactly the state the
 manuscript reports.
@@ -32,9 +32,7 @@ ladder is applied here:
   * the unenforced 8,192-token cap is not asserted on rows that never recorded
     a parameter.
 
-`gpt-6-astra` is in neither batch. It is blocked on org API access and belongs
-to release 1.4.0; the local store holds a run for it, and this exporter refuses
-to see it. The round-2 control item (`140c95dc...`) is likewise not here: the
+The round-2 control item (`140c95dc...`) is not here: the
 subset is exactly 610 ids, and admitting the control is the 2.0.0 boundary.
 
 ABSENT IS NOT NULL. The 20 published models were run through a THIN store --
@@ -199,21 +197,20 @@ GRADER_NOTE = (
 # The frozen release's 20 candidates ARE the harness's registry -- there is no
 # second list to drift from it. The 1.x models are not in it (they were run
 # through generate_ledger.py in the dev checkout), which is why they are named
-# here and gpt-6-astra, blocked on org API access and belonging to release
-# 1.4.0, is named nowhere.
+# here.
 PUBLISHED_MODELS = sorted(S.REGISTRY)
-NEW_MODELS = ["claude-fable-5-1", "gemini-3.8-flash"]
+NEW_MODELS = ["claude-fable-5-1", "gemini-3.8-flash", "gpt-6-astra"]
 
 RELEASES = {
     "v1.0.0": {
         "models": PUBLISHED_MODELS,
         "source": "thin",
-        "note": "frozen for PLOS review: 610 prompts, 20 candidate models, 3-judge panel",
+        "note": "v1.0.0, the state the preprint describes: 610 prompts, 20 candidate models, 3-judge panel",
     },
     "v1.1.0": {
         "models": NEW_MODELS,
         "source": "ledger",
-        "note": "additive 1.x line: two new candidate models on the unchanged v1.0.0 subset",
+        "note": "additive 1.x line: three new candidate models on the unchanged v1.0.0 subset",
     },
 }
 
@@ -408,20 +405,20 @@ def thin_generations(models, subset, rubric_ids, gen_window, dev_commit, hash_he
             # travels with it rather than being dropped.
             if rec.get("correction") is not None:
                 meta["correction"] = rec["correction"]
-            stats["status_" + status_of(rec.get("stop_reason"), text)] += 1
-            if rec.get("stop_reason") is not None:
+            stats["status_" + status_of(rec.get("finish_reason", rec.get("stop_reason")), text)] += 1
+            if rec.get("finish_reason", rec.get("stop_reason")) is not None:
                 stats["finish_reason_present"] += 1
             rows.append({
                 "key": f"{label}/{pid}",
                 "purpose": "target",
-                "status": status_of(rec.get("stop_reason"), text),
+                "status": status_of(rec.get("finish_reason", rec.get("stop_reason")), text),
                 "cell_key": CELL_KEY,
                 # The stimulus is OpenAI's: point at it, never ship it.
                 "prompt_ref": f"hb:{pid}",
                 "model": model_ref(label),
                 # Declared by the store, sparse in it: carried where present,
                 # null where the provider returned none. Not repaired.
-                "finish_reason": rec.get("stop_reason"),
+                "finish_reason": rec.get("finish_reason", rec.get("stop_reason")),
                 "generated_at": last if in_round2 else first,
                 "data_tier": DATA_TIER,
                 "response_text": text,

@@ -34,9 +34,9 @@ verdict. The shipped platform fixture
 `healthbench-psych-rubric` as an illustration; the batch is the consumer here
 and the batch says `rubric_item`, so that is the key the two sides agree on.
 
-VERSION: `v1.0.0` -- the release, not the corpus date. `versioning.md` freezes
-v1.0.0 (610 prompts, `prompt_id_sha256 = 3788760429bb...`) for the duration of
-PLOS review, and v1.1.0 adds two candidate MODELS against that unchanged subset
+VERSION: `v1.0.0` -- the release, not the corpus date. `versioning.md` fixes
+v1.0.0 (610 prompts, `prompt_id_sha256 = 3788760429bb...`) by its tag, and
+v1.1.0 adds three candidate MODELS against that unchanged subset
 and unchanged rubric. Both grade runs are therefore cast against this one
 instrument version; a version bump here would mean the RUBRIC moved, which is
 a 2.x event (admitting the round-2 control item), not a 1.x one.
