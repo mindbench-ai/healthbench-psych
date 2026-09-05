@@ -22,11 +22,15 @@ released run data (responses and grades) is hosted on the
 
 | Path | Contents |
 |---|---|
-| `eval/` | The evaluation harness: entry points (`generate.py`, `grade.py`, `grade_sync.py`, `aggregate.py`, `run_sweep.sh`), shared libraries (`lib/`), provider batch backends (`backends/`), the vendored HealthBench grader (`vendor/`), subset definitions (`subsets/`), and the run store (`runs/`; populated by `fetch_runs.py`) |
-| `eval/runs/responses/` | One response per (model, conversation): 20 models × 610, full text, refusals retained with their API stop reason. Hosted on Hugging Face; rebuilt by `eval/fetch_runs.py` |
+| `eval/` | The evaluation harness: entry points (`generate.py`, `grade.py`, `grade_sync.py`, `aggregate.py`, `run_eval.py`, `run_sweep.sh`), shared libraries (`lib/`), provider batch backends (`backends/`), the vendored HealthBench grader (`vendor/`), subset definitions (`subsets/`), and the run store (`runs/`) |
+| `eval/runs/` | Tracked: the aggregate matrices (`matrix_*.csv`), the spend ledger (`spend.jsonl`), the anomaly log (`errors.jsonl`). Not tracked: `responses/` and `grades/`, which `fetch_runs.py` pulls from Hugging Face (next two rows) |
+| `eval/runs/responses/` | One response per (model, conversation): full text, refusals retained with their API stop reason. Hosted on Hugging Face; rebuilt by `eval/fetch_runs.py` |
 | `eval/runs/grades/` | Per-rubric-criterion verdicts and per-conversation scores for every (model, conversation, judge); judge free-text explanations omitted for size. Hosted on Hugging Face; rebuilt by `eval/fetch_runs.py` |
+| `source/` | The HealthBench OSS corpus (`hb_oss.jsonl`), gitignored; fetched per *Reproducing* below. Required by `generate.py` and `grade.py`; the released results can be analyzed without it |
 | `analysis/` | `visualization/`: figure generation from the released data; `statistics/`: the paper's quantitative analyses (runs key-less) |
 | `provenance/` | How the dataset was built: screening and recovery rubrics (`rubrics/`), full-corpus screening outputs (`screening/`), the blinded review instruments plus de-identified expert ratings (`review/`), and the HealthBench-Hard parity run backing the harness-validation result (`harness-validation/`) |
+| `platform/` | Exporters that produce the artifacts the MindBench platform ingests (`export_platform_artifacts.py`, `export_ledger_batch.py`, `export_ledger_instrument.py`) and the vendored result schema (`schemas/`); see *Platform export* |
+| `.github/` | `workflows/release-audit.yml`: on a release tag, verifies that the Hugging Face payload at that tag reproduces the committed matrices, then publishes the GitHub release. `scripts/audit_release.sh` is the audit itself and runs locally |
 
 ## Quickstart: analyze the released results (no API keys needed)
 
@@ -60,6 +64,14 @@ message, token limits) with one documented deviation: judges run at temperature 
 
 ## Platform export
 
+Three exporters:
+
+| Script | Emits | What it carries |
+|---|---|---|
+| `export_platform_artifacts.py` | `mindbench-results.v1`, one per candidate model | The three-judge panel means and the per-judge scores |
+| `export_ledger_batch.py` | `generation-batch.v1`, one batch per release | Every candidate response and every rubric-item verdict |
+| `export_ledger_instrument.py` | `instrument.v1` | The rubric criteria, under the same item keys the batch uses for its verdicts |
+
 `platform/export_platform_artifacts.py` converts the grades store (populated by `eval/fetch_runs.py`) into the
 versioned artifacts the [MindBench platform](https://mindbench.ai) ingests: one
 `mindbench-results.v1` payload per candidate model, carrying the three-judge panel mean on
@@ -68,7 +80,7 @@ No API keys are needed; everything is recomputed from the fetched `eval/runs/gra
 
 ```bash
 python3 platform/export_platform_artifacts.py     # -> platform/out/healthbench-psych--<model>.json
-                                                  #    (20 files + export-manifest.json, gitignored)
+                                                  #    (one per model + export-manifest.json, gitignored)
 ```
 
 Each payload is validated against `platform/schemas/mindbench-results.v1.schema.json`

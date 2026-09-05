@@ -23,11 +23,11 @@
 # Needs: git with the tag fetched, python3 (stdlib only), network to HF.
 # No secrets. Writes eval/runs/{responses,grades} -- run in a clean checkout.
 #
-#   eval/audit_release.sh v1.0.0
+#   .github/scripts/audit_release.sh v1.0.0
 set -euo pipefail
 
 TAG="${1:?usage: audit_release.sh vX.Y.Z}"
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT"
 
 git rev-parse -q --verify "refs/tags/$TAG" >/dev/null \

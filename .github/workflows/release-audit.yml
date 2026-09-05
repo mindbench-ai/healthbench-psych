@@ -12,7 +12,7 @@
 #
 # Tooling runs from the branch carrying this file, against the tag's DATA, so
 # it can also audit tags made before this workflow existed (workflow_dispatch
-# with tag=v1.0.0). See eval/audit_release.sh.
+# with tag=v1.0.0). See .github/scripts/audit_release.sh.
 #
 # No secrets: the audit reads public HF data; the release step uses the
 # repo-scoped GITHUB_TOKEN.
@@ -57,7 +57,7 @@ jobs:
           echo "auditing $TAG"
 
       - name: audit GitHub@tag against HF@tag
-        run: bash eval/audit_release.sh "${{ steps.tag.outputs.tag }}"
+        run: bash .github/scripts/audit_release.sh "${{ steps.tag.outputs.tag }}"
 
       - name: publish release (only on a passing audit)
         env:
