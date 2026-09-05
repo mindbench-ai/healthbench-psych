@@ -67,8 +67,11 @@ def main():
     for line in fetch(a.source, "responses", a.revision).splitlines():
         r = json.loads(line)
         rec = {"prompt_id": r["prompt_id"], "response_text": r["response_text"]}
-        if r.get("stop_reason") is not None:
-            rec["stop_reason"] = r["stop_reason"]
+        # 1.1.0+ payloads carry finish_reason (and stop_reason as a deprecated
+        # alias); a v1.0.0 payload carries stop_reason only. Store one name.
+        fr = r.get("finish_reason", r.get("stop_reason"))
+        if fr is not None:
+            rec["finish_reason"] = fr
         if r.get("correction") is not None:
             rec["correction"] = r["correction"]
         resp.setdefault(r["model"], []).append(rec)

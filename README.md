@@ -2,7 +2,7 @@
 
 An expert-adjudicated **mental-health subset of [HealthBench](https://arxiv.org/abs/2505.08775)**
 (OpenAI's open benchmark of 5,000 physician-rubric-graded health conversations), together with a
-faithful evaluation harness and released results for 20 language models under a three-judge
+faithful evaluation harness and released results for 23 language models under a three-judge
 panel. Maintained by [MindBench.ai](https://mindbench.ai).
 
 **Released datasets**

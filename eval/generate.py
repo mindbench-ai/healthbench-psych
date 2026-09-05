@@ -71,7 +71,7 @@ def gen_batch(provider, cand, todo, examples, poll):
                 print(f"    {pid[:8]} fallback ERROR {detail[:90]}")
                 failed.append((pid, detail))
                 continue
-        recs.append({"prompt_id": pid, "response_text": txt or "", "stop_reason": sr})
+        recs.append({"prompt_id": pid, "response_text": txt or "", "finish_reason": sr})
     empty = sum(1 for r in recs if not (r["response_text"] or "").strip())
     return recs, empty, meta.get("usage", {"input": 0, "cached": 0, "output": 0}), failed
 
@@ -92,7 +92,7 @@ def gen_sync(cand, todo, examples, workers, flush_every=40):
                 print(f"    {pid[:8]} ERROR {detail[:90]}")
                 failed.append((pid, detail))
                 continue
-            r = {"prompt_id": pid, "response_text": txt, "stop_reason": sr}
+            r = {"prompt_id": pid, "response_text": txt, "finish_reason": sr}
             recs.append(r); buf.append(r)
             if len(buf) >= flush_every:  # incremental save -> a kill keeps completed work
                 store.append(path, buf); buf = []
@@ -160,7 +160,7 @@ def main():
             if not (r["response_text"] or "").strip():
                 store.log_error(phase="generate", provider=args.provider, candidate=cand,
                                 prompt_id=r["prompt_id"], kind="empty_response",
-                                detail=f"stop_reason={r.get('stop_reason')}")
+                                detail=f"finish_reason={r.get('finish_reason')}")
         if failed:
             all_failed[cand] = failed
         flag = (f" [{empty} empty]" if empty else "") + (f" [{len(failed)} FAILED-not stored]" if failed else "")

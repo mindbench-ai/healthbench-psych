@@ -2,6 +2,9 @@ candidate,judge,clipped_mean_score,n_prompts
 claude-fable-5,claude-haiku-4-5-20251001,0.546304,610
 claude-fable-5,gemini-2.5-flash,0.668708,610
 claude-fable-5,gpt-4.1-2025-04-14,0.557562,610
+claude-fable-5-1,claude-haiku-4-5-20251001,0.572788,610
+claude-fable-5-1,gemini-2.5-flash,0.695254,610
+claude-fable-5-1,gpt-4.1-2025-04-14,0.594306,610
 claude-haiku-4-5-20251001,claude-haiku-4-5-20251001,0.401298,610
 claude-haiku-4-5-20251001,gemini-2.5-flash,0.516337,610
 claude-haiku-4-5-20251001,gpt-4.1-2025-04-14,0.404613,610
@@ -26,6 +29,9 @@ gemini-2.5-pro,gpt-4.1-2025-04-14,0.499169,610
 gemini-3.6-flash,claude-haiku-4-5-20251001,0.531865,610
 gemini-3.6-flash,gemini-2.5-flash,0.646950,610
 gemini-3.6-flash,gpt-4.1-2025-04-14,0.555948,610
+gemini-3.8-flash,claude-haiku-4-5-20251001,0.518376,610
+gemini-3.8-flash,gemini-2.5-flash,0.642477,610
+gemini-3.8-flash,gpt-4.1-2025-04-14,0.543627,610
 gpt-3.5-turbo,claude-haiku-4-5-20251001,0.129478,610
 gpt-3.5-turbo,gemini-2.5-flash,0.272775,610
 gpt-3.5-turbo,gpt-4.1-2025-04-14,0.125420,610
@@ -38,6 +44,9 @@ gpt-5.5,gpt-4.1-2025-04-14,0.597851,610
 gpt-5.6-sol,claude-haiku-4-5-20251001,0.569371,610
 gpt-5.6-sol,gemini-2.5-flash,0.671636,610
 gpt-5.6-sol,gpt-4.1-2025-04-14,0.587759,610
+gpt-6-astra,claude-haiku-4-5-20251001,0.537838,610
+gpt-6-astra,gemini-2.5-flash,0.649440,610
+gpt-6-astra,gpt-4.1-2025-04-14,0.567199,610
 grok-4.5,claude-haiku-4-5-20251001,0.563673,610
 grok-4.5,gemini-2.5-flash,0.680270,610
 grok-4.5,gpt-4.1-2025-04-14,0.592547,610
