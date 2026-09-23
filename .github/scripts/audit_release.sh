@@ -56,6 +56,21 @@ for m in "${MATRICES[@]}"; do
   python3 eval/aggregate.py --subset "$subset" >/dev/null
 done
 
+# 3b. the run data itself: row counts and a content hash of the fetched files, so a
+#     responses-only change (a correction, a dropped column) is visible in the log.
+#     The matrices cannot see those: grades are keyed by prompt, not by text.
+echo "== fetched run data"
+python3 - <<'EOF'
+import glob, hashlib
+for kind in ("responses", "grades"):
+    files = sorted(glob.glob(f"eval/runs/{kind}/*.jsonl"))
+    rows = sum(1 for f in files for _ in open(f))
+    h = hashlib.sha256()
+    for f in files:
+        h.update(open(f, "rb").read())
+    print(f"   {kind}: {len(files)} files, {rows:,} rows, sha256 {h.hexdigest()[:16]}")
+EOF
+
 # 4. compare against the tag, not HEAD
 echo "== diff recomputed matrices vs $TAG"
 if git diff --exit-code --stat "$TAG" -- "${MATRICES[@]}"; then
