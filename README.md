@@ -9,8 +9,9 @@ panel. Maintained by [MindBench.ai](https://mindbench.ai).
 
 | Subset | n | Definition |
 |---|---|---|
-| `healthbench-psych-v1` | 610 | Mental-health-relevant HealthBench conversations, selected by LLM screening and two rounds of blinded review by three clinical mental-health experts (≥2/3 majority; concealed known-exclude controls in every round) |
-| `healthbench-psych-hard-v1` | 119 | Intersection of v1 with OpenAI's HealthBench-Hard release |
+| `healthbench-psych-v2` | 611 | Mental-health-relevant HealthBench conversations, selected by LLM screening and two rounds of blinded review by three clinical mental-health experts (≥2/3 majority; concealed known-exclude controls in every round); v2 admits the one round-2 control that reached majority, applying the inclusion rule as round 1 did |
+| `healthbench-psych-v1` | 610 | Superseded by v2 at 2.0.0; the subset used by arXiv preprint v1. Available at tag `v1.2.0` and earlier |
+| `healthbench-psych-hard-v1` | 119 | Intersection with OpenAI's HealthBench-Hard release; identical for v1 and v2 |
 
 Subset files contain HealthBench `prompt_id` lists plus construction provenance and a content
 hash; the conversations themselves ship with HealthBench (see *Reproducing*, below). The
@@ -37,10 +38,10 @@ released run data (responses and grades) is hosted on the
 ```bash
 git clone https://github.com/mindbench-ai/healthbench-psych.git && cd healthbench-psych
 python3 eval/fetch_runs.py                                     # one-time ~45 MB download
-python3 eval/aggregate.py --subset healthbench-psych-v1        # 20-model × 3-judge matrix,
+python3 eval/aggregate.py --subset healthbench-psych-v2        # 23-model × 3-judge matrix,
 python3 eval/aggregate.py --subset healthbench-psych-hard-v1   # agreement, severity stats
 pip install matplotlib
-python3 analysis/visualization/make_panel_fig.py --subset healthbench-psych-v1 --orient landscape
+python3 analysis/visualization/make_panel_fig.py --subset healthbench-psych-v2 --orient landscape
 ```
 
 ## Reproducing or extending the evaluation
@@ -52,8 +53,8 @@ provider API keys:
 curl -o source/hb_oss.jsonl \
   https://openaipublic.blob.core.windows.net/simple-evals/healthbench/2025-05-07-06-14-12_oss_eval.jsonl
 export OPENAI_API_KEY=... ANTHROPIC_API_KEY=... GOOGLE_API_KEY=...   # per provider
-bash eval/run_sweep.sh gen   healthbench-psych-v1     # candidate responses (per-provider processes)
-bash eval/run_sweep.sh grade healthbench-psych-v1     # judge panel (batch APIs)
+bash eval/run_sweep.sh gen   healthbench-psych-v2     # candidate responses (per-provider processes)
+bash eval/run_sweep.sh grade healthbench-psych-v2     # judge panel (batch APIs)
 ```
 
 Everything is prompt-keyed and idempotent: re-runs resume, and grading a new model or judge

@@ -22,7 +22,7 @@ cd "$(dirname "$0")/.."
 set -a; . ./.env 2>/dev/null; set +a
 
 PHASE="${1:-all}"
-SUBSET="${2:-healthbench-psych-v1}"
+SUBSET="${2:-healthbench-psych-v2}"
 ONLY="${3:-}"
 LOGDIR="eval/runs/logs"; mkdir -p "$LOGDIR"
 GEN_PROVIDERS="openai anthropic google mistral deepseek moonshot xai dashscope"
