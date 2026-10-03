@@ -32,11 +32,13 @@ is authoritative; to sync, re-copy the file verbatim. Every
 payload is validated against it before anything is written.
 
 Self-description (R2.3): mindbench-results.v1 is additionalProperties:false,
-so the payload's producer identity rides in run.harness / run.harness_commit
-and its generation time in run.started_at / run.finished_at (this exporter,
-like the original, stamps export wall-clock time; the store keeps no
-per-call timestamps). The batch-level generated_at and producer {repo,
-commit} live in <out>/export-manifest.json alongside the payload sha256s.
+so the payload's producer identity rides in run.harness / run.harness_commit.
+run.started_at / run.finished_at are the model's real run dates on the subset,
+read from platform/run_dates.csv: when its responses were first generated, and
+when the grading run that last changed its score finished. The export time is
+not a run date; it lives, with producer {repo, commit}, in
+<out>/export-manifest.json as generated_at alongside the payload sha256s.
+(The promoted v1 artifacts stamped export wall-clock time in both fields.)
 
 Usage (no API keys needed):
     python3 platform/export_platform_artifacts.py     # -> platform/out/healthbench-psych-v2/
@@ -64,6 +66,7 @@ from lib import samplers, store  # noqa: E402
 SCHEMA_PATH = os.path.join(ROOT, "platform", "schemas",
                            "mindbench-results.v1.schema.json")
 SUBSETS_DIR = os.path.join(ROOT, "eval", "subsets")
+RUN_DATES_PATH = os.path.join(ROOT, "platform", "run_dates.csv")
 DEFAULT_SUBSET = "healthbench-psych-v2"
 HARD_SUBSET = "healthbench-psych-hard-v1"
 BENCHMARK_SLUG = "healthbench-psych"
@@ -112,6 +115,13 @@ def committed_table(subset):
     path = os.path.join(ROOT, "eval", "runs", f"matrix_{subset}.csv")
     return {(r["candidate"], r["judge"]): r["clipped_mean_score"]
             for r in csv.DictReader(open(path, newline=""))}
+
+
+def run_dates(subset):
+    """{model: (started_at, finished_at)} for a subset, from platform/run_dates.csv."""
+    return {r["model"]: (r["started_at"], r["finished_at"])
+            for r in csv.DictReader(open(RUN_DATES_PATH, newline=""))
+            if r["subset"] == subset}
 
 
 def model_info(candidate):
@@ -222,7 +232,7 @@ def validate(payload, schema):
 
 # --- payload construction -----------------------------------------------------
 
-def build_payload(candidate, judges, subsets, tables, commit, started_at):
+def build_payload(candidate, judges, subsets, tables, commit, started_at, finished_at):
     per_judge = {}   # subset key -> judge -> full-precision clipped mean
     counts = {}      # subset key -> n prompts scored (asserted judge-uniform)
     for key, meta in subsets.items():
@@ -270,7 +280,7 @@ def build_payload(candidate, judges, subsets, tables, commit, started_at):
             "harness_commit": commit,
             "adapter_version": ADAPTER_VERSION,
             "started_at": started_at,
-            "finished_at": utc_now(),
+            "finished_at": finished_at,
             "cost_usd": None,
             "n_completed": counts[main_key],
             # Always 0: judge_scores() drops ungraded rows, and build_payload
@@ -316,19 +326,22 @@ def main():
     judges = list(samplers.JUDGES)
     # The models are the committed table's: a closed subset keeps the models it had.
     candidates = sorted({c for c, _ in tables[main_key]})
+    dates = run_dates(args.subset)
+    missing = [c for c in candidates if c not in dates]
+    if missing:
+        raise SystemExit(f"no run dates for {missing} on {args.subset}; add them to platform/run_dates.csv")
     commit = git_commit()
-    started_at = utc_now()
 
     os.makedirs(args.out, exist_ok=True)
     manifest = {
         "artifact_type": "mindbench-results.v1",
-        "generated_at": started_at,
+        "generated_at": utc_now(),
         "producer": {"repo": "mindbench-ai/healthbench-psych", "commit": commit},
         "schema": os.path.relpath(SCHEMA_PATH, ROOT),
         "files": {},
     }
     for cand in candidates:
-        payload = quantize(build_payload(cand, judges, subsets, tables, commit, started_at))
+        payload = quantize(build_payload(cand, judges, subsets, tables, commit, *dates[cand]))
         validate(payload, schema)  # R2.2: never write an invalid artifact
         text = json.dumps(payload, indent=2) + "\n"
         name = f"{BENCHMARK_SLUG}--{cand}.json"

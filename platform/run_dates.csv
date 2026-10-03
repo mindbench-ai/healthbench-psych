@@ -1,0 +1,52 @@
+subset,model,started_at,finished_at,started_source,finished_source
+healthbench-psych-v1,claude-fable-5,2026-07-30T00:14:27Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,claude-fable-5-1,2026-09-04T16:41:29Z,2026-09-05T08:19:34Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the 1.1.0 grading run
+healthbench-psych-v1,claude-haiku-4-5-20251001,2026-07-29T23:57:58Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,claude-opus-5,2026-07-30T00:09:48Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,claude-sonnet-5,2026-07-30T00:04:02Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,deepseek-v4-flash,2026-07-29T23:13:12Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,deepseek-v4-pro,2026-07-29T23:41:42Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,gemini-2.5-flash,2026-07-29T22:58:05Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,gemini-2.5-pro,2026-07-29T23:00:12Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,gemini-3.6-flash,2026-07-29T23:05:18Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,gemini-3.8-flash,2026-09-04T16:19:50Z,2026-09-05T08:19:34Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the 1.1.0 grading run
+healthbench-psych-v1,gpt-3.5-turbo,2026-07-29T23:00:35Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,gpt-4.1-2025-04-14,2026-07-29T23:03:38Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,gpt-5.5,2026-07-29T23:12:15Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,gpt-5.6-sol,2026-07-29T23:27:53Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,gpt-6-astra,2026-09-04T20:23:09Z,2026-09-05T08:19:34Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the 1.1.0 grading run
+healthbench-psych-v1,grok-4.5,2026-07-29T23:20:03Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,kimi-k2.6,2026-07-30T04:53:31Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,kimi-k3,2026-07-30T02:15:22Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,mistral-large-latest,2026-07-30T03:43:47Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,mistral-small-latest,2026-07-30T04:27:37Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,qwen3-8b,2026-07-30T00:04:03Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v1,qwen3.7-plus,2026-07-29T23:48:56Z,2026-07-31T15:16:57Z,spend ledger: first generate row for this model,spend ledger: last grade row of the original grading run
+healthbench-psych-v2,claude-fable-5,2026-07-30T00:14:27Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,claude-fable-5-1,2026-09-04T16:41:29Z,2026-09-23T00:28:25Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,claude-haiku-4-5-20251001,2026-07-29T23:57:58Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,claude-opus-5,2026-07-30T00:09:48Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,claude-opus-5-5,2026-10-03T14:58:14Z,2026-10-03T16:53:09Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the 2.1.0 grading run
+healthbench-psych-v2,claude-sonnet-5,2026-07-30T00:04:02Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,claude-sonnet-5-5,2026-10-03T14:54:14Z,2026-10-03T16:53:09Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the 2.1.0 grading run
+healthbench-psych-v2,deepseek-v4-flash,2026-07-29T23:13:12Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,deepseek-v4-pro,2026-07-29T23:41:42Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,gemini-2.5-flash,2026-07-29T22:58:05Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,gemini-2.5-pro,2026-07-29T23:00:12Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,gemini-3.6-flash,2026-07-29T23:05:18Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,gemini-3.8-flash,2026-09-04T16:19:50Z,2026-09-23T00:28:25Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,gpt-3.5-turbo,2026-07-29T23:00:35Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,gpt-4.1-2025-04-14,2026-07-29T23:03:38Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,gpt-5.5,2026-07-29T23:12:15Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,gpt-5.6-sol,2026-07-29T23:27:53Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,gpt-6-astra,2026-09-04T20:23:09Z,2026-09-23T00:28:25Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,gpt-6-luna,2026-10-03T15:23:20Z,2026-10-03T16:53:09Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the 2.1.0 grading run
+healthbench-psych-v2,gpt-6-sol,2026-10-03T14:55:14Z,2026-10-03T16:53:09Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the 2.1.0 grading run
+healthbench-psych-v2,gpt-6.1-sol,2026-10-03T14:59:14Z,2026-10-03T16:53:09Z,released dataset: earliest responses.generated_at for this model,spend ledger: last grade row of the 2.1.0 grading run
+healthbench-psych-v2,grok-4.5,2026-07-29T23:20:03Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,kimi-k2.6,2026-07-30T04:53:31Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,kimi-k3,2026-07-30T02:15:22Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,mistral-large-latest,2026-07-30T03:43:47Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,mistral-small-latest,2026-07-30T04:27:37Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,qwen3-8b,2026-07-30T00:04:03Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
+healthbench-psych-v2,qwen3.7-plus,2026-07-29T23:48:56Z,2026-09-23T00:28:25Z,spend ledger: first generate row for this model,spend ledger: last grade row of the run that graded the conversation added at 2.0.0
