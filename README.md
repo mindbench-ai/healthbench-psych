@@ -19,6 +19,12 @@ released run data (responses and grades) is hosted on the
 [Hugging Face dataset](https://huggingface.co/datasets/mindbench-ai/healthbench-psych);
 `eval/fetch_runs.py` rebuilds the local store from it.
 
+**Versions.** The benchmark test, meaning the subset and the grading mechanism, changes only at a
+major version. Minor releases add models, patch minor bugs, add support tooling, and handle
+platform integration. They do not change existing scores, or logic that would impact reproducing
+them. So if you run the benchmark from your own tooling, updates within a major version will not
+affect your results.
+
 ## Repository layout
 
 | Path | Contents |
