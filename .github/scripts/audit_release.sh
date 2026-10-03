@@ -14,6 +14,12 @@
 # repo at TAG claims. A subset mismatch surfaces as a diff too, because
 # n_prompts is a matrix column.
 #
+# A subset is CLOSED once the tag also carries a later version of it (v1, once
+# v2 exists). A closed matrix is a finished record: models added afterwards are
+# not part of it and are not added to it. For a closed matrix the audit checks
+# that every committed row still reproduces from HF, and that the file has not
+# changed since the previous release.
+#
 # Runs current tooling against the tag's DATA. That is deliberate: a tag made
 # before this script existed (v1.0.0) has no --revision flag and no workflow,
 # so the auditor has to be whatever branch carries this file. If tooling ever
@@ -45,6 +51,22 @@ while IFS= read -r line; do [ -n "$line" ] && MATRICES+=("$line"); done \
 [ "${#MATRICES[@]}" -gt 0 ] || { echo "::error::no committed matrices at $TAG -- nothing to audit"; exit 1; }
 echo "== committed matrices at $TAG:"; printf '   %s\n' "${MATRICES[@]}"
 
+# A subset is closed once this tag carries a later version of it: -v1 when -v2 exists.
+# Read from the tag's own tree: the working tree also holds main's newer subsets.
+is_closed() {
+  local fam="${1%-v[0-9]*}" n="${1##*-v}" f m
+  while IFS= read -r f; do
+    m="$(basename "$f" .json)"
+    [ "${m%-v[0-9]*}" = "$fam" ] || continue
+    m="${m##*-v}"
+    case "$m" in ''|*[!0-9]*) continue ;; esac
+    if [ "$m" -gt "$n" ]; then return 0; fi
+  done < <(git ls-tree -r --name-only "$TAG" -- eval/subsets)
+  return 1
+}
+PREV="$(git describe --tags --abbrev=0 "$TAG^" 2>/dev/null || true)"
+CLOSED=""
+
 # 2. run data from HF at the same tag (fails here if HF is not tagged)
 rm -rf eval/runs/responses eval/runs/grades
 python3 eval/fetch_runs.py --revision "$TAG" --force
@@ -54,6 +76,24 @@ for m in "${MATRICES[@]}"; do
   subset="$(basename "$m" .csv)"; subset="${subset#matrix_}"
   echo "== aggregate --subset $subset"
   python3 eval/aggregate.py --subset "$subset" >/dev/null
+  if is_closed "$subset"; then
+    echo "   closed subset: comparing only the rows committed at $TAG"
+    python3 - "$TAG" "$m" <<'EOF'
+import csv, io, subprocess, sys
+tag, path = sys.argv[1], sys.argv[2]
+committed = subprocess.check_output(["git", "show", f"{tag}:{path}"], text=True)
+keep = {(r["candidate"], r["judge"]) for r in csv.DictReader(io.StringIO(committed))}
+lines = open(path, newline="").read().splitlines(keepends=True)
+kept = [lines[0]] + [l for l in lines[1:] if tuple(l.split(",", 2)[:2]) in keep]
+open(path, "w", newline="").write("".join(kept))
+EOF
+    if [ -n "$PREV" ] && git cat-file -e "$PREV:$m" 2>/dev/null; then
+      git diff --quiet "$PREV" "$TAG" -- "$m" \
+        || { echo "::error::FAIL: closed matrix $m changed between $PREV and $TAG"; exit 1; }
+      echo "   unchanged since $PREV"
+    fi
+    CLOSED="$CLOSED $subset"
+  fi
 done
 
 # 3b. the run data itself: row counts and a content hash of the fetched files, so a
@@ -79,6 +119,7 @@ if git diff --exit-code --stat "$TAG" -- "${MATRICES[@]}"; then
     echo "### Release audit: \`$TAG\` PASS"
     echo "HF revision \`$TAG\` reproduces every committed matrix byte-for-byte:"
     printf -- '- `%s`\n' "${MATRICES[@]}"
+    [ -z "$CLOSED" ] || echo "Closed subsets, checked on their committed rows only:$CLOSED"
   } >> "${GITHUB_STEP_SUMMARY:-/dev/null}"
 else
   echo "::error::FAIL: recomputed matrices differ from $TAG (see diff above)"
