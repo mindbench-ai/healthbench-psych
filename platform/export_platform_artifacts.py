@@ -7,14 +7,23 @@ artifact per candidate model, keyed benchmark x model x run (R2.4).
 Each carries:
 
   - healthbench_score        panel mean (3 judges) of the per-judge
-                             HealthBench clipped-mean scores on
-                             healthbench-psych-v1 (n=610)
+                             HealthBench clipped-mean scores on the chosen
+                             subset (--subset; default healthbench-psych-v2,
+                             n=611)
   - healthbench_hard_score   the same on healthbench-psych-hard-v1 (n=119)
   - per_judge_scores         the per-judge clipped means behind both
 
 All numbers are recomputed from the grades store (eval/runs/grades/*.jsonl,
 populated by eval/fetch_runs.py) exactly as eval/aggregate.py does: per-prompt
 scores filtered to the subset, mean clipped to [0,1].
+
+The models exported are the ones in the subset's committed table
+(eval/runs/matrix_<subset>.csv), and every exported per-judge score must equal
+that table's value or the export stops. So --subset healthbench-psych-v1 gives
+the closed v1 record (23 models) and the default gives the current one.
+
+The promoted v1 artifacts recorded sampling temperature 0 for every model.
+This exporter records the temperature each model actually ran at.
 
 Schema (R2.2 / L25): platform/schemas/mindbench-results.v1.schema.json is a
 VENDORED, byte-identical copy of the authoritative platform schema at
@@ -30,7 +39,8 @@ per-call timestamps). The batch-level generated_at and producer {repo,
 commit} live in <out>/export-manifest.json alongside the payload sha256s.
 
 Usage (no API keys needed):
-    python3 platform/export_platform_artifacts.py              # -> platform/out/
+    python3 platform/export_platform_artifacts.py     # -> platform/out/healthbench-psych-v2/
+    python3 platform/export_platform_artifacts.py --subset healthbench-psych-v1
     python3 platform/export_platform_artifacts.py --out DIR
 
 Writes one <out>/healthbench-psych--<model>.json per model (gitignored) plus
@@ -38,6 +48,7 @@ Writes one <out>/healthbench-psych--<model>.json per model (gitignored) plus
 mindbench-results.v1 importer; no platform code is specific to this spoke.
 """
 import argparse
+import csv
 import datetime
 import hashlib
 import json
@@ -53,7 +64,7 @@ from lib import samplers, store  # noqa: E402
 SCHEMA_PATH = os.path.join(ROOT, "platform", "schemas",
                            "mindbench-results.v1.schema.json")
 SUBSETS_DIR = os.path.join(ROOT, "eval", "subsets")
-V1_SUBSET = "healthbench-psych-v1"
+DEFAULT_SUBSET = "healthbench-psych-v2"
 HARD_SUBSET = "healthbench-psych-hard-v1"
 BENCHMARK_SLUG = "healthbench-psych"
 HARNESS = "healthbench-psych-eval"
@@ -63,6 +74,20 @@ HB_SOURCE = ("https://openaipublic.blob.core.windows.net/simple-evals/"
              "healthbench/2025-05-07-06-14-12_oss_eval.jsonl")
 # Platform provider slugs where they differ from the harness's endpoint names.
 PROVIDER_SLUGS = {"dashscope": "alibaba"}
+# Models evaluated after the original sweep, which the harness registry
+# (eval/lib/samplers.py) does not list: provider, and the temperature sent.
+# None means the request omitted temperature and the provider's default
+# applied. These mirror the `temperature` column of the released dataset.
+LATER_MODELS = {
+    "claude-fable-5-1": ("anthropic", 1),
+    "gemini-3.8-flash": ("google", 0),
+    "gpt-6-astra": ("openai", None),
+    "gpt-6-sol": ("openai", None),
+    "gpt-6-luna": ("openai", None),
+    "gpt-6.1-sol": ("openai", None),
+    "claude-opus-5-5": ("anthropic", None),
+    "claude-sonnet-5-5": ("anthropic", None),
+}
 
 
 def git_commit():
@@ -80,6 +105,22 @@ def utc_now():
 
 def load_subset(name):
     return json.load(open(os.path.join(SUBSETS_DIR, f"{name}.json")))
+
+
+def committed_table(subset):
+    """The subset's committed table: {(candidate, judge): score as written}."""
+    path = os.path.join(ROOT, "eval", "runs", f"matrix_{subset}.csv")
+    return {(r["candidate"], r["judge"]): r["clipped_mean_score"]
+            for r in csv.DictReader(open(path, newline=""))}
+
+
+def model_info(candidate):
+    """(provider, temperature) from the harness registry, else LATER_MODELS."""
+    if candidate in samplers.REGISTRY:
+        return samplers.provider_of(candidate), samplers.REGISTRY[candidate]._temp
+    if candidate in LATER_MODELS:
+        return LATER_MODELS[candidate]
+    raise SystemExit(f"{candidate}: no provider on record; add it to LATER_MODELS")
 
 
 def clipped_mean(scores):
@@ -181,7 +222,7 @@ def validate(payload, schema):
 
 # --- payload construction -----------------------------------------------------
 
-def build_payload(candidate, judges, subsets, commit, started_at):
+def build_payload(candidate, judges, subsets, tables, commit, started_at):
     per_judge = {}   # subset key -> judge -> full-precision clipped mean
     counts = {}      # subset key -> n prompts scored (asserted judge-uniform)
     for key, meta in subsets.items():
@@ -193,32 +234,36 @@ def build_payload(candidate, judges, subsets, commit, started_at):
             ns.add(len(scores))
         if ns != {meta["n"]}:
             raise SystemExit(f"{candidate}/{key}: scored counts {sorted(ns)} != subset n={meta['n']}")
+        for j in judges:  # the artifact must carry the committed table's numbers
+            if f"{vals[j]:.6f}" != tables[key].get((candidate, j)):
+                raise SystemExit(f"{candidate}/{key}/{j}: recomputed {vals[j]:.6f} != committed "
+                                 f"{tables[key].get((candidate, j))}")
         per_judge[key], counts[key] = vals, meta["n"]
 
-    v1 = subsets["v1"]
+    main_key = next(k for k in subsets if k != "hard")
+    main = subsets[main_key]
     panel = {k: sum(per_judge[k][j] for j in judges) / len(judges) for k in subsets}
-    provider = samplers.provider_of(candidate)
+    provider, temperature = model_info(candidate)
     return {
         "schema_version": 1,
         "benchmark": {
             "slug": BENCHMARK_SLUG,
             "dataset_manifest": {
                 "source": HB_SOURCE,
-                "revision": f"{v1['name']} {v1['version']}",
-                "split": v1["name"],
-                "n_items": v1["n"],
+                "revision": f"{main['name']} {main['version']}",
+                "split": main["name"],
+                "n_items": main["n"],
                 "subsample": None,
-                "checksum": f"sha256:{v1['prompt_id_sha256']}",
+                "checksum": f"sha256:{main['prompt_id_sha256']}",
             },
         },
         "model": {
             "label": candidate,
             "api_model_id": candidate,
             "provider": PROVIDER_SLUGS.get(provider, provider),
-            # The sweep's default config, as the promoted artifacts record it.
-            # Per-model deviations (provider-forced or fixed temperatures) are
-            # documented in eval/lib/samplers.py.
-            "sampling": {"temperature": 0},
+            # The temperature this model ran at; null where the request
+            # omitted it and the provider's default applied.
+            "sampling": {"temperature": temperature},
         },
         "run": {
             "harness": HARNESS,
@@ -227,7 +272,7 @@ def build_payload(candidate, judges, subsets, commit, started_at):
             "started_at": started_at,
             "finished_at": utc_now(),
             "cost_usd": None,
-            "n_completed": counts["v1"],
+            "n_completed": counts[main_key],
             # Always 0: judge_scores() drops ungraded rows, and build_payload
             # asserts every judge scored exactly meta["n"] prompts, so a run
             # with any ungraded prompt exits before reaching this line.
@@ -243,12 +288,12 @@ def build_payload(candidate, judges, subsets, commit, started_at):
             },
         },
         "metrics": [
-            {"key": "healthbench_score", "value": panel["v1"],
-             "n": counts["v1"], "ci_low": None, "ci_high": None},
+            {"key": "healthbench_score", "value": panel[main_key],
+             "n": counts[main_key], "ci_low": None, "ci_high": None},
             {"key": "healthbench_hard_score", "value": panel["hard"],
              "n": counts["hard"], "ci_low": None, "ci_high": None},
             {"key": "per_judge_scores",
-             "value_json": {"v1": {j: per_judge["v1"][j] for j in sorted(judges)},
+             "value_json": {main_key: {j: per_judge[main_key][j] for j in sorted(judges)},
                             "hard": {j: per_judge["hard"][j] for j in sorted(judges)}}},
         ],
         "items_artifact": None,
@@ -257,14 +302,20 @@ def build_payload(candidate, judges, subsets, commit, started_at):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--out", default=os.path.join(ROOT, "platform", "out"),
-                    help="output directory (gitignored; default platform/out/)")
+    ap.add_argument("--subset", default=DEFAULT_SUBSET,
+                    help=f"subset to export (default {DEFAULT_SUBSET})")
+    ap.add_argument("--out", default=None,
+                    help="output directory (gitignored; default platform/out/<subset>/)")
     args = ap.parse_args()
+    args.out = args.out or os.path.join(ROOT, "platform", "out", args.subset)
 
     schema = json.load(open(SCHEMA_PATH))
-    subsets = {"v1": load_subset(V1_SUBSET), "hard": load_subset(HARD_SUBSET)}
+    main_key = args.subset.rsplit("-", 1)[-1]  # "v1", "v2": the per-judge block's key
+    subsets = {main_key: load_subset(args.subset), "hard": load_subset(HARD_SUBSET)}
+    tables = {main_key: committed_table(args.subset), "hard": committed_table(HARD_SUBSET)}
     judges = list(samplers.JUDGES)
-    candidates = sorted(samplers.CANDIDATES)
+    # The models are the committed table's: a closed subset keeps the models it had.
+    candidates = sorted({c for c, _ in tables[main_key]})
     commit = git_commit()
     started_at = utc_now()
 
@@ -277,7 +328,7 @@ def main():
         "files": {},
     }
     for cand in candidates:
-        payload = quantize(build_payload(cand, judges, subsets, commit, started_at))
+        payload = quantize(build_payload(cand, judges, subsets, tables, commit, started_at))
         validate(payload, schema)  # R2.2: never write an invalid artifact
         text = json.dumps(payload, indent=2) + "\n"
         name = f"{BENCHMARK_SLUG}--{cand}.json"

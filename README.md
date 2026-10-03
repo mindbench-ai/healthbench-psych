@@ -82,11 +82,12 @@ Three exporters:
 `platform/export_platform_artifacts.py` converts the grades store (populated by `eval/fetch_runs.py`) into the
 versioned artifacts the [MindBench platform](https://mindbench.ai) ingests: one
 `mindbench-results.v1` payload per candidate model, carrying the three-judge panel mean on
-`healthbench-psych-v1`, the hard-subset panel mean, and the per-judge scores behind both.
+`healthbench-psych-v2` (or the subset named with `--subset`), the hard-subset panel mean, and the
+per-judge scores behind both.
 No API keys are needed; everything is recomputed from the fetched `eval/runs/grades/`.
 
 ```bash
-python3 platform/export_platform_artifacts.py     # -> platform/out/healthbench-psych--<model>.json
+python3 platform/export_platform_artifacts.py     # -> platform/out/healthbench-psych-v2/healthbench-psych--<model>.json
                                                   #    (one per model + export-manifest.json, gitignored)
 ```
 
