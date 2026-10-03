@@ -2,7 +2,7 @@
 
 An expert-adjudicated **mental-health subset of [HealthBench](https://arxiv.org/abs/2505.08775)**
 (OpenAI's open benchmark of 5,000 physician-rubric-graded health conversations), together with a
-faithful evaluation harness and released results for 23 language models under a three-judge
+faithful evaluation harness and released results for 28 language models under a three-judge
 panel. Maintained by [MindBench.ai](https://mindbench.ai).
 
 **Released datasets**
@@ -43,8 +43,8 @@ affect your results.
 
 ```bash
 git clone https://github.com/mindbench-ai/healthbench-psych.git && cd healthbench-psych
-python3 eval/fetch_runs.py                                     # one-time ~45 MB download
-python3 eval/aggregate.py --subset healthbench-psych-v2        # 23-model × 3-judge matrix,
+python3 eval/fetch_runs.py                                     # one-time ~67 MB download
+python3 eval/aggregate.py --subset healthbench-psych-v2        # 28-model × 3-judge matrix,
 python3 eval/aggregate.py --subset healthbench-psych-hard-v1   # agreement, severity stats
 pip install matplotlib
 python3 analysis/visualization/make_panel_fig.py --subset healthbench-psych-v2 --orient landscape
